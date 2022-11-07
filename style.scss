@@ -118,9 +118,11 @@ body {
 	display: grid;
 	align-content: end;
 	margin-bottom: 80px;
+	color: #ffffff;
 
 	&:nth-of-type(2) {
 		background-color: #f2ac57;
+		color: #ffffff;
 	}
 	&:nth-of-type(3) {
 		background-color: #14a38b;
@@ -136,15 +138,19 @@ body {
 	}
 	&:nth-of-type(7) {
 		background-color: #7c9cbf;
+		color: #2C2738;
 	}
 	&:nth-of-type(8) {
 		background-color: #ffffff;
+		color: #2C2738;
 	}
 	&:nth-of-type(9) {
 		background-color: #dbe2ea;
+		color: #2C2738;
 	}
 	&:nth-of-type(10) {
 		background-color: #ebf4f8;
+		color: #2C2738;
 	}
 
 	&__label {
@@ -158,26 +164,28 @@ body {
 	}
 }
 .icons {
-
 }
 .icon {
+	&__title {
+		@include title;
+	}
 
-		&__title {
-			@include title;
+	&__group {
+		padding: 30px 24px;
+		margin-bottom: 40px;
+		background-color: #ffffff;
+		border-radius: 13px;
+		color: #0880ae;
+		&:nth-of-type(2) {
+			background-color: #7c9cbf;
+			color: #ffffff;
 		}
+		&:nth-of-type(3) {
+			color: #2c2738;
+		}
+	}
 
-		&__group {
-			padding: 30px 24px;
-			margin-bottom: 40px;
-			background-color: #ffffff;
-			border-radius: 13px;
-			&:nth-of-type(2){
-				background-color: #7C9CBF;
-			}
-		}
-
-		&__img {
-			
-			fill: #0880AE;
-		}
+	&__img {
+		margin: 24px;
+	}
 }
