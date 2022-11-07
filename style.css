@@ -113,38 +113,67 @@ body {
   -webkit-box-shadow: 0px 16px 56px rgba(44, 39, 56, 0.08);
           box-shadow: 0px 16px 56px rgba(44, 39, 56, 0.08);
   border-radius: 15%;
-  text-align: start;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: end;
+      align-content: end;
+  margin-bottom: 80px;
 }
 .color:nth-of-type(2) {
-  background-color: #F2AC57;
+  background-color: #f2ac57;
 }
 .color:nth-of-type(3) {
-  background-color: #14A38B;
+  background-color: #14a38b;
 }
 .color:nth-of-type(4) {
-  background-color: #FF7171;
+  background-color: #ff7171;
 }
 .color:nth-of-type(5) {
-  background-color: #2C2738;
+  background-color: #2c2738;
 }
 .color:nth-of-type(6) {
-  background-color: #756F86;
+  background-color: #756f86;
 }
 .color:nth-of-type(7) {
-  background-color: #7C9CBF;
+  background-color: #7c9cbf;
 }
 .color:nth-of-type(8) {
   background-color: #ffffff;
 }
 .color:nth-of-type(9) {
-  background-color: #DBE2EA;
+  background-color: #dbe2ea;
 }
 .color:nth-of-type(10) {
-  background-color: #EBF4F8;
+  background-color: #ebf4f8;
+}
+.color__label {
+  margin-left: 40px;
 }
 .color__name {
   font-style: normal;
   font-weight: 600;
   font-size: 34px;
   line-height: 44px;
+  margin-left: 40px;
+  margin-bottom: 40px;
+}
+
+.icon__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 36px;
+  margin-bottom: 81px;
+}
+.icon__group {
+  padding: 30px 24px;
+  margin-bottom: 40px;
+  background-color: #ffffff;
+  border-radius: 13px;
+}
+.icon__group:nth-of-type(2) {
+  background-color: #7C9CBF;
+}
+.icon__img {
+  fill: #0880AE;
 }
