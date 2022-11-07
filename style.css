@@ -115,6 +115,33 @@ body {
   border-radius: 15%;
   text-align: start;
 }
+.color:nth-of-type(2) {
+  background-color: #F2AC57;
+}
+.color:nth-of-type(3) {
+  background-color: #14A38B;
+}
+.color:nth-of-type(4) {
+  background-color: #FF7171;
+}
+.color:nth-of-type(5) {
+  background-color: #2C2738;
+}
+.color:nth-of-type(6) {
+  background-color: #756F86;
+}
+.color:nth-of-type(7) {
+  background-color: #7C9CBF;
+}
+.color:nth-of-type(8) {
+  background-color: #ffffff;
+}
+.color:nth-of-type(9) {
+  background-color: #DBE2EA;
+}
+.color:nth-of-type(10) {
+  background-color: #EBF4F8;
+}
 .color__name {
   font-style: normal;
   font-weight: 600;
