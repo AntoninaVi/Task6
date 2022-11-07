@@ -22,9 +22,9 @@
 }
 
 body {
-	color: #2c2738;
 	font-family: "IBM Plex Sans", sans-serif;
 	box-sizing: border-box;
+	color: #2c2738;
 }
 
 .wrapper {
@@ -43,6 +43,7 @@ body {
 
 	&__title {
 		@include title;
+		
 	}
 
 	&__img {
@@ -52,9 +53,11 @@ body {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
+		
 	}
 	&__content {
 		display: flex;
+		
 	}
 
 	&__source {
@@ -67,15 +70,24 @@ body {
 
 	&__name {
 		@include name;
+		
 	}
 
 	&__font {
+		
+		
 	}
 
 	&__style {
 		font-weight: 400;
 		font-size: 20px;
 		line-height: 26px;
+		&:nth-of-type(2) {
+			font-family: "IBM Plex Sans";
+			font-style: normal;
+			font-weight: 600;
+		}
+		
 	}
 
 	&__links {
@@ -138,19 +150,19 @@ body {
 	}
 	&:nth-of-type(7) {
 		background-color: #7c9cbf;
-		color: #2C2738;
+		color: #2c2738;
 	}
 	&:nth-of-type(8) {
 		background-color: #ffffff;
-		color: #2C2738;
+		color: #2c2738;
 	}
 	&:nth-of-type(9) {
 		background-color: #dbe2ea;
-		color: #2C2738;
+		color: #2c2738;
 	}
 	&:nth-of-type(10) {
 		background-color: #ebf4f8;
-		color: #2C2738;
+		color: #2c2738;
 	}
 
 	&__label {

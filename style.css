@@ -9,10 +9,10 @@
 }
 
 body {
-  color: #2c2738;
   font-family: "IBM Plex Sans", sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  color: #2c2738;
 }
 
 .wrapper {
@@ -76,6 +76,11 @@ body {
   font-size: 20px;
   line-height: 26px;
 }
+.typeface__style:nth-of-type(2) {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 600;
+}
 .typeface__link-title {
   font-style: normal;
   font-weight: 400;
@@ -138,19 +143,19 @@ body {
 }
 .color:nth-of-type(7) {
   background-color: #7c9cbf;
-  color: #2C2738;
+  color: #2c2738;
 }
 .color:nth-of-type(8) {
   background-color: #ffffff;
-  color: #2C2738;
+  color: #2c2738;
 }
 .color:nth-of-type(9) {
   background-color: #dbe2ea;
-  color: #2C2738;
+  color: #2c2738;
 }
 .color:nth-of-type(10) {
   background-color: #ebf4f8;
-  color: #2C2738;
+  color: #2c2738;
 }
 .color__label {
   margin-left: 40px;
