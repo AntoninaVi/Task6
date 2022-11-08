@@ -218,3 +218,7 @@ body {
 .icons__img {
   margin: 24px;
 }
+
+input[type=text]:focus {
+  background-color: transparent;
+}

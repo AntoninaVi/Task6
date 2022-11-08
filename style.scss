@@ -209,3 +209,9 @@ body {
 		margin: 24px;
 	}
 }
+
+// FORMS
+
+input[type=text]:focus{
+	background-color: transparent;
+}

@@ -14,53 +14,22 @@
             <section class="form">
                 <h2 class="form__title"><span class="form__span">04. </span>Form</h2>
                 <div class="form__content">
-                    <form name="test" action="#">
+                    <form name="myForm"  onsubmit="return validateForm()" method="post">
                         <p>Label</p>
-                        <input type="text" required placeholder="Placeholder">
-                        <div class="requirements">
-                            Must be a valid email address.
-                          </div>
+                        <input class="form__input" type="text" pattern="Value" required placeholder="Value" name="fname">
+                        
                     </form>
-                    <form name="test" action="#">
-                        <p>Label</p>
-                        <input type="text" placeholder="Placeholder">
-                    </form>
-                    <form name="test" action="#">
-                        <p>Label</p>
-                        <input type="text" placeholder="Placeholder">
-                    </form>
-                    <form name="test" action="#">
-                        <p>Label</p>
-                        <input type="text" placeholder="Placeholder">
-                    </form>
-                    <form name="test" action="#">
-                        <p>Label</p>
-                        <input type="text" placeholder="Placeholder">
-                    </form>
-                    <form name="test" action="#">
-                        <p>Label</p>
-                        <input type="text" placeholder="Placeholder">
-                    </form>
-                    <form name="test" action="#">
-                        <p>Label</p>
-                        <input type="text" placeholder="Placeholder">
-                    </form>
-                    <form name="test" action="#">
-                        <p>Label</p>
-                        <input type="text" placeholder="Placeholder">
-                    </form>
-                    <form name="test" action="#">
-                        <p>Label</p>
-                        <input type="text" placeholder="Placeholder">
-                    </form>
-                    <form name="test" action="#">
-                        <p>Label</p>
-                        <input type="text" placeholder="Placeholder">
-                    </form>
+
+
+
+
+
+
                 </div>
             </section>
         </div>
     </div>
+    <script src="index.js"></script>
 </body>
 
 </html>
