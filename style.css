@@ -17,6 +17,7 @@ body {
 
 .wrapper {
   padding: 60px 60px 180px 60px;
+  height: 100vh;
   background: #ebf4f8;
 }
 
@@ -226,12 +227,46 @@ body {
 }
 
 .form__field:nth-of-type(2) .form__input:focus {
-  border: 3px solid #0880AE;
+  border: 3px solid #0880ae;
 }
 .form__field:nth-of-type(3) .form__input {
   background-image: url(img/Lens.svg);
   background-repeat: no-repeat;
   background-position: right;
+}
+.form__field:nth-of-type(4) .form__select {
+  display: block;
+  width: 100%;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 10px;
+  border-radius: 7px;
+}
+.form__field:nth-of-type(5) .form__select {
+  width: 100%;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 10px;
+  border-radius: 7px;
+  opacity: 0.24;
+}
+.form__field:nth-of-type(6) .form__textarea:focus {
+  width: 100%;
+  height: 10rem;
+}
+
+.form__label {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #756f86;
+  margin-bottom: 10px;
 }
 
 .form__error {
