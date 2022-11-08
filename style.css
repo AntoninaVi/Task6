@@ -219,6 +219,84 @@ body {
   margin: 24px;
 }
 
-input[type=text]:focus {
-  background-color: transparent;
+.form {
+  display: inline-block;
+  padding: 25px;
+  width: 500px;
+}
+
+.form__field:nth-of-type(2) .form__input:focus {
+  border: 3px solid #0880AE;
+}
+.form__field:nth-of-type(3) .form__input {
+  background-image: url(img/Lens.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.form__error {
+  color: red;
+  text-align: left;
+  font-size: 12px;
+  display: block;
+  margin-top: 3px;
+  display: none;
+}
+
+.form__true {
+  color: rgb(82, 57, 57);
+  text-align: left;
+  font-size: 12px;
+  display: block;
+  margin-top: 3px;
+  display: none;
+}
+
+.form__input {
+  outline: none;
+  display: block;
+  width: 100%;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 10px;
+  border-radius: 7px;
+}
+
+input:valid:not(:-moz-placeholder-shown) + .form__true {
+  display: block;
+}
+
+input:valid:not(:-ms-input-placeholder) + .form__true {
+  display: block;
+}
+
+input:valid:not(:placeholder-shown) + .form__true {
+  display: block;
+}
+
+input:invalid:not(:-moz-placeholder-shown) {
+  border-color: red;
+}
+
+input:invalid:not(:-ms-input-placeholder) {
+  border-color: red;
+}
+
+input:invalid:not(:placeholder-shown) {
+  border-color: red;
+}
+
+input:invalid:not(:-moz-placeholder-shown) + .form__error {
+  display: block;
+}
+
+input:invalid:not(:-ms-input-placeholder) + .form__error {
+  display: block;
+}
+
+input:invalid:not(:placeholder-shown) + .form__error {
+  display: block;
 }

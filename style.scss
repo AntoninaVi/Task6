@@ -47,9 +47,9 @@ body {
 }
 .typeface {
 	margin-bottom: 80px;
-&__span{
-	@include span;
-}
+	&__span {
+		@include span;
+	}
 	&__title {
 		@include title;
 	}
@@ -112,7 +112,7 @@ body {
 }
 
 .colors {
-	&__span{
+	&__span {
 		@include span;
 	}
 	&__title {
@@ -183,7 +183,7 @@ body {
 }
 
 .icons {
-	&__span{
+	&__span {
 		@include span;
 	}
 	&__title {
@@ -212,6 +212,63 @@ body {
 
 // FORMS
 
-input[type=text]:focus{
-	background-color: transparent;
+.form {
+	display: inline-block;
+	padding: 25px;
+	width: 500px;
+}
+
+.form__field {
+	
+	&:nth-of-type(2) .form__input:focus{
+		border: 3px solid #0880AE;
+		
+	}
+	&:nth-of-type(3) .form__input{
+		background-image: url(img/Lens.svg);
+		background-repeat: no-repeat;
+		background-position: right;
+	}
+}
+
+.form__error {
+	color: red;
+	text-align: left;
+	font-size: 12px;
+	display: block;
+	margin-top: 3px;
+	display: none;
+}
+
+.form__true {
+	color: rgb(82, 57, 57);
+	text-align: left;
+	font-size: 12px;
+	display: block;
+	margin-top: 3px;
+	display: none;
+}
+
+.form__input {
+	outline: none;
+	display: block;
+	width: 100%;
+	border-radius: 2px;
+	border: 1px solid #ccc;
+	padding: 10px;
+	box-sizing: border-box;
+	margin-bottom: 10px;
+	border-radius: 7px;
+}
+
+
+input:valid:not(:placeholder-shown) + .form__true {
+	display: block;
+}
+
+input:invalid:not(:placeholder-shown) {
+	border-color: red;
+}
+input:invalid:not(:placeholder-shown) + .form__error {
+	display: block;
 }
