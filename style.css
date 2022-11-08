@@ -169,27 +169,27 @@ body {
   margin-bottom: 40px;
 }
 
-.icon__title {
+.icons__title {
   font-style: normal;
   font-weight: 600;
   font-size: 28px;
   line-height: 36px;
   margin-bottom: 81px;
 }
-.icon__group {
+.icons__group {
   padding: 30px 24px;
   margin-bottom: 40px;
   background-color: #ffffff;
   border-radius: 13px;
   color: #0880ae;
 }
-.icon__group:nth-of-type(2) {
+.icons__group:nth-of-type(2) {
   background-color: #7c9cbf;
   color: #ffffff;
 }
-.icon__group:nth-of-type(3) {
+.icons__group:nth-of-type(3) {
   color: #2c2738;
 }
-.icon__img {
+.icons__img {
   margin: 24px;
 }
