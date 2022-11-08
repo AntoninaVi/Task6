@@ -220,8 +220,8 @@ body {
 
 	&__content{
 		display: grid;
-		grid-template-columns: repeat( auto-fit, minmax(100%, 1fr 1fr) );
-		column-gap: 80px;
+		grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+	}
 		
 		
 	}
@@ -232,7 +232,6 @@ body {
 	&__title {
 		@include title;
 	}
-}
 
 .form__field {
 	&:nth-of-type(2) .form__input:focus {
@@ -257,16 +256,16 @@ body {
 	// &:nth-of-type(8) .form__input {
 	
 	// }
-	&:nth-of-type(9) .form__input {
-		opacity: 0.24;
-	}
-	&:nth-of-type(10) .form__select {
-	background-image: url(img/Left.svg);
-	background-repeat: no-repeat;
-	background-position: right;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	}
+	// &:nth-of-type(9) .form__input {
+	// 	opacity: 0.24;
+	// }
+	// &:nth-of-type(10) .form__select {
+	// background-image: url(img/Left.svg);
+	// background-repeat: no-repeat;
+	// background-position: right;
+	// -webkit-appearance: none;
+	// -moz-appearance: none;
+	// }
 }
 .form__select {
 	display: block;

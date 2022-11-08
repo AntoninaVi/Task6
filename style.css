@@ -228,7 +228,8 @@ body {
 .form__content {
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100%, 1fr 1fr));
+  -ms-grid-columns: 100% 80px 100% 80px 100%;
+  grid-template-columns: 100% 100% 100%;
   -webkit-column-gap: 80px;
      -moz-column-gap: 80px;
           column-gap: 80px;
