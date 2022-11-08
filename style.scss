@@ -217,6 +217,13 @@ body {
 	display: inline-block;
 	padding: 25px;
 	width: 500px;
+
+	&__span {
+		@include span;
+	}
+	&__title {
+		@include title;
+	}
 }
 
 .form__field {
@@ -229,30 +236,48 @@ body {
 		background-position: right;
 	}
 	&:nth-of-type(4) .form__select {
-		display: block;
-		width: 100%;
-		border-radius: 2px;
-		border: 1px solid #ccc;
-		padding: 10px;
-		box-sizing: border-box;
-		margin-bottom: 10px;
-		border-radius: 7px;
 	}
 	&:nth-of-type(5) .form__select {
-		width: 100%;
-		border-radius: 2px;
-		border: 1px solid #ccc;
-		padding: 10px;
-		box-sizing: border-box;
-		margin-bottom: 10px;
-		border-radius: 7px;
 		opacity: 0.24;
 	}
-	&:nth-of-type(6) .form__textarea:focus{
-		width: 100%;
-		height: 10rem;
+	&:nth-of-type(6) .form__textarea:focus {
+		outline: none;
+	}
+	&:nth-of-type(7) .form__textarea:focus {
+		border: 3px solid #0880ae;
 	}
 }
+.form__select {
+	display: block;
+	width: 100%;
+	border-radius: 2px;
+	border: 1px solid #ccc;
+	padding: 10px;
+	box-sizing: border-box;
+	margin-bottom: 10px;
+	border-radius: 7px;
+	outline: none;
+	margin-bottom: 40px;
+}
+.form__textarea {
+	width: 100%;
+	height: 10rem;
+	resize: none;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 21px;
+	color: #7c9cbf;
+	padding: 10px;
+	border-radius: 7px;
+	margin-bottom: 40px;
+}
+.form__textarea:invalid:not(:placeholder-shown) {
+	border-color: red;
+}
+.form__textarea:invalid:not(:placeholder-shown) + .form__error {
+	display: block;
+}
+
 .form__label {
 	font-weight: 500;
 	font-size: 16px;
@@ -287,8 +312,8 @@ body {
 	border: 1px solid #ccc;
 	padding: 10px;
 	box-sizing: border-box;
-	margin-bottom: 10px;
 	border-radius: 7px;
+	margin-bottom: 40px;
 }
 
 input:valid:not(:placeholder-shown) + .form__true {
