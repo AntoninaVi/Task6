@@ -31,6 +31,14 @@ body {
 .typeface {
   margin-bottom: 80px;
 }
+.typeface__span {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 36px;
+  color: #7c9cbf;
+}
 .typeface__title {
   font-style: normal;
   font-weight: 600;
@@ -96,6 +104,14 @@ body {
   color: #0880ae;
 }
 
+.colors__span {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 36px;
+  color: #7c9cbf;
+}
 .colors__title {
   font-style: normal;
   font-weight: 600;
@@ -159,6 +175,7 @@ body {
 }
 .color__label {
   margin-left: 40px;
+  opacity: 0.56;
 }
 .color__name {
   font-style: normal;
@@ -169,6 +186,14 @@ body {
   margin-bottom: 40px;
 }
 
+.icons__span {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 36px;
+  color: #7c9cbf;
+}
 .icons__title {
   font-style: normal;
   font-weight: 600;

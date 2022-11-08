@@ -11,7 +11,14 @@
 	font-size: 34px;
 	line-height: 44px;
 }
-
+@mixin span {
+	font-family: "IBM Plex Sans";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 28px;
+	line-height: 36px;
+	color: #7c9cbf;
+}
 *,
 *:before,
 *:after {
@@ -40,10 +47,11 @@ body {
 }
 .typeface {
 	margin-bottom: 80px;
-
+&__span{
+	@include span;
+}
 	&__title {
 		@include title;
-		
 	}
 
 	&__img {
@@ -53,11 +61,9 @@ body {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		
 	}
 	&__content {
 		display: flex;
-		
 	}
 
 	&__source {
@@ -70,12 +76,9 @@ body {
 
 	&__name {
 		@include name;
-		
 	}
 
 	&__font {
-		
-		
 	}
 
 	&__style {
@@ -87,7 +90,6 @@ body {
 			font-style: normal;
 			font-weight: 600;
 		}
-		
 	}
 
 	&__links {
@@ -110,6 +112,9 @@ body {
 }
 
 .colors {
+	&__span{
+		@include span;
+	}
 	&__title {
 		@include title;
 	}
@@ -167,6 +172,7 @@ body {
 
 	&__label {
 		margin-left: 40px;
+		opacity: 0.56;
 	}
 
 	&__name {
@@ -177,6 +183,9 @@ body {
 }
 
 .icons {
+	&__span{
+		@include span;
+	}
 	&__title {
 		@include title;
 	}
