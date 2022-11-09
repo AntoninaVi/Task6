@@ -429,6 +429,7 @@ input:invalid:not(:placeholder-shown) + .form__error {
 
 .tags-buttons {
 	display: flex;
+	margin-bottom: 80px;
 	&__btn {
 		position: relative;
 		box-shadow: 0px 1px 2px rgba(44, 39, 56, 0.0001), 0px 2px 4px rgba(44, 39, 56, 0.08);
@@ -439,30 +440,30 @@ input:invalid:not(:placeholder-shown) + .form__error {
 		font-weight: 500;
 		font-size: 14px;
 		line-height: 18px;
-		color: #7c9cbf;
+		color: #ffffff;
 		cursor: pointer;
 		margin-right: 20px;
-		&:last-child{
+		&:last-child {
 			margin-left: 0;
 		}
 		&::after {
-			content: '';
+			content: "";
 			width: 2px;
 			height: 18px;
-			background: #0880AE;
+			background: #ffffff;
 			display: block;
 			transform: rotate(45deg) translateX(0px);
 			position: absolute;
 			top: 0;
 			margin-left: 50px;
 			margin-top: 8px;
-			transform: rotate(-45deg) ;
+			transform: rotate(-45deg);
 		}
 		&::before {
-			content: '';
+			content: "";
 			width: 2px;
 			height: 18px;
-			background: #0880AE;
+			background: #ffffff;
 			display: block;
 			transform: rotate(45deg) translateX(0px);
 			position: absolute;
@@ -472,4 +473,76 @@ input:invalid:not(:placeholder-shown) + .form__error {
 		}
 	}
 }
+.tags-buttons__btn:nth-last-child(6) {
+	color: #7c9cbf;
+	&::after {
+		background: #7c9cbf;
+	}
+	&::before {
+		background: #7c9cbf;
+	}
+}
+.tags-buttons__btn:nth-last-child(5) {
+	background: #2c2738;
+	color: #ffffff;
+}
+.tags-buttons__btn:nth-last-child(4) {
+	background: #0880ae;
+}
+.tags-buttons__btn:nth-last-child(3) {
+	background: #f2ac57;
+}
+.tags-buttons__btn:nth-last-child(2) {
+	background: #14a38b;
+}
+.tags-buttons__btn:nth-last-child(1) {
+	background: #ff7171;
+}
 
+.buttons {
+	width: 520px;
+	display: flex;
+	flex-direction: column;
+
+	&__group {
+		display: flex;
+		&:nth-last-child(2) {
+			.buttons__button {
+				color: #ebf4f8;
+				background: #0880ae;
+				box-shadow: 0px 6px 12px rgba(44, 39, 56, 0.08), 0px 12px 24px rgba(44, 39, 56, 0.16);
+			}
+		}
+
+		&:nth-last-child(1){
+			.buttons__button{
+				background-color: transparent;
+				border: 2px solid rgba(44, 39, 56, 0.24);
+				
+			}
+		}
+	}
+}
+.buttons__button {
+	padding: 8px 28px;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 18px;
+	text-align: center;
+	color: #7c9cbf;
+	background-color: #ffffff;
+	border: 1px solid #dbe2ea;
+	box-shadow: 0px 1px 2px rgba(44, 39, 56, 0.0001), 0px 2px 4px rgba(44, 39, 56, 0.08);
+	border-radius: 3px;
+	margin-right: 40px;
+	margin-bottom: 30px;
+
+	&:nth-last-child(2) {
+		border: 2px solid #0880AE;
+	}
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
