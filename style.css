@@ -580,8 +580,8 @@ input:invalid:not(:placeholder-shown) + .form__error {
   border: 2px solid #0880ae;
 }
 .buttons__group:nth-last-child(1) .buttons__button:nth-last-child(4) {
-  color: #7C9CBF;
-  border: 2px solid #7C9CBF;
+  color: #7c9cbf;
+  border: 2px solid #7c9cbf;
 }
 .buttons__group:nth-last-child(2) .buttons__button {
   color: #ebf4f8;
@@ -638,6 +638,59 @@ input:invalid:not(:placeholder-shown) + .form__error {
   padding: 14px 45px;
 }
 
+.buttons-large {
+  margin-bottom: 80px;
+}
 .buttons-large .buttons__button {
   padding: 18px 65px;
+}
+
+.alerts__alert {
+  padding: 18px 66px 18px 24px;
+  width: 800px;
+  color: #0880ae;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 12px 24px rgba(44, 39, 56, 0.04), 0px 24px 48px rgba(44, 39, 56, 0.08);
+          box-shadow: 0px 12px 24px rgba(44, 39, 56, 0.04), 0px 24px 48px rgba(44, 39, 56, 0.08);
+  margin-bottom: 30px;
+}
+.alerts__alert:nth-last-child(6) .closebtn {
+  color: #0880AE;
+}
+.alerts__alert:nth-last-child(5) {
+  color: #FFFFFF;
+  background: #2c2738;
+}
+.alerts__alert:nth-last-child(4) {
+  color: #FFFFFF;
+  background: #0880ae;
+}
+.alerts__alert:nth-last-child(3) {
+  color: #FFFFFF;
+  background: #F2AC57;
+}
+.alerts__alert:nth-last-child(2) {
+  color: #FFFFFF;
+  background: #14A38B;
+}
+.alerts__alert:nth-last-child(1) {
+  color: #FFFFFF;
+  background: #FF7171;
+  margin-bottom: 80px;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: #ffffff;
+  font-weight: bold;
+  float: right;
+  font-size: 25px;
+  line-height: 18px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: #ff3c3c;
 }
