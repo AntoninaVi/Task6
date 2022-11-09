@@ -499,26 +499,63 @@ input:invalid:not(:placeholder-shown) + .form__error {
 	background: #ff7171;
 }
 
+// SIMPLE BUTTONS
+
 .buttons {
 	width: 520px;
 	display: flex;
 	flex-direction: column;
+	margin-bottom: 80px;
 
 	&__group {
 		display: flex;
+		&:nth-last-child(1) {
+			.buttons__button {
+				background-color: transparent;
+				border: 2px solid rgba(44, 39, 56, 0.24);
+			
+				&:nth-last-child(1){
+					opacity: 0.24;
+				}
+				color: #2c2738;
+				&:nth-last-child(2) {
+					color: #756f86;
+					border: 2px solid #756f86;
+				}
+				&:nth-last-child(3) {
+					color: #0880ae;
+					border: 2px solid #0880ae;
+				}
+				&:nth-last-child(4){
+					color: #7C9CBF;
+					border: 2px solid #7C9CBF;
+				}
+			}
+		}
+
 		&:nth-last-child(2) {
 			.buttons__button {
 				color: #ebf4f8;
 				background: #0880ae;
 				box-shadow: 0px 6px 12px rgba(44, 39, 56, 0.08), 0px 12px 24px rgba(44, 39, 56, 0.16);
+				&:nth-last-child(1) {
+					background: #dbe2ea;
+					box-shadow: 0px 2px 4px rgba(44, 39, 56, 0.08);
+					color: #2c2738;
+					opacity: 0.24;
+				}
+				&:nth-last-child(2){
+					border: 2px solid rgba(44, 39, 56, 0.86);
+				}
 			}
 		}
 
-		&:nth-last-child(1){
-			.buttons__button{
-				background-color: transparent;
-				border: 2px solid rgba(44, 39, 56, 0.24);
-				
+		&:nth-last-child(3) {
+			.buttons__button:nth-last-child(1) {
+				border: 1px solid #dbe2ea;
+				box-shadow: 0px 2px 4px rgba(44, 39, 56, 0.08);
+				opacity: 0.24;
+				color: #2c2738;
 			}
 		}
 	}
@@ -531,18 +568,34 @@ input:invalid:not(:placeholder-shown) + .form__error {
 	line-height: 18px;
 	text-align: center;
 	color: #7c9cbf;
+	border-radius: 6px;
 	background-color: #ffffff;
 	border: 1px solid #dbe2ea;
 	box-shadow: 0px 1px 2px rgba(44, 39, 56, 0.0001), 0px 2px 4px rgba(44, 39, 56, 0.08);
-	border-radius: 3px;
 	margin-right: 40px;
 	margin-bottom: 30px;
+	cursor: pointer;
 
 	&:nth-last-child(2) {
-		border: 2px solid #0880AE;
+		border: 2px solid #0880ae;
 	}
 
 	&:last-child {
 		margin-right: 0;
+	}
+}
+
+
+.buttons-medium {
+	margin-bottom: 80px;
+
+	.buttons__button{
+		padding: 14px 45px;
+	}
+}
+
+.buttons-large{
+	.buttons__button{
+		padding: 18px 65px;
 	}
 }
