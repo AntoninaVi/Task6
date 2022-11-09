@@ -655,32 +655,31 @@ input:invalid:not(:placeholder-shown) + .form__error {
   margin-bottom: 30px;
 }
 .alerts__alert:nth-last-child(6) .closebtn {
-  color: #0880AE;
+  color: #0880ae;
 }
 .alerts__alert:nth-last-child(5) {
-  color: #FFFFFF;
+  color: #ffffff;
   background: #2c2738;
 }
 .alerts__alert:nth-last-child(4) {
-  color: #FFFFFF;
+  color: #ffffff;
   background: #0880ae;
 }
 .alerts__alert:nth-last-child(3) {
-  color: #FFFFFF;
-  background: #F2AC57;
+  color: #ffffff;
+  background: #f2ac57;
 }
 .alerts__alert:nth-last-child(2) {
-  color: #FFFFFF;
-  background: #14A38B;
+  color: #ffffff;
+  background: #14a38b;
 }
 .alerts__alert:nth-last-child(1) {
-  color: #FFFFFF;
-  background: #FF7171;
+  color: #ffffff;
+  background: #ff7171;
   margin-bottom: 80px;
 }
 
 .closebtn {
-  margin-left: 15px;
   color: #ffffff;
   font-weight: bold;
   float: right;
@@ -693,4 +692,44 @@ input:invalid:not(:placeholder-shown) + .form__error {
 
 .closebtn:hover {
   color: #ff3c3c;
+}
+
+.progressbars__progress {
+  background: #dbe2ea;
+  border-radius: 100px;
+  height: 9px;
+  width: 800px;
+  margin-bottom: 50px;
+}
+.progressbars__progress__progress-value:nth-last-child(1) {
+  background: #FF7171;
+}
+
+.progressbars__progress-value {
+  -webkit-animation: load 40s normal forwards;
+          animation: load 40s normal forwards;
+  -webkit-box-shadow: 0 10px 40px -10px #fff;
+          box-shadow: 0 10px 40px -10px #fff;
+  border-radius: 100px;
+  background: #0880ae;
+  height: 8px;
+  width: 100%;
+}
+
+@-webkit-keyframes load {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 75%;
+  }
+}
+
+@keyframes load {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 75%;
+  }
 }

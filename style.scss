@@ -609,44 +609,38 @@ input:invalid:not(:placeholder-shown) + .form__error {
 		box-shadow: 0px 12px 24px rgba(44, 39, 56, 0.04), 0px 24px 48px rgba(44, 39, 56, 0.08);
 		margin-bottom: 30px;
 
-		&:nth-last-child(6){
-			.closebtn{
-				color: #0880AE;
+		&:nth-last-child(6) {
+			.closebtn {
+				color: #0880ae;
 			}
 		}
 
 		&:nth-last-child(5) {
-			color: #FFFFFF;
+			color: #ffffff;
 			background: #2c2738;
-			
 		}
 
 		&:nth-last-child(4) {
-			color: #FFFFFF;
+			color: #ffffff;
 			background: #0880ae;
-			
 		}
 
 		&:nth-last-child(3) {
-			color: #FFFFFF;
-			background: #F2AC57;
-			
+			color: #ffffff;
+			background: #f2ac57;
 		}
 		&:nth-last-child(2) {
-			color: #FFFFFF;
-			background: #14A38B;
-			
+			color: #ffffff;
+			background: #14a38b;
 		}
 		&:nth-last-child(1) {
-			color: #FFFFFF;
-			background: #FF7171;
+			color: #ffffff;
+			background: #ff7171;
 			margin-bottom: 80px;
-			
 		}
 	}
 }
 .closebtn {
-	margin-left: 15px;
 	color: #ffffff;
 	font-weight: bold;
 	float: right;
@@ -658,4 +652,38 @@ input:invalid:not(:placeholder-shown) + .form__error {
 
 .closebtn:hover {
 	color: #ff3c3c;
+}
+
+// PROGRESS
+
+
+.progressbars__progress {
+	background: #dbe2ea;
+	border-radius: 100px;
+	height: 9px;
+	width: 800px;
+	margin-bottom: 50px;
+	
+	&__progress-value:nth-last-child(1){
+		background: #FF7171;
+	}
+}
+
+.progressbars__progress-value {
+	animation: load 40s normal forwards;
+	box-shadow: 0 10px 40px -10px #fff;
+	border-radius: 100px;
+	background: #0880ae;
+	height: 8px;
+	width: 100%;
+	
+}
+
+@keyframes load {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 75%;
+	}
 }
