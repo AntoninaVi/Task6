@@ -6,10 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task 6</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="loading-bar.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js"></script>
+
+
 </head>
 
 
 <body>
+
 
 
 
@@ -146,220 +152,247 @@
                 </div>
 
                 <div class="counters">
-                    <div class="counters__number">
-                        <span class="counters__minus">-</span>
-                        <input type="counters__text" value="1" />
-                        <span class="counters__plus">+</span>
+
+                    <div class="counters__counter">
+                        <span class="counter__minus">-</span>
+                        <input class="counter__input" type="text" value="1" size="5"/>
+                        <span class="counter__plus">+</span>
+                    </div>
+                    <div class="counters__counter">
+                        <span class="counter__minus">-</span>
+                        <input class="counter__input" type="text" value="1" size="5"/>
+                        <span class="counter__plus">+</span>
+                    </div>
+                    <div class="counters__counter">
+                        <span class="counter__minus">-</span>
+                        <input class="counter__input" type="text" value="1" size="5"/>
+                        <span class="counter__plus">+</span>
+                    </div>
+                    <div class="counters__counter">
+                        <span class="counter__minus">-</span>
+                        <input class="counter__input" type="text" value="1" size="5"/>
+                        <span class="counter__plus">+</span>
                     </div>
 
-                    <div class="counters__number">
-                        <span class="counters__minus">-</span>
-                        <input type="counters__text" value="1" />
-                        <span class="counters__plus">+</span>
-                    </div>
-                    <div class="counters__number">
-                        <span class="counters__minus">-</span>
-                        <input type="counters__text" value="1" />
-                        <span class="counters__plus">+</span>
-                    </div>
-                    <div class="counters__number">
-                        <span class="counters__minus">-</span>
-                        <input type="counters__text" value="1" />
-                        <span class="counters__plus">+</span>
-                    </div>
+            </div>
+
+
+            <div class="check__buttons">
+                <input class="check__button" type="checkbox" checked> <label class="check__title" for="click"
+                    class="text"> Label </label>
+                <input class="check__button" type="checkbox" checked> <label class="check__title" for="click"
+                    class="text"> Label </label>
+                <input class="check__button" type="checkbox" checked> <label class="check__title" for="click"
+                    class="text"> Label </label>
+                <input class="check__button" type="checkbox" checked> <label class="check__title" for="click"
+                    class="text"> Label </label>
+                <input class="check__button" type="checkbox" checked> <label class="check__title" for="click"
+                    class="text"> Label </label>
+                <input class="check__button" type="checkbox" checked> <label class="check__title" for="click"
+                    class="text"> Label </label>
+            </div>
+
+
+
+
+            <div class="radio__buttons">
+                <form class="radio__button" action="#">
+                    <input class="radio__input" type="radio" id="label" name="" value="Hello">
+                      <label class="radio__title" for="label">Hello</label>
+                    <input class="radio__input" type="radio" id="label" name="" value="Hallo">
+                      <label class="radio__title" for="label">Hallo</label>
+                    <input class="radio__input" type="radio" id="label" name="" value="Xin chao">
+                      <label class="radio__title" for="label">Xin chao</label>
+                    <input class="radio__input" type="radio" id="label" name="" value="Ni hao">
+                      <label class="radio__title" for="label">Ni hao</label>
+                </form>
+            </div>
+
+            <div class="switchers">
+                <div class="switchers__switcher">
+                    <input class="switcher__input" type="checkbox" id="switch" />
+                    <label class="switcher__title" for="switch">Hello</label>
                 </div>
 
-
-                <div class="check__buttons">
-                    <input class="check__button" type="checkbox" checked> <label class="check__title" for="click"
-                        class="text"> Label </label>
-                    <input class="check__button" type="checkbox" checked> <label class="check__title" for="click"
-                        class="text"> Label </label>
-                    <input class="check__button" type="checkbox" checked> <label class="check__title" for="click"
-                        class="text"> Label </label>
-                    <input class="check__button" type="checkbox" checked> <label class="check__title" for="click"
-                        class="text"> Label </label>
-                    <input class="check__button" type="checkbox" checked> <label class="check__title" for="click"
-                        class="text"> Label </label>
-                    <input class="check__button" type="checkbox" checked> <label class="check__title" for="click"
-                        class="text"> Label </label>
+                <div class="switchers__switcher">
+                    <input class="switcher__input" type="checkbox" id="switch" />
+                    <label class="switcher__title" for="switch">Hello</label>
                 </div>
 
-
-
-
-                <div class="radio__buttons">
-                    <form class="radio__button" action="#">
-                        <input class="radio__input" type="radio" id="label" name="" value="Hello">
-                          <label class="radio__title" for="label">Hello</label>
-                        <input class="radio__input" type="radio" id="label" name="" value="Hallo">
-                          <label class="radio__title" for="label">Hallo</label>
-                        <input class="radio__input" type="radio" id="label" name="" value="Xin chao">
-                          <label class="radio__title" for="label">Xin chao</label>
-                        <input class="radio__input" type="radio" id="label" name="" value="Ni hao">
-                          <label class="radio__title" for="label">Ni hao</label>
-                    </form>
+                <div class="switchers__switcher">
+                    <input class="switcher__input" type="checkbox" id="switch" />
+                    <label class="switcher__title" for="switch">Hello</label>
                 </div>
 
-                <div class="switchers">
-                    <div class="switchers__switcher">
-                        <input class="switcher__input" type="checkbox" id="switch" />
-                        <label class="switcher__title" for="switch">Hello</label>
-                    </div>
+                <div class="switchers__switcher">
+                    <input class="switcher__input" type="checkbox" id="switch" />
+                    <label class="switcher__title" for="switch">Hello</label>
+                </div>
+            </div>
 
-                    <div class="switchers__switcher">
-                        <input class="switcher__input" type="checkbox" id="switch" />
-                        <label class="switcher__title" for="switch">Hello</label>
-                    </div>
+            <div class="sliders">
+                <input class="sliders__input" type="range" min="1" max="100" value="70">
+                <input class="sliders__input" type="range" min="1" max="100" value="30" disabled>
+            </div>
 
-                    <div class="switchers__switcher">
-                        <input class="switcher__input" type="checkbox" id="switch" />
-                        <label class="switcher__title" for="switch">Hello</label>
-                    </div>
+            <div class="tags-buttons">
+                <button type="button" class="tags-buttons__btn">Label</button>
+                <button type="button" class="tags-buttons__btn">Label</button>
+                <button type="button" class="tags-buttons__btn">Label</button>
+                <button type="button" class="tags-buttons__btn">Label</button>
+                <button type="button" class="tags-buttons__btn">Label</button>
+                <button type="button" class="tags-buttons__btn">Label</button>
+            </div>
 
-                    <div class="switchers__switcher">
-                        <input class="switcher__input" type="checkbox" id="switch" />
-                        <label class="switcher__title" for="switch">Hello</label>
-                    </div>
+
+            <div class="buttons">
+                <div class="buttons__group">
+                    <button class="buttons__button">Button</button>
+                    <button class="buttons__button">Button</button>
+                    <button class="buttons__button">Button</button>
+                    <button class="buttons__button">Button</button>
+                </div>
+                <div class="buttons__group">
+                    <button class="buttons__button">Button</button>
+                    <button class="buttons__button">Button</button>
+                    <button class="buttons__button">Button</button>
+                    <button class="buttons__button">Button</button>
+                </div>
+                <div class="buttons__group">
+                    <button class="buttons__button">Button</button>
+                    <button class="buttons__button">Button</button>
+                    <button class="buttons__button">Button</button>
+                    <button class="buttons__button ">Button</button>
+                </div>
+            </div>
+
+            <div class="buttons-medium">
+                <div class="buttons__group">
+                    <button class="buttons-medium buttons__button">Button</button>
+                    <button class="buttons-medium buttons__button">Button</button>
+                    <button class="buttons-medium buttons__button">Button</button>
+                    <button class="buttons-medium buttons__button">Button</button>
+                </div>
+                <div class="buttons__group">
+                    <button class="buttons__button">Button</button>
+                    <button class="buttons__button">Button</button>
+                    <button class="buttons__button">Button</button>
+                    <button class="buttons__button">Button</button>
+                </div>
+                <div class="buttons__group">
+                    <button class="buttons__button">Button</button>
+                    <button class="buttons__button">Button</button>
+                    <button class="buttons__button">Button</button>
+                    <button class="buttons__button ">Button</button>
+                </div>
+            </div>
+
+            <div class="buttons-large">
+                <div class="buttons__group">
+                    <button class="buttons-large buttons__button">Button</button>
+                    <button class="buttons-large buttons__button">Button</button>
+                    <button class="buttons-large buttons__button">Button</button>
+                    <button class="buttons-large buttons__button">Button</button>
+                </div>
+                <div class="buttons__group">
+                    <button class="buttons-large buttons__button">Button</button>
+                    <button class="buttons-large buttons__button">Button</button>
+                    <button class="buttons-large buttons__button">Button</button>
+                    <button class="buttons-large buttons__button">Button</button>
+                </div>
+                <div class="buttons__group">
+                    <button class="buttons-large buttons__button">Button</button>
+                    <button class="buttons-large buttons__button">Button</button>
+                    <button class="buttons-large buttons__button">Button</button>
+                    <button class="buttons-large buttons__button">Button</button>
+                </div>
+            </div>
+
+            <div class="alerts">
+                <div class="alerts__alert">
+                    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                    A bright alert flash for dark backgrounds, which never lose the contrast.
                 </div>
 
-                <div class="sliders">
-                    <input class="sliders__input" type="range" min="1" max="100" value="70">
-                    <input class="sliders__input" type="range" min="1" max="100" value="30" disabled>
+                <div class="alerts__alert">
+                    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                    A dark alert flash for bright backgrounds, which never lose the contrast.
                 </div>
 
-                <div class="tags-buttons">
-                    <button type="button" class="tags-buttons__btn">Label</button>
-                    <button type="button" class="tags-buttons__btn">Label</button>
-                    <button type="button" class="tags-buttons__btn">Label</button>
-                    <button type="button" class="tags-buttons__btn">Label</button>
-                    <button type="button" class="tags-buttons__btn">Label</button>
-                    <button type="button" class="tags-buttons__btn">Label</button>
+                <div class="alerts__alert">
+                    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                    A primary alert flash that looks pretty nice.
                 </div>
 
-
-                <div class="buttons">
-                    <div class="buttons__group">
-                        <button class="buttons__button">Button</button>
-                        <button class="buttons__button">Button</button>
-                        <button class="buttons__button">Button</button>
-                        <button class="buttons__button">Button</button>
-                    </div>
-                    <div class="buttons__group">
-                        <button class="buttons__button">Button</button>
-                        <button class="buttons__button">Button</button>
-                        <button class="buttons__button">Button</button>
-                        <button class="buttons__button">Button</button>
-                    </div>
-                    <div class="buttons__group">
-                        <button class="buttons__button">Button</button>
-                        <button class="buttons__button">Button</button>
-                        <button class="buttons__button">Button</button>
-                        <button class="buttons__button ">Button</button>
-                    </div>
+                <div class="alerts__alert">
+                    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                    A warning alert flash that never sucks.
                 </div>
 
-                <div class="buttons-medium">
-                    <div class="buttons__group">
-                        <button class="buttons-medium buttons__button">Button</button>
-                        <button class="buttons-medium buttons__button">Button</button>
-                        <button class="buttons-medium buttons__button">Button</button>
-                        <button class="buttons-medium buttons__button">Button</button>
-                    </div>
-                    <div class="buttons__group">
-                        <button class="buttons__button">Button</button>
-                        <button class="buttons__button">Button</button>
-                        <button class="buttons__button">Button</button>
-                        <button class="buttons__button">Button</button>
-                    </div>
-                    <div class="buttons__group">
-                        <button class="buttons__button">Button</button>
-                        <button class="buttons__button">Button</button>
-                        <button class="buttons__button">Button</button>
-                        <button class="buttons__button ">Button</button>
-                    </div>
+                <div class="alerts__alert">
+                    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                    A success alert flash, which never lose the contrast.
                 </div>
 
-                <div class="buttons-large">
-                    <div class="buttons__group">
-                        <button class="buttons-large buttons__button">Button</button>
-                        <button class="buttons-large buttons__button">Button</button>
-                        <button class="buttons-large buttons__button">Button</button>
-                        <button class="buttons-large buttons__button">Button</button>
-                    </div>
-                    <div class="buttons__group">
-                        <button class="buttons-large buttons__button">Button</button>
-                        <button class="buttons-large buttons__button">Button</button>
-                        <button class="buttons-large buttons__button">Button</button>
-                        <button class="buttons-large buttons__button">Button</button>
-                    </div>
-                    <div class="buttons__group">
-                        <button class="buttons-large buttons__button">Button</button>
-                        <button class="buttons-large buttons__button">Button</button>
-                        <button class="buttons-large buttons__button">Button</button>
-                        <button class="buttons-large buttons__button">Button</button>
-                    </div>
+                <div class="alerts__alert">
+                    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                    An error alert flash that nobody loves.
+                </div>
+            </div>
+
+
+            <div class="progressbars">
+                <div class="progressbars__progress">
+                    <div class="progressbars__progress-value"></div>
                 </div>
 
-                <div class="alerts">
-                    <div class="alerts__alert">
-                        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-                        A bright alert flash for dark backgrounds, which never lose the contrast.
-                    </div>
-
-                    <div class="alerts__alert">
-                        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-                        A dark alert flash for bright backgrounds, which never lose the contrast.
-                    </div>
-
-                    <div class="alerts__alert">
-                        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-                        A primary alert flash that looks pretty nice.
-                    </div>
-
-                    <div class="alerts__alert">
-                        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-                        A warning alert flash that never sucks.
-                    </div>
-
-                    <div class="alerts__alert">
-                        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-                        A success alert flash, which never lose the contrast.
-                    </div>
-
-                    <div class="alerts__alert">
-                        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-                        An error alert flash that nobody loves.
-                    </div>
+                <div class="progressbars__progress">
+                    <div class="progressbars__progress-value"></div>
                 </div>
 
+                <div class="progressbars__progress">
+                    <div class="progressbars__progress-value"></div>
+                </div>
 
-                <div class="progressbars">
-                    <div class="progressbars__progress">
-                        <div class="progressbars__progress-value"></div>
-                    </div>
+                <div class="progressbars__progress">
+                    <div class="progressbars__progress-value"></div>
+                </div>
+            </div>
 
-                    <div class="progressbars__progress">
-                        <div class="progressbars__progress-value"></div>
-                    </div>
+            <div class="circle-loaders">
+                <div class="circle-loaders__circle-loader">
+                    <div class="chart" data-percent="75"></div>
 
-                    <div class="progressbars__progress">
-                        <div class="progressbars__progress-value"></div>
-                    </div>
+                </div>
+                <div class="circle-loaders__circle-loader">
+                    <div class="chart2" data-percent="50"></div>
 
-                    <div class="progressbars__progress">
-                        <div class="progressbars__progress-value"></div>
-                    </div>
+                </div>
+                <div class="circle-loaders__circle-loader">
+                    <div class="chart3" data-percent="100"></div>
 
-                    
+                </div>
+                <div class="circle-loaders__circle-loader">
+                    <div class="chart4" data-percent="90"></div>
                 </div>
 
             </div>
+
+
+
+
+
         </div>
 
 
-        <script src="index.js"></script>
+
+    </div>
+    </div>
+
+
+    <script src="/index.js"></script>
 
 </body>
+
 
 </html>

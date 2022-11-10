@@ -701,8 +701,20 @@ input:invalid:not(:placeholder-shown) + .form__error {
   width: 800px;
   margin-bottom: 50px;
 }
-.progressbars__progress__progress-value:nth-last-child(1) {
-  background: #FF7171;
+.progressbars__progress:nth-last-of-type(1) .progressbars__progress-value {
+  -webkit-animation: load 10s normal forwards;
+          animation: load 10s normal forwards;
+  width: 30%;
+  background: #ff7171;
+}
+.progressbars__progress:nth-last-of-type(2) .progressbars__progress-value {
+  -webkit-animation: load 10s normal forwards;
+          animation: load 10s normal forwards;
+  width: 50px;
+  background: #14a38b;
+}
+.progressbars__progress:nth-last-of-type(3) .progressbars__progress-value {
+  background: #f2ac57;
 }
 
 .progressbars__progress-value {
@@ -713,7 +725,7 @@ input:invalid:not(:placeholder-shown) + .form__error {
   border-radius: 100px;
   background: #0880ae;
   height: 8px;
-  width: 100%;
+  width: 65%;
 }
 
 @-webkit-keyframes load {
@@ -721,7 +733,7 @@ input:invalid:not(:placeholder-shown) + .form__error {
     width: 0;
   }
   100% {
-    width: 75%;
+    width: 65%;
   }
 }
 
@@ -730,6 +742,57 @@ input:invalid:not(:placeholder-shown) + .form__error {
     width: 0;
   }
   100% {
-    width: 75%;
+    width: 65%;
   }
+}
+.circle-loaders {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.circle-loaders__circle-loader {
+  margin-right: 30px;
+  rotate: 90deg;
+}
+
+.counters__counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 40px;
+}
+.counters__counter:last-child {
+  margin-right: 0;
+}
+
+.counter__minus {
+  background: #ffffff;
+  -webkit-box-shadow: inset -1px 0px 0px #dbe2ea;
+          box-shadow: inset -1px 0px 0px #dbe2ea;
+  border-radius: 6px 0px 0px 6px;
+  padding: 11px 15px;
+  color: #0880AE;
+  font-weight: 400;
+  font-size: 20px;
+  cursor: pointer;
+}
+.counter__input {
+  text-align: center;
+  border: none;
+  padding: 16px 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #2c2738;
+}
+.counter__plus {
+  background-color: #fff;
+  -webkit-box-shadow: inset 1px 0px 0px #dbe2ea;
+          box-shadow: inset 1px 0px 0px #dbe2ea;
+  border-radius: 0px 6px 6px 0px;
+  padding: 11px 15px;
+  color: #0880AE;
+  font-weight: 400;
+  font-size: 20px;
+  cursor: pointer;
 }
