@@ -764,35 +764,61 @@ input:invalid:not(:placeholder-shown) + .form__error {
 .counters__counter:last-child {
   margin-right: 0;
 }
-
-.counter__minus {
+.counters__counter-minus {
+  border: solid 1px rgb(219, 226, 234);
   background: #ffffff;
   -webkit-box-shadow: inset -1px 0px 0px #dbe2ea;
           box-shadow: inset -1px 0px 0px #dbe2ea;
   border-radius: 6px 0px 0px 6px;
-  padding: 11px 15px;
-  color: #0880AE;
+  padding: 19px 23px;
+  color: #0880ae;
   font-weight: 400;
   font-size: 20px;
   cursor: pointer;
 }
-.counter__input {
+.counters__counter-input {
+  border: solid 1px rgb(219, 226, 234);
   text-align: center;
-  border: none;
-  padding: 16px 20px;
+  padding: 16px 10px;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
   color: #2c2738;
 }
-.counter__plus {
+.counters__counter-plus {
+  border: solid 1px rgb(219, 226, 234);
   background-color: #fff;
   -webkit-box-shadow: inset 1px 0px 0px #dbe2ea;
           box-shadow: inset 1px 0px 0px #dbe2ea;
   border-radius: 0px 6px 6px 0px;
-  padding: 11px 15px;
-  color: #0880AE;
+  padding: 19px 23px;
+  color: #0880ae;
   font-weight: 400;
   font-size: 20px;
   cursor: pointer;
+}
+
+.counters__counter:nth-last-of-type(1) .counters__counter-minus {
+  background-color: transparent;
+  color: #979797;
+}
+
+.counters__counter:nth-last-of-type(1) .counters__counter-plus {
+  background-color: transparent;
+  color: #979797;
+}
+
+.counters__counter:nth-last-of-type(1) .counters__counter-input {
+  background-color: transparent;
+  color: #979797;
+}
+
+.counters__counter:nth-last-of-type(2) .counters__counter-plus {
+  background-color: #0880ae;
+  color: #fff;
+}
+
+.counters__counter:nth-last-of-type(3) .counters__counter-minus {
+  background-color: #0880ae;
+  color: #fff;
 }

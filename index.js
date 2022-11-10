@@ -75,27 +75,19 @@ $(function () {
 });
 
 
-
-
-// $('button').click(function() {
-//     const $btn = $(this);
-//     $('#output').html(function(i, val) {
-//       val = val * 1 + $btn.data('inc');
-//       return (val <= 0 ? '' : '+') + val;
-//     });
-//   });
+// COUNTERS
 
 $(document).ready(function() {
-    $('.counter__minus').click(function () {
-        var $input = $(this).parent().find('.counter__input');
+    $('.counters__counter-minus').click(function () {
+        var $input = $(this).parent().find('.counters__counter-input');
         var count = parseInt($input.val()) - 01;
         count = count < 1 ? 1 : count;
         $input.val(count);
         $input.change();
         return false;
     });
-    $('.counter__plus').click(function () {
-        var $input = $(this).parent().find('.counter__input');
+    $('.counters__counter-plus').click(function () {
+        var $input = $(this).parent().find('.counters__counter-input');
         $input.val(parseInt($input.val()) + 01);
         $input.change();
         return false;
