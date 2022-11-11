@@ -151,3 +151,7 @@ window.onclick = function (event) {
         }
     }
 }
+
+
+
+// CHECKBOX

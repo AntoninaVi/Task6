@@ -501,7 +501,9 @@ input::-webkit-inner-spin-button {
 		height: 25px;
 		width: 25px;
 		background-color: rgb(255, 255, 255);
+		border-radius: 6px;
 	}
+	
 }
 
 .checkboxes__label:hover input ~ .checkboxes__checkmark {
@@ -518,7 +520,9 @@ input::-webkit-inner-spin-button {
 }
 .checkboxes__label input:checked ~ .checkboxes__checkmark:after {
 	display: block;
+	
 }
+
 .checkboxes__checkmark:after {
 	left: 9px;
 	top: 5px;
@@ -529,6 +533,7 @@ input::-webkit-inner-spin-button {
 	-webkit-transform: rotate(45deg);
 	-ms-transform: rotate(45deg);
 	transform: rotate(45deg);
+	text-align: center;
 }
 
 .checkboxes__label:nth-of-type(3) .checkboxes__checkmark:after {
@@ -554,9 +559,7 @@ input::-webkit-inner-spin-button {
 	-ms-transform: rotate(90deg);
 	transform: rotate(90deg);
 }
-.checkboxes__checkbox:checked{
-	outline: 2px solid #0880ae;
-}
+
 
 
 .radio {
