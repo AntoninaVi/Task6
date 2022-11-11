@@ -12,13 +12,20 @@
 	line-height: 44px;
 }
 @mixin span {
-	font-family: "IBM Plex Sans";
 	font-style: normal;
 	font-weight: 600;
 	font-size: 28px;
 	line-height: 36px;
 	color: #7c9cbf;
 }
+@mixin label {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 21px;
+	color: #756f86;
+}
+
 *,
 *:before,
 *:after {
@@ -232,18 +239,8 @@ body {
 		column-gap: 80px;
 	}
 
-	&__fields {
-	}
-
-	&__field:nth-last-child(3) {
-		grid-template-rows: 4;
-	}
-
 	&__label {
-		font-weight: 500;
-		font-size: 16px;
-		line-height: 21px;
-		color: #756f86;
+		@include label;
 		margin-bottom: 10px;
 	}
 
@@ -269,11 +266,11 @@ body {
 	}
 
 	&__true {
-		color: rgb(82, 57, 57);
+		color: #14a38b;
 		text-align: left;
 		font-size: 12px;
 		display: block;
-		margin-top: 3px;
+		margin-top: -30px;
 		display: none;
 	}
 
@@ -303,8 +300,21 @@ body {
 		margin-bottom: 40px;
 	}
 }
+.form__field:nth-last-child(1) .form__error {
+	margin-top: -30px;
+}
+.form__field:nth-last-child(1) .form__input {
+	border: none;
+	outline: 2px solid #0880ae;
+	background-image: url(/img/Alert.svg);
+	background-repeat: no-repeat;
+	background-position: right;
+}
+// .form__field:nth-last-child(8) .form__true{
 
-input:valid:not(:placeholder-shown) + .form__true {
+// }
+
+input:valid (:placeholder-shown) + .form__true {
 	display: block;
 }
 
@@ -322,24 +332,14 @@ input:invalid:not(:placeholder-shown) + .form__error {
 	display: block;
 }
 
-.counters {
-	display: flex;
-	margin-bottom: 80px;
-
-	&__number {
-		display: flex;
-		margin-right: 40px;
-		&:last-child {
-			margin-right: 0;
-		}
-	}
-
-	&__minus {
-	}
-
-	&__plus {
-	}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
 }
+
+
+
+
 
 .check {
 	max-width: 568px;
@@ -708,10 +708,13 @@ input:invalid:not(:placeholder-shown) + .form__error {
 // COUNTERS
 
 .counters {
+	display: flex;
+	margin-bottom: 80px;
+
 	&__counter {
 		display: flex;
 		margin-right: 40px;
-		
+
 		&:last-child {
 			margin-right: 0;
 		}
@@ -771,4 +774,23 @@ input:invalid:not(:placeholder-shown) + .form__error {
 .counters__counter:nth-last-of-type(3) .counters__counter-minus {
 	background-color: #0880ae;
 	color: #fff;
+}
+
+// CHECKBOX
+
+.check {
+	&__buttons {
+	}
+
+	&__button {
+		vertical-align: middle;
+		width: 28px;
+		height: 28px;
+		box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04);
+		border-radius: 4px;
+	}
+
+	&__title {
+		@include label;
+	}
 }
