@@ -307,70 +307,15 @@ body {
   background-position: right;
 }
 
-.form__fields:nth-child(2) .form__field:nth-last-child(4) .form__select-box option {
-  background-color: saddlebrown;
+.form__fields:nth-child(1) .form__field:nth-last-child(6) .form__input:nth-child(2):focus {
+  border: none;
+  outline: 2px solid #0880ae;
 }
 
-.form__select-dropbtn {
-  background-color: #ffffff;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21px;
-  color: #2c2738;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  text-align: start;
-  padding: 16px 0 16px 16px;
-  background-image: url(img/arrow-bottom.svg);
+.form__fields:nth-child(1) .form__field:nth-last-child(5) .form__input:nth-child(2) {
+  background-image: url(img/Lens.svg);
   background-repeat: no-repeat;
   background-position: right;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-}
-
-.form__select-dropbtn:hover,
-.form__select-dropbtn:focus {
-  background-color: #ffffff;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.form__select-dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #ffffff;
-  min-width: 160px;
-  overflow: auto;
-  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  width: 23.7%;
-  border-radius: 6px;
-  margin-top: 5px;
-}
-
-.form__select-link {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21px;
-  color: #756f86;
-  text-decoration: none;
-  display: block;
-  padding: 15px 0 12px 15px;
-}
-
-.form__select-link:hover {
-  background-color: #EBF4F8;
-}
-
-.show {
-  display: block;
 }
 
 input:valid:not(:-moz-placeholder-shown) + .form__true {
@@ -438,17 +383,230 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
-.check {
-  max-width: 568px;
+.form__select-dropbtn {
+  background-color: #ffffff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #2c2738;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  text-align: start;
+  padding: 16px 0 16px 16px;
+  background-image: url(img/arrow-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  border-radius: 6px;
+  border: 1px solid #ccc;
 }
-.check__buttons {
+
+.form__select-dropbtn:hover,
+.form__select-dropbtn:focus {
+  border: none;
+  outline: 2px solid #0880ae;
+}
+
+.form__select-dropdown-content {
+  display: none;
+  position: relative;
+  background-color: #ffffff;
+  min-width: 160px;
+  overflow: auto;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  max-width: 100%;
+  border-radius: 6px;
+  margin-top: 5px;
+}
+
+.form__select-link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #756f86;
+  text-decoration: none;
+  display: block;
+  padding: 15px 0 12px 15px;
+}
+
+.form__select-link:hover {
+  background-color: #ebf4f8;
+}
+
+.show {
+  display: block;
+}
+
+.counters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-bottom: 80px;
 }
-.check__button {
-  margin-left: 60px;
+.counters__counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 40px;
 }
-.check__title {
-  margin-right: 8px;
+.counters__counter:last-child {
+  margin-right: 0;
+}
+.counters__counter-minus {
+  border: solid 1px rgb(219, 226, 234);
+  background: #ffffff;
+  -webkit-box-shadow: inset -1px 0px 0px #dbe2ea;
+          box-shadow: inset -1px 0px 0px #dbe2ea;
+  border-radius: 6px 0px 0px 6px;
+  padding: 19px 23px;
+  color: #0880ae;
+  font-weight: 400;
+  font-size: 20px;
+  cursor: pointer;
+}
+.counters__counter-input {
+  border: solid 1px rgb(219, 226, 234);
+  text-align: center;
+  padding: 16px 10px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #2c2738;
+}
+.counters__counter-plus {
+  border: solid 1px rgb(219, 226, 234);
+  background-color: #fff;
+  -webkit-box-shadow: inset 1px 0px 0px #dbe2ea;
+          box-shadow: inset 1px 0px 0px #dbe2ea;
+  border-radius: 0px 6px 6px 0px;
+  padding: 19px 23px;
+  color: #0880ae;
+  font-weight: 400;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.counters__counter:nth-last-of-type(1) .counters__counter-minus {
+  background-color: transparent;
+  color: #979797;
+}
+
+.counters__counter:nth-last-of-type(1) .counters__counter-plus {
+  background-color: transparent;
+  color: #979797;
+}
+
+.counters__counter:nth-last-of-type(1) .counters__counter-input {
+  background-color: transparent;
+  color: #979797;
+}
+
+.counters__counter:nth-last-of-type(2) .counters__counter-plus {
+  background-color: #0880ae;
+  color: #fff;
+}
+
+.counters__counter:nth-last-of-type(3) .counters__counter-minus {
+  background-color: #0880ae;
+  color: #fff;
+}
+
+.checkboxes {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 40px 1fr;
+  grid-template-rows: 1fr 1fr;
+  -ms-grid-columns: 1fr 40px 1fr 40px 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 80px;
+}
+
+.checkboxes > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.checkboxes > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+
+.checkboxes > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+}
+
+.checkboxes > *:nth-child(4) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+
+.checkboxes > *:nth-child(5) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+
+.checkboxes > *:nth-child(6) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+}
+.checkboxes__label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.checkboxes__checkbox {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkboxes__checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: rgb(148, 0, 0);
+}
+
+.checkboxes__label:hover input ~ .checkboxes__checkmark {
+  background-color: #ccc;
+}
+
+.checkboxes__checkbox:checked ~ .checkboxes__checkmark {
+  background-color: #ffffff;
+}
+
+.checkboxes__checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkboxes__label input:checked ~ .checkboxes__checkmark:after {
+  display: block;
+}
+
+.checkboxes__checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid rgb(72, 9, 189);
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .radio__buttons {
@@ -802,80 +960,6 @@ input::-webkit-inner-spin-button {
 .circle-loaders__circle-loader {
   margin-right: 30px;
   rotate: 90deg;
-}
-
-.counters {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 80px;
-}
-.counters__counter {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 40px;
-}
-.counters__counter:last-child {
-  margin-right: 0;
-}
-.counters__counter-minus {
-  border: solid 1px rgb(219, 226, 234);
-  background: #ffffff;
-  -webkit-box-shadow: inset -1px 0px 0px #dbe2ea;
-          box-shadow: inset -1px 0px 0px #dbe2ea;
-  border-radius: 6px 0px 0px 6px;
-  padding: 19px 23px;
-  color: #0880ae;
-  font-weight: 400;
-  font-size: 20px;
-  cursor: pointer;
-}
-.counters__counter-input {
-  border: solid 1px rgb(219, 226, 234);
-  text-align: center;
-  padding: 16px 10px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21px;
-  color: #2c2738;
-}
-.counters__counter-plus {
-  border: solid 1px rgb(219, 226, 234);
-  background-color: #fff;
-  -webkit-box-shadow: inset 1px 0px 0px #dbe2ea;
-          box-shadow: inset 1px 0px 0px #dbe2ea;
-  border-radius: 0px 6px 6px 0px;
-  padding: 19px 23px;
-  color: #0880ae;
-  font-weight: 400;
-  font-size: 20px;
-  cursor: pointer;
-}
-
-.counters__counter:nth-last-of-type(1) .counters__counter-minus {
-  background-color: transparent;
-  color: #979797;
-}
-
-.counters__counter:nth-last-of-type(1) .counters__counter-plus {
-  background-color: transparent;
-  color: #979797;
-}
-
-.counters__counter:nth-last-of-type(1) .counters__counter-input {
-  background-color: transparent;
-  color: #979797;
-}
-
-.counters__counter:nth-last-of-type(2) .counters__counter-plus {
-  background-color: #0880ae;
-  color: #fff;
-}
-
-.counters__counter:nth-last-of-type(3) .counters__counter-minus {
-  background-color: #0880ae;
-  color: #fff;
 }
 
 .check__button {
