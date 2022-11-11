@@ -473,12 +473,12 @@ input::-webkit-inner-spin-button {
 	grid-template-rows: 1fr 1fr;
 	grid-template-columns: 1fr 1fr 1fr;
 	gap: 40px;
-	
 	margin-bottom: 80px;
 
 	&__label {
 		display: block;
 		position: relative;
+		padding-left: 35px;
 		cursor: pointer;
 		-webkit-user-select: none;
 		-moz-user-select: none;
@@ -500,7 +500,7 @@ input::-webkit-inner-spin-button {
 		left: 0;
 		height: 25px;
 		width: 25px;
-		background-color: rgb(148, 0, 0);
+		background-color: rgb(255, 255, 255);
 	}
 }
 
@@ -524,12 +524,40 @@ input::-webkit-inner-spin-button {
 	top: 5px;
 	width: 5px;
 	height: 10px;
-	border: solid rgb(72, 9, 189);
-	border-width: 0 3px 3px 0;
+	border: solid  #0880AE;
+	border-width: 0 2px 2px 0;
 	-webkit-transform: rotate(45deg);
 	-ms-transform: rotate(45deg);
 	transform: rotate(45deg);
 }
+
+.checkboxes__label:nth-of-type(3) .checkboxes__checkmark:after {
+	left: 9px;
+	top: 5px;
+	width: 5px;
+	height: 10px;
+	border: solid  #0880AE;
+	border-width: 0 2px 0px 0;
+	-webkit-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+.checkboxes__label:nth-of-type(6) .checkboxes__checkmark:after {
+	left: 9px;
+	top: 5px;
+	width: 5px;
+	height: 10px;
+	border: solid  #0880AE;
+	border-width: 0 2px 0px 0;
+	-webkit-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+.checkboxes__checkbox:checked{
+	outline: 2px solid #0880ae;
+}
+
 
 .radio {
 	&__buttons {
