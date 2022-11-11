@@ -37,7 +37,6 @@
                             <p class="form__label">Label</p>
                             <input class="form__input" type="email" name="name" placeholder="Placeholder" />
                             <span class="form__error">Validation error message</span>
-                            <span class="form__true">Validation success message</span>
                         </div>
 
                         <div class="form__field">
@@ -49,24 +48,28 @@
 
                         <div class="form__field">
                             <p class="form__label">Label</p>
-                            <select name="Dropdown" class="form__select">
-                                <option value="Hello">Hello</option>
-                                <option value="Hello">Hello</option>
-                                <option value="Hello">Hello</option>
-                                <option value="Hello">Hello</option>
-                                <option value="Hello">Hello</option>
-                            </select>
+                            <div class="form__select">
+                                <button onclick="dropDown()" class="form__select-dropbtn">Dropdown</button>
+                                <div id="myDropdown" class="form__select-dropdown-content">
+                                    <a class="form__select-link" href="#">Item</a>
+                                    <a class="form__select-link" href="#">Item</a>
+                                    <a class="form__select-link" href="#">Item</a>
+                                    <a class="form__select-link" href="#">Item</a>
+                                </div>
+                            </div>
                         </div>
 
                         <div class="form__field">
                             <p class="form__label">Label</p>
-                            <select disabled name="Dropdown" class="form__select">
-                                <option value="Hello">Hello</option>
-                                <option value="Hello">Hello</option>
-                                <option value="Hello">Hello</option>
-                                <option value="Hello">Hello</option>
-                                <option value="Hello">Hello</option>
-                            </select>
+                            <div class="form__select">
+                                <button id="dropbtn2" onclick="dropDown2()" class="form__select-dropbtn">Dropdown</button>
+                                <div id="myDropdown2" class="form__select-dropdown-content">
+                                    <a class="form__select-link" href="#">Item</a>
+                                    <a class="form__select-link" href="#">Item</a>
+                                    <a class="form__select-link" href="#">Item</a>
+                                    <a class="form__select-link" href="#">Item</a>
+                                </div>
+                            </div>
                         </div>
 
                         <div class="form__field">
@@ -106,23 +109,27 @@
 
                         <div class="form__field">
                             <p class="form__label">Label</p>
-                            <select name="Dropdown" class="form__select">
-                                <option value="Hello">Hello</option>
-                                <option value="Hello">Hello</option>
-                                <option value="Hello">Hello</option>
-                                <option value="Hello">Hello</option>
-                                <option value="Hello">Hello</option>
-                            </select>
+                            <div class="form__select">
+                                <button id="dropbtn3" onclick="dropDown3()" class="form__select-dropbtn">Dropdown</button>
+                                <div id="myDropdown3" class="form__select-dropdown-content">
+                                    <a class="form__select-link" href="#">Item</a>
+                                    <a class="form__select-link" href="#">Item</a>
+                                    <a class="form__select-link" href="#">Item</a>
+                                    <a class="form__select-link" href="#">Item</a>
+                                </div>
+                            </div>
                         </div>
                         <div class="form__field">
                             <p class="form__label">Label</p>
-                            <select disabled name="Dropdown" class="form__select ">
-                                <option value="Hello">Hello</option>
-                                <option value="Hello">Hello</option>
-                                <option value="Hello">Hello</option>
-                                <option value="Hello">Hello</option>
-                                <option value="Hello">Hello</option>
-                            </select>
+                            <div class="form__select">
+                                <button id="dropbtn4" onclick="dropDown4()" class="form__select-dropbtn">Dropdown</button>
+                                <div id="myDropdown4" class="form__select-dropdown-content">
+                                    <a class="form__select-link" href="#">Item</a>
+                                    <a class="form__select-link" href="#">Item</a>
+                                    <a class="form__select-link" href="#">Item</a>
+                                    <a class="form__select-link" href="#">Item</a>
+                                </div>
+                            </div>
                         </div>
                         <div class="form__field">
                             <p class="form__label">Label</p>
