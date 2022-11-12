@@ -625,18 +625,29 @@ input::-webkit-inner-spin-button {
   transform: rotate(90deg);
 }
 
-.radio__title {
+.radio__buttons {
+  margin-bottom: 80px;
+}
+.radio__button:first-of-type {
+  margin-bottom: 30px;
+}
+.radio__label {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 21px;
   color: #756f86;
-  margin-right: 8px;
+  margin-right: 50px;
 }
 .radio__input {
+  vertical-align: middle;
+  margin-right: 8px;
   width: 24px;
   height: 24px;
   background: #ffffff;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
   font: inherit;
   width: 1.15em;
   height: 1.15em;
