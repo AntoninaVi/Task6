@@ -155,3 +155,16 @@ window.onclick = function (event) {
 
 
 // CHECKBOX
+
+
+
+var $slider = $("#my-slider");
+var $fill = $(".bar .fill");
+
+function setBar() {
+	$fill.css("width", $slider.val() + "%");
+}
+
+$slider.on(".my-slider", setBar);
+
+setBar();
