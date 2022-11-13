@@ -651,58 +651,91 @@ input::-webkit-inner-spin-button {
 			box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.2);
 			margin-top: -2px;
 		}
-		&::after{
+		&::after {
 			content: "Label";
 			margin-left: 58px;
 			@include label;
 			vertical-align: sub;
-			
 		}
 	}
 }
 
+// RANGE SLIDER
 
 .sliders {
 	display: flex;
-	justify-content: space-between;
 	margin-bottom: 80px;
 
-	&__input {
-		-webkit-appearance: none;
-		appearance: none;
-    width: 100%; 
-    height: 2px;
-    background: #d3d3d3; 
-    outline: none; 
-    opacity: 0.7; 
-    -webkit-transition: .2s; 
-	transition: opacity .2s;
-	
+	&__slider-container {
+		position: relative;
+		width: 353px;
+		&:first-of-type{
+			margin-right: 66px;
+		}
 	}
+}
+.slider-container {
+	&__bar {
+		position: absolute;
+		z-index: 1;
+		left: 2px;
+		top: 7px;
+		width: 100%;
+		height: 2px;
+		border-radius: 5px;
+		background-color: #dbe2ea;
+		overflow: hidden;
+		
+	}
+
+	&__fill {
+		display: block;
+		width: 0;
+		height: 100%;
+		background-color: #0880ae;
+	}
+
+	&__input {
+		position: relative;
+		z-index: 2;
+		-webkit-appearance: none;
+		width: 100%;
+		height: 10px;
+		border-radius: 5px;
+		outline: none;
+		background-color: transparent;
+		width: 100%;
+		max-width: 235px;
+		
+	}
+}
+.slider-container__input::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	width: 30px;
+	height: 30px;
+	background-color: #ffffff;
+	border-radius: 50%;
+	border: 1px solid #dbe2ea;
+	cursor: pointer;
+	outline: none;
+	box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.2);
+	transition: 0.3s ease-in-out;
+}
+
+.slider-container__input::-webkit-slider-thumb:hover {
+	box-shadow: 0px 4px 8px rgba(36, 33, 44, 0.2);
+}
+
+.slider-container__input:active::-webkit-slider-thumb {
+	box-shadow: 0px 4px 8px rgba(6, 6, 194, 0.2);
 }
 
 
-// .sliders__input::-moz-range-thumb {
-// 	width: 30px; 
-//     height: 30px; 
-// 	background: #FFFFFF;
-// 	border: 1px solid #DBE2EA;
-// 	box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.2);
-// 	border-radius: 50%;
-//     cursor: pointer;
-// }
+.slider-container__input:disabled::-webkit-slider-thumb {
+	background: #EBF4F8;
+}
 
-// input[type='range']::-webkit-slider-thumb {
-// 	width: 10px;
-// 	-webkit-appearance: none;
-// 	height: 10px;
-// 	cursor: ew-resize;
-// 	background: #434343;
-// 	box-shadow: -80px 0 0 80px #43e5f7;
-// }
-
-
-
+// TAGS-BTN
 .tags-buttons {
 	display: flex;
 	margin-bottom: 80px;

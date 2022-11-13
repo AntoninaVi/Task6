@@ -158,13 +158,13 @@ window.onclick = function (event) {
 
 
 
-var $slider = $("#my-slider");
-var $fill = $(".bar .fill");
+var $slider = $("#slider");
+var $fill = $(".slider-container__bar .slider-container__fill");
 
 function setBar() {
 	$fill.css("width", $slider.val() + "%");
 }
 
-$slider.on(".my-slider", setBar);
+$slider.on("input", setBar);
 
 setBar();
