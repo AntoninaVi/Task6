@@ -815,7 +815,7 @@ input::-webkit-inner-spin-button {
 }
 
 .slider-container__input:disabled::-webkit-slider-thumb {
-  background: #EBF4F8;
+  background: #ebf4f8;
 }
 
 .tags-buttons {
@@ -1117,9 +1117,23 @@ input::-webkit-inner-spin-button {
   font-size: 28px;
   line-height: 36px;
   margin-bottom: 81px;
-  font-family: "IBM Plex Sans";
+}
+.logos__span {
   font-style: normal;
   font-weight: 600;
   font-size: 28px;
   line-height: 36px;
+  color: #7c9cbf;
+}
+.logos__logotypes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 80px;
+}
+.logos__logo:first-of-type {
+  margin-right: 60px;
 }

@@ -1,18 +1,17 @@
-@mixin title {	font-style: normal;
+@mixin title {
+	font-style: normal;
 	font-weight: 600;
 	font-size: 28px;
 	line-height: 36px;
 	margin-bottom: 81px;
 }
 @mixin name {
-
 	font-style: normal;
 	font-weight: 600;
 	font-size: 34px;
 	line-height: 44px;
 }
 @mixin span {
-
 	font-style: normal;
 	font-weight: 600;
 	font-size: 28px;
@@ -20,14 +19,13 @@
 	color: #7c9cbf;
 }
 @mixin label {
-
 	font-style: normal;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 21px;
 	color: #756f86;
 }
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap");
 *,
 *:before,
 *:after {
@@ -671,7 +669,7 @@ input::-webkit-inner-spin-button {
 	&__slider-container {
 		position: relative;
 		width: 353px;
-		&:first-of-type{
+		&:first-of-type {
 			margin-right: 66px;
 		}
 	}
@@ -687,7 +685,6 @@ input::-webkit-inner-spin-button {
 		border-radius: 5px;
 		background-color: #dbe2ea;
 		overflow: hidden;
-		
 	}
 
 	&__fill {
@@ -708,7 +705,6 @@ input::-webkit-inner-spin-button {
 		background-color: transparent;
 		width: 100%;
 		max-width: 235px;
-		
 	}
 }
 .slider-container__input::-webkit-slider-thumb {
@@ -732,9 +728,8 @@ input::-webkit-inner-spin-button {
 	box-shadow: 0px 4px 8px rgba(6, 6, 194, 0.2);
 }
 
-
 .slider-container__input:disabled::-webkit-slider-thumb {
-	background: #EBF4F8;
+	background: #ebf4f8;
 }
 
 // TAGS-BTN
@@ -1020,28 +1015,25 @@ input::-webkit-inner-spin-button {
 
 // CHECKBOX
 
-
-
-
-
 // 05.LOGOS
 .logos {
-
 	&__title {
 		@include title;
-		font-family: 'IBM Plex Sans';
-font-style: normal;
-font-weight: 600;
-font-size: 28px;
-line-height: 36px;
 	}
 
 	&__span {
+		@include span;
 	}
 
 	&__logotypes {
+		display: flex;
+		align-items: center;
+		margin-bottom: 80px;
 	}
 
 	&__logo {
+		&:first-of-type{
+			margin-right: 60px;
+		}
 	}
 }
