@@ -1058,17 +1058,18 @@ input::-webkit-inner-spin-button {
 .progressbars__progress:nth-last-of-type(1) .progressbars__progress-value {
   -webkit-animation: load 10s normal forwards;
           animation: load 10s normal forwards;
-  width: 30%;
+  width: 60%;
   background: #ff7171;
 }
 .progressbars__progress:nth-last-of-type(2) .progressbars__progress-value {
   -webkit-animation: load 10s normal forwards;
           animation: load 10s normal forwards;
-  width: 50px;
+  width: 80%;
   background: #14a38b;
 }
 .progressbars__progress:nth-last-of-type(3) .progressbars__progress-value {
   background: #f2ac57;
+  max-width: 30%;
 }
 
 .progressbars__progress-value {
@@ -1079,7 +1080,7 @@ input::-webkit-inner-spin-button {
   border-radius: 100px;
   background: #0880ae;
   height: 8px;
-  width: 65%;
+  width: 100%;
 }
 
 @-webkit-keyframes load {
@@ -1087,7 +1088,7 @@ input::-webkit-inner-spin-button {
     width: 0;
   }
   100% {
-    width: 65%;
+    width: 100%;
   }
 }
 
@@ -1096,7 +1097,7 @@ input::-webkit-inner-spin-button {
     width: 0;
   }
   100% {
-    width: 65%;
+    width: 100%;
   }
 }
 .circle-loaders {
@@ -1107,20 +1108,4 @@ input::-webkit-inner-spin-button {
 .circle-loaders__circle-loader {
   margin-right: 30px;
   rotate: 90deg;
-}
-
-.check__button {
-  vertical-align: middle;
-  width: 28px;
-  height: 28px;
-  -webkit-box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04);
-          box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04);
-  border-radius: 4px;
-}
-.check__title {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 21px;
-  color: #756f86;
 }

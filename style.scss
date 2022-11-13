@@ -909,6 +909,7 @@ input::-webkit-inner-spin-button {
 	}
 }
 
+// ALERTS
 .alerts {
 	&__alert {
 		padding: 18px 66px 18px 24px;
@@ -973,16 +974,17 @@ input::-webkit-inner-spin-button {
 	margin-bottom: 50px;
 	&:nth-last-of-type(1) .progressbars__progress-value {
 		animation: load 10s normal forwards;
-		width: 30%;
+		width: 60%;
 		background: #ff7171;
 	}
 	&:nth-last-of-type(2) .progressbars__progress-value {
 		animation: load 10s normal forwards;
-		width: 50px;
+		width: 80%;
 		background: #14a38b;
 	}
 	&:nth-last-of-type(3) .progressbars__progress-value {
 		background: #f2ac57;
+		max-width: 30%;
 	}
 }
 
@@ -992,7 +994,7 @@ input::-webkit-inner-spin-button {
 	border-radius: 100px;
 	background: #0880ae;
 	height: 8px;
-	width: 65%;
+	width: 100%;
 }
 
 @keyframes load {
@@ -1000,7 +1002,7 @@ input::-webkit-inner-spin-button {
 		width: 0;
 	}
 	100% {
-		width: 65%;
+		width: 100%;
 	}
 }
 
@@ -1016,19 +1018,3 @@ input::-webkit-inner-spin-button {
 
 // CHECKBOX
 
-.check {
-	&__buttons {
-	}
-
-	&__button {
-		vertical-align: middle;
-		width: 28px;
-		height: 28px;
-		box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04);
-		border-radius: 4px;
-	}
-
-	&__title {
-		@include label;
-	}
-}
