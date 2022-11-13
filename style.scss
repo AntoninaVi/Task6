@@ -1,17 +1,18 @@
-@mixin title {
-	font-style: normal;
+@mixin title {	font-style: normal;
 	font-weight: 600;
 	font-size: 28px;
 	line-height: 36px;
 	margin-bottom: 81px;
 }
 @mixin name {
+
 	font-style: normal;
 	font-weight: 600;
 	font-size: 34px;
 	line-height: 44px;
 }
 @mixin span {
+
 	font-style: normal;
 	font-weight: 600;
 	font-size: 28px;
@@ -19,13 +20,14 @@
 	color: #7c9cbf;
 }
 @mixin label {
+
 	font-style: normal;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 21px;
 	color: #756f86;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
 *,
 *:before,
 *:after {
@@ -1018,3 +1020,28 @@ input::-webkit-inner-spin-button {
 
 // CHECKBOX
 
+
+
+
+
+// 05.LOGOS
+.logos {
+
+	&__title {
+		@include title;
+		font-family: 'IBM Plex Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 28px;
+line-height: 36px;
+	}
+
+	&__span {
+	}
+
+	&__logotypes {
+	}
+
+	&__logo {
+	}
+}
