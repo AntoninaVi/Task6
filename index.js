@@ -142,7 +142,7 @@ window.onclick = function (event) {
 
 
 
-// CHECKBOX
+// RANGE SLIDER
 
 
 
@@ -156,3 +156,10 @@ function setBar() {
 $slider.on("input", setBar);
 
 setBar();
+
+
+
+// POPOVER
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+});
