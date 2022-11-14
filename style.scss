@@ -1013,8 +1013,6 @@ input::-webkit-inner-spin-button {
 	}
 }
 
-// CHECKBOX
-
 // 05.LOGOS
 .logos {
 	&__title {
@@ -1032,10 +1030,66 @@ input::-webkit-inner-spin-button {
 	}
 
 	&__logo {
-		&:first-of-type{
+		&:first-of-type {
 			margin-right: 60px;
 		}
 	}
+}
 
-	
+// AVATARS
+
+.avatars {
+	display: flex;
+	margin-bottom: 80px;
+
+	&__group {
+	}
+
+	&__group-img {
+		margin-right: 30px;
+		.avatars__group:last-child &:last-child {
+			margin-right: 0;
+		}
+	}
+}
+
+// CHAT MESSAGES
+.chat {
+	&__group {
+	}
+
+	&__message {
+		margin: 40px;
+		display: inline-block;
+		position: relative;
+		width: 200px;
+		padding: 20px;
+		height: auto;
+		background-color: rgb(255, 255, 255);
+		border-radius: 7px;
+		z-index: 1;
+		&:after {
+			content: "";
+			position: absolute;
+			z-index: 0;
+			bottom: -8px;
+			left: 1px;
+			width: 3px;
+			height: 22px;
+			background: #979797;
+			border-bottom-right-radius: 30px;
+		}
+		&:before {
+			content: "";
+			position: absolute;
+			z-index: 0;
+			bottom: -7px;
+			left: 6px;
+			height: 23px;
+			width: 3px;
+			rotate: -154deg;
+			border-bottom-right-radius: 20px;
+			background: #979797;
+		}
+	}
 }

@@ -1137,3 +1137,51 @@ input::-webkit-inner-spin-button {
 .logos__logo:first-of-type {
   margin-right: 60px;
 }
+
+.avatars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 80px;
+}
+.avatars__group-img {
+  margin-right: 30px;
+}
+.avatars__group:last-child .avatars__group-img:last-child {
+  margin-right: 0;
+}
+
+.chat__message {
+  margin: 40px;
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  padding: 20px;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  border-radius: 7px;
+  z-index: 1;
+}
+.chat__message:after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  bottom: -8px;
+  left: 1px;
+  width: 3px;
+  height: 22px;
+  background: #979797;
+  border-bottom-right-radius: 30px;
+}
+.chat__message:before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  bottom: -7px;
+  left: 6px;
+  height: 23px;
+  width: 3px;
+  rotate: -154deg;
+  border-bottom-right-radius: 20px;
+  background: #979797;
+}
