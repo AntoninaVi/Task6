@@ -4,6 +4,15 @@
 	font-size: 28px;
 	line-height: 36px;
 	margin-bottom: 81px;
+	&:after {
+		content: "";
+		position: relative;
+		display:  block;
+		width: 100%;
+		height: 2px;
+		background-color: #DBE2EA;
+		margin-top: 20px;
+	}
 }
 @mixin name {
 	font-style: normal;
@@ -1411,15 +1420,18 @@ input::-webkit-inner-spin-button {
 	rotate: 90deg;
 }
 
-// MISC
+// 10. MISC
 .misc {
 	margin-bottom: 80px;
+	
 	&__title {
 		@include title;
+		
 	}
 
 	&__span {
 		@include span;
+		
 	}
 
 	&__content {
@@ -1443,7 +1455,8 @@ input::-webkit-inner-spin-button {
 
 // TYPES SCALE
 .types {
-	margin-bottom: 80px;
+	
+
 	&__title {
 		@include title;
 	}
@@ -1456,13 +1469,17 @@ input::-webkit-inner-spin-button {
 	}
 
 	&__group {
+		text-align: start;
 		display: flex;
 		justify-content: space-between;
+		
+		
+	
 	}
 
 	&__paragraph {
 		margin-bottom: 49px;
-		text-align: left;
+		margin-right: 40px;
 	}
 }
 .types__group:nth-of-type(1) .types__paragraph {
