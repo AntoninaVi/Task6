@@ -1176,6 +1176,7 @@ input::-webkit-inner-spin-button {
 // POPOVER
 
 .popover {
+	margin-bottom: 80px;
 	&__title {
 		@include title;
 	}
@@ -1190,7 +1191,6 @@ input::-webkit-inner-spin-button {
 		&:last-child {
 			margin-bottom: 0;
 		}
-		
 	}
 
 	&__content {
@@ -1231,7 +1231,6 @@ input::-webkit-inner-spin-button {
 		background-color: #ffffff;
 		&::before {
 			content: "";
-
 			border-top: 19px solid #ffffff;
 		}
 	}
@@ -1240,7 +1239,6 @@ input::-webkit-inner-spin-button {
 		color: #ffffff;
 		&::before {
 			content: "";
-
 			border-top: 19px solid #2c2738;
 		}
 	}
@@ -1313,7 +1311,124 @@ input::-webkit-inner-spin-button {
 	border-left: 5px solid transparent;
 	border-right: 16px solid transparent;
 	border-top: 11px solid inherit;
-	left:-10px;
+	left: -10px;
 	top: 40px;
 	rotate: -40deg;
+}
+
+// 10.TOOLTIP
+.tooltips {
+	&__title {
+		@include title;
+	}
+
+	&__span {
+		@include span;
+	}
+
+	&__group {
+		display: flex;
+		margin-bottom: 30px;
+	}
+
+	&__content {
+		position: relative;
+		padding: 7px 10px;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 18px;
+		text-align: center;
+		color: #756f86;
+		width: 120px;
+		background: #ffffff;
+		border-radius: 4px;
+		text-align: center;
+		border-radius: 6px;
+		margin-right: 30px;
+	}
+}
+.tooltips__content:nth-of-type(2) {
+	background: #2c2738;
+	color: #ffffff;
+}
+.tooltips__content:nth-of-type(3) {
+	background: #0880ae;
+	color: #ffffff;
+}
+.tooltips__content:nth-of-type(4) {
+	background: #f2ac57;
+	color: #ffffff;
+}
+.tooltips__content:nth-of-type(5) {
+	background: #14a38b;
+	color: #ffffff;
+}
+.tooltips__content:nth-of-type(6) {
+	background: #ff7171;
+	color: #ffffff;
+}
+
+.group1 .tooltips__content::after {
+	content: "";
+	position: absolute;
+	top: -30%;
+	right: 45%;
+	border-width: 5px;
+	border-style: solid;
+	border-color: rgb(255, 255, 255) transparent transparent transparent;
+	rotate: 182deg;
+}
+.group2 .tooltips__content::after {
+	content: "";
+	position: absolute;
+	top: 35%;
+	right: -8%;
+	border-width: 5px;
+	border-style: solid;
+	border-color: rgb(255, 255, 255) transparent transparent transparent;
+	rotate: 270deg;
+}
+.group3 .tooltips__content::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 45%;
+	border-width: 5px;
+	border-style: solid;
+	border-color: rgb(255, 255, 255) transparent transparent transparent;
+}
+
+.group4 .tooltips__content::after {
+	content: "";
+	position: absolute;
+	top: 34%;
+	left: -8%;
+	border-width: 5px;
+	border-style: solid;
+	border-color: rgb(255, 255, 255) transparent transparent transparent;
+	rotate: 90deg;
+}
+
+
+// MISC
+.misc {
+
+	&__title {
+		@include title;
+	}
+
+	&__span {
+		@include span;
+	}
+
+	&__group {
+	}
+
+	&__paragraph {
+	}
+}
+.miscs {
+
+	&__content {
+	}
 }

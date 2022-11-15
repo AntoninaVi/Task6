@@ -163,3 +163,10 @@ setBar();
 // $(document).ready(function(){
 //     $('[data-toggle="popover"]').popover();   
 // });
+
+// document.querySelector('jsuites-rating').addEventListener('onchange', function(e) {
+//     document.getElementById('console').innerHTML = 'New value: ' + this.value;
+// });
+document.querySelector('jsuites-rating').addEventListener('onchange', function(e) {
+    document.getElementById('console').innerHTML =  + this.value;
+});
