@@ -159,7 +159,7 @@ setBar();
 
 
 
-// POPOVER
-$(document).ready(function(){
-    $('[data-toggle="popover"]').popover();   
-});
+// // POPOVER
+// $(document).ready(function(){
+//     $('[data-toggle="popover"]').popover();   
+// });
