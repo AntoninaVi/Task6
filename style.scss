@@ -1413,6 +1413,7 @@ input::-webkit-inner-spin-button {
 
 // MISC
 .misc {
+	margin-bottom: 80px;
 	&__title {
 		@include title;
 	}
@@ -1439,3 +1440,94 @@ input::-webkit-inner-spin-button {
 		color: #756f86;
 	}
 }
+
+// TYPES SCALE
+.types {
+	margin-bottom: 80px;
+	&__title {
+		@include title;
+	}
+
+	&__span {
+		@include span;
+	}
+
+	&__content {
+	}
+
+	&__group {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__paragraph {
+		margin-bottom: 49px;
+		text-align: left;
+	}
+}
+.types__group:nth-of-type(1) .types__paragraph {
+	font-weight: 600;
+	font-size: 72px;
+	line-height: 86px;
+}
+.types__group:nth-of-type(2) .types__paragraph {
+	font-weight: 600;
+	font-size: 64px;
+	line-height: 76px;
+}
+.types__group:nth-of-type(3) .types__paragraph {
+	font-weight: 600;
+	font-size: 56px;
+	line-height: 68px;
+}
+.types__group:nth-of-type(4) .types__paragraph {
+	font-weight: 600;
+	font-size: 34px;
+	line-height: 44px;
+}
+.types__group:nth-of-type(5) .types__paragraph {
+	font-weight: 600;
+	font-size: 28px;
+	line-height: 36px;
+}
+.types__group:nth-of-type(6) .types__paragraph {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 28px;
+}
+.types__group:nth-of-type(7) .types__paragraph {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 22px;
+}
+.types__group:nth-of-type(8) .types__paragraph {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+}
+.types__group:nth-of-type(9) .types__paragraph {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 18px;
+}
+.types__paragraph:nth-of-type(2) {
+	color: #756f86;
+}
+.types__paragraph:nth-of-type(3) {
+	color: #7c9cbf;
+}
+.types__content:nth-of-type(2) .types__paragraph:nth-of-type(1) {
+	color: #0880ae;
+}
+.types__content:nth-of-type(2) .types__paragraph:nth-of-type(2){
+	color: #F2AC57;
+} 
+.types__content:nth-of-type(2) .types__paragraph:nth-of-type(3){
+	color: #14A38B;
+} 
+.types__content:nth-of-type(3) .types__paragraph:nth-of-type(1) {
+	color: #FF7171;
+}
+.types__content:nth-of-type(3) .types__paragraph:nth-of-type(2){
+	color: #FFFFFF;
+} 
