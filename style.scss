@@ -1318,6 +1318,8 @@ input::-webkit-inner-spin-button {
 
 // 10.TOOLTIP
 .tooltips {
+	margin-bottom: 80px;
+	
 	&__title {
 		@include title;
 	}
@@ -1412,6 +1414,7 @@ input::-webkit-inner-spin-button {
 
 // MISC
 .misc {
+	
 
 	&__title {
 		@include title;
@@ -1421,14 +1424,19 @@ input::-webkit-inner-spin-button {
 		@include span;
 	}
 
+	&__content {
+		display: flex;
+	
+	}
+
 	&__group {
+		margin-right: 40px;
+		&:last-child{
+			margin-right: 0;
+		}
 	}
 
 	&__paragraph {
 	}
 }
-.miscs {
 
-	&__content {
-	}
-}

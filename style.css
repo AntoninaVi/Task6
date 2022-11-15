@@ -1428,6 +1428,9 @@ input::-webkit-inner-spin-button {
   rotate: -40deg;
 }
 
+.tooltips {
+  margin-bottom: 80px;
+}
 .tooltips__title {
   font-style: normal;
   font-weight: 600;
@@ -1545,4 +1548,15 @@ input::-webkit-inner-spin-button {
   font-size: 28px;
   line-height: 36px;
   color: #7c9cbf;
+}
+.misc__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.misc__group {
+  margin-right: 40px;
+}
+.misc__group:last-child {
+  margin-right: 0;
 }
