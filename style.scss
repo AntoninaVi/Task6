@@ -1552,6 +1552,7 @@ input::-webkit-inner-spin-button {
 	}
 
 	&__content {
+		
 	}
 
 	&__nav {
@@ -1608,5 +1609,10 @@ input::-webkit-inner-spin-button {
 			background: #0880ae;
 			box-shadow: 0px 1px 2px rgba(44, 39, 56, 0.08), 0px 2px 4px rgba(44, 39, 56, 0.08);
 		}
+	}
+	&__nav-dropdown{
+		display: flex;
+		
+		
 	}
 }
