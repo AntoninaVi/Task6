@@ -1723,12 +1723,24 @@ input::-webkit-inner-spin-button {
 	}
 
 	&__flap {
+		width: 100%;
+		margin-bottom: 60px;
+		padding: 76px 0px 76px 40px;
+		border-radius: 20px;
+		background-color: #ffffff;
+		display: flex;
 	}
 
 	&__flap-img {
+		&:first-of-type {
+			margin-right: 80px;
+		}
+		
+		
 	}
 
 	&__flap-content {
+		
 	}
 }
 .flaps__flap-first {
@@ -1748,5 +1760,21 @@ input::-webkit-inner-spin-button {
 		mix-blend-mode: normal;
 		opacity: 0.72;
 		margin-bottom: 8px;
+	}
+}
+
+.flaps__flap-fourth {
+		display: flex;
+
+	&-content {
+	}
+
+	&-img {
+	}
+
+	&-title {
+	}
+
+	&-paragraph {
 	}
 }

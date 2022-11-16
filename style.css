@@ -1972,6 +1972,19 @@ input::-webkit-inner-spin-button {
   border: none;
   padding: 18px 41px;
 }
+.flaps__flap {
+  width: 100%;
+  margin-bottom: 60px;
+  padding: 76px 0px 76px 40px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.flaps__flap-img:first-of-type {
+  margin-right: 80px;
+}
 .flaps__flap-first {
   background-image: url(img/bg__flap.png);
   background-position: right;
@@ -1989,4 +2002,10 @@ input::-webkit-inner-spin-button {
   mix-blend-mode: normal;
   opacity: 0.72;
   margin-bottom: 8px;
+}
+
+.flaps__flap-fourth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
