@@ -1777,6 +1777,8 @@ input::-webkit-inner-spin-button {
 }
 // 14. MODALS
 .modals {
+	margin-bottom: 80px;
+
 	&__title {
 		@include title;
 	}
@@ -1836,6 +1838,60 @@ input::-webkit-inner-spin-button {
 		left: 11em;
 		top: 1em;
 		font-size: 28px;
+	}
+}
+// 15. Callouts
+.callout {
+	&__title {
+		@include title;
+	}
+
+	&__span {
+		@include span;
+	}
+
+	&__message {
+		background: #ffffff;
+		border-radius: 16px;
+		margin-bottom: 60px;
+		padding: 40px 40px;
+	}
+
+	&__message-title {
+		font-style: normal;
+		font-weight: 600;
+		font-size: 44px;
+		line-height: 56px;
+		margin-bottom: 16px;
+	}
+
+	&__message-paragraph {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 28px;
+	}
+
+	&__message-buttons {
 		
 	}
+
+	&__message-button {
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 21px;
+		text-align: center;
+		color: #7c9cbf;
+		border: 2px solid #7c9cbf;
+		border-radius: 6px;
+		padding: 14px 46px;
+		background-color: #ffffff;
+	}
+}
+.callout__message:nth-of-type(3),
+.callout__message:nth-of-type(4)
+{
+display: flex;
+justify-content: space-between;
+align-items: center;
 }

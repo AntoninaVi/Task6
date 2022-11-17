@@ -2026,6 +2026,9 @@ input::-webkit-inner-spin-button {
   color: #2c2738;
 }
 
+.modals {
+  margin-bottom: 80px;
+}
 .modals__title {
   font-style: normal;
   font-weight: 600;
@@ -2099,4 +2102,71 @@ input::-webkit-inner-spin-button {
   left: 11em;
   top: 1em;
   font-size: 28px;
+}
+
+.callout__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 36px;
+  margin-bottom: 81px;
+}
+.callout__title:after {
+  content: "";
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #dbe2ea;
+  margin-top: 20px;
+}
+.callout__span {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 36px;
+  color: #7c9cbf;
+}
+.callout__message {
+  background: #ffffff;
+  border-radius: 16px;
+  margin-bottom: 60px;
+  padding: 40px 40px;
+}
+.callout__message-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 56px;
+  margin-bottom: 16px;
+}
+.callout__message-paragraph {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+}
+.callout__message-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #7c9cbf;
+  border: 2px solid #7c9cbf;
+  border-radius: 6px;
+  padding: 14px 46px;
+  background-color: #ffffff;
+}
+
+.callout__message:nth-of-type(3),
+.callout__message:nth-of-type(4) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
