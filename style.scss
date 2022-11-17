@@ -1735,12 +1735,9 @@ input::-webkit-inner-spin-button {
 		&:first-of-type {
 			margin-right: 80px;
 		}
-		
-		
 	}
 
 	&__flap-content {
-		
 	}
 }
 .flaps__flap-first {
@@ -1764,17 +1761,28 @@ input::-webkit-inner-spin-button {
 }
 
 .flaps__flap-fourth {
-		display: flex;
-
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	row-gap: 40px;
+	background: #ffffff;
+	border-radius: 20px;
+	padding: 60px 60px;
 	&-content {
+		margin-right: 13px;
+		text-align: center;
 	}
 
 	&-img {
+		margin-bottom: 18px;
 	}
 
 	&-title {
+		margin-bottom: 8px;
 	}
 
 	&-paragraph {
+		max-width: 260px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 }

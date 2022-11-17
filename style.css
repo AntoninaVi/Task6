@@ -2005,7 +2005,27 @@ input::-webkit-inner-spin-button {
 }
 
 .flaps__flap-fourth {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 40px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 60px 60px;
+}
+.flaps__flap-fourth-content {
+  margin-right: 13px;
+  text-align: center;
+}
+.flaps__flap-fourth-img {
+  margin-bottom: 18px;
+}
+.flaps__flap-fourth-title {
+  margin-bottom: 8px;
+}
+.flaps__flap-fourth-paragraph {
+  max-width: 260px;
+  margin-left: auto;
+  margin-right: auto;
 }
