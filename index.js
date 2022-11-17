@@ -150,7 +150,7 @@ var $slider = $("#slider");
 var $fill = $(".slider-container__bar .slider-container__fill");
 
 function setBar() {
-	$fill.css("width", $slider.val() + "%");
+    $fill.css("width", $slider.val() + "%");
 }
 
 $slider.on("input", setBar);
@@ -160,16 +160,18 @@ setBar();
 
 
 
-document.querySelector('jsuites-rating').addEventListener('onchange', function(e) {
-    document.getElementById('console').innerHTML =  + this.value;
+document.querySelector('jsuites-rating').addEventListener('onchange', function (e) {
+    document.getElementById('console').innerHTML = + this.value;
 });
 
 // BURGER MENU
 function myFunction() {
     var x = document.getElementById("myLinks");
     if (x.style.display === "block") {
-      x.style.display = "none";
+        x.style.display = "none";
     } else {
-      x.style.display = "block";
+        x.style.display = "block";
     }
-  }
+}
+
+//   CHARTS
