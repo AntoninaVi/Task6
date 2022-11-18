@@ -5,87 +5,308 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Task 6</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-  <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-base.min.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="/style.css">
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-base.min.js" type="text/javascript"></script>
+ 
 </head>
 
 <body>
   <div class="wrapper">
     <div class="container">
       <section class="charts">
-        <h2 class="charts__title"><span class="charts__span">16. </span>Charts</h2>
-        <div class="charts__content">
-          <div id="charts__container-column"></div>
-         
+        <div id="charts__container-column"></div>
+        <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
       </section>
+
+
+      <section class="cards">
+        <h2 class="cards__title"><span class="cards__span">17. </span>Cards</h2>
+        <div class="cards__content">
+          <article class="cards__card">
+            <img src="img/cards-bg.png" alt="image" class="cards__card-img">
+            <h6 class="cards__card-title">Card Title</h6>
+            <p class="cards__card-paragraph">Supporting description for the card goes here like a breeze.</p>
+            <button class="cards__card-button">Action</button>
+          </article>
+          <article class="cards__card">
+            <div class="cards__card-information">
+            <h6 class="cards__card-title">Card Title</h6>
+            <p class="cards__card-paragraph">Supporting description for the card goes here like a breeze.</p>
+          </div>
+          </article>
+          <article class="cards__card">
+            <h6 class="cards__card-title">Card Title</h6>
+            <p class="cards__card-paragraph">Supporting description for the card goes here like a breeze.</p>
+            <button class="cards__card-button">Action</button>
+          </article>
+        </div>
+        <div class="cards__content">
+          <article class="cards__card-2">
+            <div class="cards__card-menu">
+
+      
+                <!-- three dots -->
+                <!-- <ul class="dotbtn icons btn-right showLeft" onclick="showDropdown()">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul> -->
+                <!-- menu -->
+                <!-- <div id="myDotDropdown" class="dotdropdown-content">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </div> -->
+            </div>
+
+         
+            <p class="cards__card-label">Label</p>
+            <h6 class="cards__card-title">Card Title</h6>
+            <p class="cards__card-paragraph">Supporting description for the card goes here.</p>
+          </article>
+          <article class="cards__card-2">
+            <div class="cards__card-menu"></div>
+            <p class="cards__card-label">Label</p>
+            <h6 class="cards__card-title">Card Title</h6>
+            <p class="cards__card-paragraph">Supporting description for the card goes here.</p>
+          </article>
+          <article class="cards__card-2">
+            <div class="cards__card-menu"></div>
+            <p class="cards__card-label">Label</p>
+            <h6 class="cards__card-title">Card Title</h6>
+            <p class="cards__card-paragraph">Supporting description for the card goes here.</p>
+          </article>
+          <article class="cards__card-2">
+            <div class="cards__card-menu"></div>
+            <p class="cards__card-label">Label</p>
+            <h6 class="cards__card-title">Card Title</h6>
+            <p class="cards__card-paragraph">Supporting description for the card goes here.</p>
+          </article>
+          <article class="cards__card-2">
+            <div class="cards__card-menu"></div>
+            <p class="cards__card-label">Label</p>
+            <h6 class="cards__card-title">Card Title</h6>
+            <p class="cards__card-paragraph">Supporting description for the card goes here.</p>
+          </article>
+        </div>
+      </div>
+      </section>
+
+
     </div>
   </div>
 
 
 
 
-</body>
+  <script src="index.js"></script>
+  <script>
+
+    // Column
+    anychart.onDocumentReady(function () {
+
+      // data
+      var data = anychart.data.set([
+        ["John", 10000, 12000, "#ccc", "#FF9900", "diamond"],
+        ["Jake", 12000, 15000, "#ccc", "#FF9900", "backwarddiagonal"],
+        ["Peter", 18000, 16000, "#ccc", "#FF9900", "diamond"],
+        ["James", 11000, 13000, "#ccc", "#FF9900", "diamond"],
+        ["Mary", 9000, 19000, "#ccc", "#FF9900", "diamond"]
+      ]);
+
+      // map data for the each series
+      var Sales2003 = data.mapAs({ x: 0, value: 1, hoverFill: 3, selectFill: 4 });
+      var Sales2004 = data.mapAs({ x: 0, value: 2, hoverFill: 3, selectHatchFill: 5 });
+
+      // chart type
+      var chart = anychart.column();
+
+      // set data
+      var series_1 = chart.column(Sales2003);
+      series_1.name("Conversions");
+      series_1.xPointPosition(0.5);
+
+      var series_2 = chart.column(Sales2004);
+      series_2.name("Pageviews");
+
+      series_1.fill("#E0F08F");
+      series_2.fill("#29ADC2");
+      series_1.stroke("none");
+      series_2.stroke("none");
+
+      // chart title
+      chart.title("443K Pageviews");
+
+      // chart.xAxis().title("Retail Channel");
+      // chart.yAxis().title("Sales");
+
+      // enable legend
+      chart.legend(true);
+
+      // switching the select mode to multi
+      var interactivity = chart.interactivity();
+      interactivity.selectionMode("multi-select");
+
+      // draw
+      chart.container("charts__container-column");
+      chart.draw();
+    });
 
 
-<script>
-  anychart.onDocumentReady(function () {
 
-    // data
-    var data = anychart.data.set([
-      ["Mon", 10000, 12000],
-      ["Tue", 12000, 15000],
-      ["Wed", 6000, 7000],
-      ["Thu", 11000, 13000],
-      ["Fri", 8000, 16000],
-      ["Sat", 9000, 19000],
-      ["Unit", 11000, 13000]
-    ]);
+    // Donut
+    var xValues = ["Web", "Mobile", "Social"];
+    var yValues = [55, 49, 44];
+    var barColors = [
+      "#b91d47",
+      "#00aba9",
+      "#2b5797"
+    ];
 
-    // map data for the each series
-    var Sales2003 = data.mapAs({ x: 0, value: 1 });
-    var Sales2004 = data.mapAs({ x: 0, value: 2 });
-
-    // chart type
-    var chart = anychart.column();
-
-    // set data
-
-    var series_1 = chart.column(Sales2003);
-    series_1.name("Conversation");
-    series_1.xPointPosition(0.4);
-
-    var series_2 = chart.column(Sales2004);
-    series_2.name("Pageviews");
-
-    series_1.fill("#D6CF6E");
-    series_2.fill("#14A38B");
-    series_1.stroke("none");
-    series_2.stroke("none");
-
-    // chart title
-    chart.title("443K Pageviews");
-
-    chart.xAxis().title("in last 7 days");
+    new Chart("myChart", {
+      type: "doughnut",
+      data: {
+        labels: xValues,
+        datasets: [{
+          backgroundColor: barColors,
+          data: yValues
+        }]
+      },
+      options: {
+        title: {
+          display: true,
+          text: "World Wide Wine Production 2018"
+        }
+      }
+    });
 
 
-    // enable legend
-    chart.legend(true);
+    const config = {
+      type: 'line',
+      data: data,
+      options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            position: 'top',
+          },
+          title: {
+            display: true,
+            text: 'Chart.js Line Chart'
+          }
+        }
+      },
+    };
+    const DATA_COUNT = 7;
+    const NUMBER_CFG = { count: DATA_COUNT, min: -100, max: 100 };
 
-    // disable the selection
-    var interactivity = chart.interactivity();
-    interactivity.selectionMode("none");
+    const labels = Utils.months({ count: 7 });
+    const data = {
+      labels: labels,
+      datasets: [
+        {
+          label: 'Dataset 1',
+          data: Utils.numbers(NUMBER_CFG),
+          borderColor: Utils.CHART_COLORS.red,
+          backgroundColor: Utils.transparentize(Utils.CHART_COLORS.red, 0.5),
+        },
+        {
+          label: 'Dataset 2',
+          data: Utils.numbers(NUMBER_CFG),
+          borderColor: Utils.CHART_COLORS.blue,
+          backgroundColor: Utils.transparentize(Utils.CHART_COLORS.blue, 0.5),
+        }
+      ]
+    };
+    const actions = [
+      {
+        name: 'Randomize',
+        handler(chart) {
+          chart.data.datasets.forEach(dataset => {
+            dataset.data = Utils.numbers({ count: chart.data.labels.length, min: -100, max: 100 });
+          });
+          chart.update();
+        }
+      },
+      {
+        name: 'Add Dataset',
+        handler(chart) {
+          const data = chart.data;
+          const dsColor = Utils.namedColor(chart.data.datasets.length);
+          const newDataset = {
+            label: 'Dataset ' + (data.datasets.length + 1),
+            backgroundColor: Utils.transparentize(dsColor, 0.5),
+            borderColor: dsColor,
+            data: Utils.numbers({ count: data.labels.length, min: -100, max: 100 }),
+          };
+          chart.data.datasets.push(newDataset);
+          chart.update();
+        }
+      },
+      {
+        name: 'Add Data',
+        handler(chart) {
+          const data = chart.data;
+          if (data.datasets.length > 0) {
+            data.labels = Utils.months({ count: data.labels.length + 1 });
 
-    // draw
-    chart.container("charts__container-column");
-    chart.draw();
-  });
+            for (let index = 0; index < data.datasets.length; ++index) {
+              data.datasets[index].data.push(Utils.rand(-100, 100));
+            }
+
+            chart.update();
+          }
+        }
+      },
+      {
+        name: 'Remove Dataset',
+        handler(chart) {
+          chart.data.datasets.pop();
+          chart.update();
+        }
+      },
+      {
+        name: 'Remove Data',
+        handler(chart) {
+          chart.data.labels.splice(-1, 1); // remove the label first
+
+          chart.data.datasets.forEach(dataset => {
+            dataset.data.pop();
+          });
+
+          chart.update();
+        }
+      }
+    ];
 
 
+function changeLanguage(language) {
+    var element = document.getElementById("url");
+    element.value = language;
+    element.innerHTML = language;
+}
+
+function showDropdown() {
+    document.getElementById("myDotDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+    if (!event.target.matches('.dotbtn')) {
+        var dropdowns = document.getElementsByClassName(".dotdropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
+  </script>
   
-</script>
-
-
+</body>
 
 </html>
