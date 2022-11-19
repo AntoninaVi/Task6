@@ -2423,8 +2423,32 @@ input::-webkit-inner-spin-button {
   color: #0880ae;
   margin-top: 23px;
 }
+.forms__checkbox-label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.forms__checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background: #ffffff;
+  border: 1px solid #dbe2ea;
+  -webkit-box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04);
+          box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04);
+  border-radius: 4px;
+}
 .forms__checkbox {
-  padding: 30px;
+  padding: 28px;
 }
 
 .forms__form label {
@@ -2460,4 +2484,41 @@ input::-webkit-inner-spin-button {
 
 .forms__content:nth-last-child(1) .forms__form-btn {
   width: 100%;
+}
+
+.forms__checkbox-label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.forms__checkbox-label:hover input ~ .forms__checkmark {
+  background-color: #ccc;
+}
+
+.forms__checkbox-label input:checked ~ .forms__checkmark {
+  background-color: #2196f3;
+}
+
+.forms__checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.forms__checkbox-label input:checked ~ .forms__checkmark:after {
+  display: block;
+}
+
+.forms__checkbox-label .forms__checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
