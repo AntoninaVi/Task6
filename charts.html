@@ -164,8 +164,8 @@
 
     <section class="forms">
       <h2 class="forms__title"><span class="forms__span">18. </span>Forms</h2>
-      <div class="form__content">
-        <form >
+      <div class="forms__content">
+        <form class="forms__form">
           <h6 class="forms__form-title">Contact us</h6>
           <p class="forms__form-paragraph">In general, our team replies within 24-28 hours.</p>
           <label for="name">Name</label>
@@ -176,7 +176,47 @@
           <textarea name="message" id="message" cols="30" rows="10"></textarea>
           <button type="submit" class="forms__form-btn">Send Message</button>
         </form>
-      
+      </div>
+      <div class="forms__content">
+        <form class="forms__form">
+          <h6 class="forms__form-title">Sign in</h6>
+          <p class="forms__form-paragraph">Don't have an account yet?</p>
+          <a href="#" class="forms__link">Sign up now</a>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="Email">
+          <label for="pass">Password</label>
+          <input type="password" id="pass" name="password" minlength="8" required>
+          <input class="forms__form-btn" type="submit" value="Sign in">
+          <a href="#" class="forms__link">Forgot password?</a>
+        </form>
+        <form class="forms__form">
+          <h6 class="forms__form-title">Create an account</h6>
+          <p class="forms__form-paragraph">Already have an account?</p>
+          <a href="#" class="forms__link">Sign in</a>
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="Email">
+          <label for="pass">Password</label>
+          <input type="password" id="pass" name="password" minlength="8" required>
+          <label class="forms__checkbox-label">
+            <input class="forms__checkbox" type="checkbox" required>
+            <span class="forms__checkmark"></span>
+            By signing up, I agree to the terms.
+          </label>
+          
+          <input class="forms__form-btn" type="submit" value="Sign Up">
+        </form>
+        <form class="forms__form">
+          <h6 class="forms__form-title">Reset Password</h6>
+          <p class="forms__form-paragraph">Enter your email for a password reset link.</p>
+          <a href="#" class="forms__link">Forgot Email?</a>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="Email">
+          <input class="forms__form-btn" type="submit" value="Send Reset Link">
+          <a href="#" class="forms__link">Back to Sign in</a>
+        </form>
+
       </div>
 
     </section>

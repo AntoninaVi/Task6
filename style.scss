@@ -1907,6 +1907,8 @@ input::-webkit-inner-spin-button {
 
 // 17. CARDS
 .cards {
+	margin-bottom: 80px;
+
 	&__title {
 		@include title;
 	}
@@ -2042,4 +2044,113 @@ input::-webkit-inner-spin-button {
 
 .dots__menu:hover .dropdown-content {
 	display: block;
+}
+
+// 18. FORMS
+.forms {
+	&__title {
+		@include title;
+	}
+
+	&__span {
+		@include span;
+	}
+	&__content {
+		&:nth-last-child(1) {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 60px;
+		}
+		&:nth-last-child(2) {
+			margin-bottom: 60px;
+		}
+	}
+
+	&__form-title {
+		font-style: normal;
+		font-weight: 700;
+		font-size: 34px;
+		line-height: 44px;
+	}
+
+	&__form-paragraph {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 22px;
+	}
+
+	&__form-btn {
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 21px;
+		text-align: center;
+		color: #ebf4f8;
+		padding: 18px 37px;
+		background: #0880ae;
+		box-shadow: 0px 2px 4px rgba(44, 39, 56, 0.08), 0px 4px 8px rgba(44, 39, 56, 0.08);
+		border-radius: 6px;
+		border: none;
+		cursor: pointer;
+		white-space: nowrap;
+		width: 11.2em;
+		margin-top: 30px;
+	}
+	&__form {
+		display: flex;
+		flex-direction: column;
+		background: #ffffff;
+		box-shadow: 0px 12px 24px rgba(44, 39, 56, 0.02), 0px 32px 64px rgba(44, 39, 56, 0.04);
+		border-radius: 24px;
+		padding: 40px 30px;
+		width: 45em;
+	}
+	&__link {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 22px;
+		color: #0880ae;
+		margin-top: 23px;
+	}
+	&__checkbox-label{
+
+	}
+
+	&__checkmark {
+		
+		}
+	
+	&__checkbox {
+		padding: 30px;
+	}
+}
+.forms__form label {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 21px;
+	color: #756f86;
+	margin-top: 30px;
+	margin-bottom: 8px;
+}
+.forms__form input {
+	border: 1px solid #dbe2ea;
+	box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04);
+	border-radius: 6px;
+	padding: 15px;
+}
+.forms__form textarea {
+	resize: none;
+	border: 1px solid #dbe2ea;
+	box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04);
+	border-radius: 6px;
+	padding: 15px;
+}
+.forms__content:nth-last-child(1) .forms__form {
+	width: 28.7em;
+}
+.forms__content:nth-last-child(1) .forms__form-btn {
+	width: 100%;
 }
