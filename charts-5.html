@@ -6,9 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Task 6</title>
   <link rel="stylesheet" href="/style.css">
+
+  <link rel="stylesheet" type="text/css" href="//www.shieldui.com/shared/components/latest/chart/css/shield-chart.min.css" />
+
+
+  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
   <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-base.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="//www.shieldui.com/shared/components/latest/chart/js/jquery-1.9.1.min.js"></script>
+  <script type="text/javascript" src="//www.shieldui.com/shared/components/latest/chart/js/shield-chart.all.min.js"></script>
 
 </head>
 
@@ -17,7 +24,12 @@
     <div class="container">
       <section class="charts">
         <div id="charts__container-column"></div>
+
+      
+
         <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+
+        <div id="chart"></div>
       </section>
 
 
@@ -432,6 +444,43 @@
         }
       }
     }
+
+    $(function() {
+  $("#chart").shieldChart({  
+primaryHeader: {
+    text: 'Shield UI Bar Spline Example',
+    align: 'center'
+},
+
+seriesSettings: {
+spline: {
+addToLegend: true,
+                      dataPointText: {
+enabled: true
+}
+}
+},
+chartLegend: {
+align: "center",
+verticalAlign: "bottom",
+borderRadius: 2,
+borderWidth: 2
+                },
+dataSeries: [
+  {
+seriesType: 'spline',
+collectionAlias: 'Series A',
+data: [11,26,27,44,15,22]
+  }, 
+  {
+seriesType: 'spline',
+collectionAlias: 'Series B',
+data: [22,11,22,31,32,22]
+  }
+]
+  });
+  
+  });
 
     // CARDS
 

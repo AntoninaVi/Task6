@@ -46,26 +46,38 @@
                         <div class="form__field">
                             <p class="form__label">Label</p>
                             <div class="form__select">
-                                <button onclick="dropDown()" class="form__select-dropbtn">Dropdown</button>
-                                <div id="myDropdown" class="form__select-dropdown-content">
-                                    <a class="form__select-link" href="#">Item</a>
-                                    <a class="form__select-link" href="#">Item</a>
-                                    <a class="form__select-link" href="#">Item</a>
-                                    <a class="form__select-link" href="#">Item</a>
+                                <div class="t-dropdown-block">
+                                    <div class="t-dropdown-select">
+                                        <input type="text" class="t-dropdown-input" placeholder="Dropdown" />
+                                        <span class="t-select-btn">
+                                        </span>
+                                    </div>
+                                    <ul class="t-dropdown-list">
+                                        <li class="t-dropdown-item">Item</li>
+                                        <li class="t-dropdown-item">Item</li>
+                                        <li class="t-dropdown-item">Item</li>
+                                        <li class="t-dropdown-item">Item</li>
+                                    </ul>
                                 </div>
+
                             </div>
                         </div>
 
                         <div class="form__field">
                             <p class="form__label">Label</p>
                             <div class="form__select">
-                                <button id="dropbtn2" onclick="dropDown2()"
-                                    class="form__select-dropbtn">Dropdown</button>
-                                <div id="myDropdown2" class="form__select-dropdown-content">
-                                    <a class="form__select-link" href="#">Item</a>
-                                    <a class="form__select-link" href="#">Item</a>
-                                    <a class="form__select-link" href="#">Item</a>
-                                    <a class="form__select-link" href="#">Item</a>
+                                <div class="t-dropdown-block">
+                                    <div class="t-dropdown-select">
+                                        <input type="text" class="t-dropdown-input" placeholder="Dropdown" disabled />
+                                        <span class="t-select-btn">
+                                        </span>
+                                    </div>
+                                    <ul class="t-dropdown-list">
+                                        <li class="t-dropdown-item">Item</li>
+                                        <li class="t-dropdown-item">Item</li>
+                                        <li class="t-dropdown-item">Item</li>
+                                        <li class="t-dropdown-item">Item</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -108,26 +120,36 @@
                         <div class="form__field">
                             <p class="form__label">Label</p>
                             <div class="form__select">
-                                <button id="dropbtn3" onclick="dropDown3()"
-                                    class="form__select-dropbtn">Dropdown</button>
-                                <div id="myDropdown3" class="form__select-dropdown-content">
-                                    <a class="form__select-link" href="#">Item</a>
-                                    <a class="form__select-link" href="#">Item</a>
-                                    <a class="form__select-link" href="#">Item</a>
-                                    <a class="form__select-link" href="#">Item</a>
+                                <div class="t-dropdown-block">
+                                    <div class="t-dropdown-select">
+                                        <input type="text" class="t-dropdown-input" placeholder="Dropdown" />
+                                        <span class="t-select-btn">
+                                        </span>
+                                    </div>
+                                    <ul class="t-dropdown-list">
+                                        <li class="t-dropdown-item">Item</li>
+                                        <li class="t-dropdown-item">Item</li>
+                                        <li class="t-dropdown-item">Item</li>
+                                        <li class="t-dropdown-item">Item</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                         <div class="form__field">
                             <p class="form__label">Label</p>
                             <div class="form__select">
-                                <button id="dropbtn4" onclick="dropDown4()"
-                                    class="form__select-dropbtn">Dropdown</button>
-                                <div id="myDropdown4" class="form__select-dropdown-content">
-                                    <a class="form__select-link" href="#">Item</a>
-                                    <a class="form__select-link" href="#">Item</a>
-                                    <a class="form__select-link" href="#">Item</a>
-                                    <a class="form__select-link" href="#">Item</a>
+                                <div class="t-dropdown-block">
+                                    <div class="t-dropdown-select">
+                                        <input type="text" class="t-dropdown-input" placeholder="Dropdown" disabled />
+                                        <span class="t-select-btn">
+                                        </span>
+                                    </div>
+                                    <ul class="t-dropdown-list">
+                                        <li class="t-dropdown-item">Item</li>
+                                        <li class="t-dropdown-item">Item</li>
+                                        <li class="t-dropdown-item">Item</li>
+                                        <li class="t-dropdown-item">Item</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -191,15 +213,15 @@
                         <span class="checkboxes__checkmark"></span>
                     </label>
                     <label class="checkboxes__label">Label
-                        <input class="checkboxes__checkbox" type="checkbox">
+                        <input class="checkboxes__checkbox" type="checkbox" disabled>
                         <span class="checkboxes__checkmark"></span>
                     </label>
                     <label class="checkboxes__label">Label
-                        <input class="checkboxes__checkbox" type="checkbox" checked="checked">
+                        <input class="checkboxes__checkbox" type="checkbox" checked="checked" disabled>
                         <span class="checkboxes__checkmark"></span>
                     </label>
                     <label class="checkboxes__label">Label
-                        <input class="checkboxes__checkbox" type="checkbox" checked="checked">
+                        <input class="checkboxes__checkbox" type="checkbox" checked="checked" disabled>
                         <span class="checkboxes__checkmark"></span>
                     </label>
                 </div>
@@ -208,24 +230,23 @@
 
 
                 <div class="radio__buttons">
-
                     <div class="radio__button">
-                        <label class="radio__label" for="radio">
-                            <input class="radio__input" type="radio" name="radio" id="radio" checked>
-                            Label</label>
+
+                        <input class="radio__input" type="radio" name="radio" id="radio" >
+                        <label class="radio__label" for="radio">Label</label>
 
                         <label class="radio__label" for="radio2">
-                            <input class="radio__input" type="radio" name="radio" id="radio2">
+                            <input class="radio__input" type="radio" name="radio2" id="radio2" checked="checked">
                             Label</label>
                     </div>
                     <div class="radio__button">
                         <label class="radio__label" for="radio3">
-                            <input class="radio__input" type="radio" name="radio" id="radio3" checked="checked">
+                            <input class="radio__input" type="radio" name="radio3" id="radio3" disabled >
                             Label</label>
 
 
                         <label class="radio__label" for="radio4">
-                            <input class="radio__input" type="radio" name="radio" id="radio4" checked="checked">
+                            <input class="radio__input" type="radio" name="radio4" id="radio4" checked="checked" disabled>
                             Label</label>
                     </div>
                 </div>
@@ -242,12 +263,12 @@
                     </div>
 
                     <div class="switchers__switcher">
-                        <input class="switcher__input" type="checkbox" id="switch3" />
+                        <input class="switcher__input" type="checkbox" id="switch3" disabled/>
                         <label class="switcher__title" for="switch3"></label>
                     </div>
 
                     <div class="switchers__switcher">
-                        <input class="switcher__input" type="checkbox" id="switch4" checked="checked" />
+                        <input class="switcher__input" type="checkbox" id="switch4" checked="checked" disabled/>
                         <label class="switcher__title" for="switch4"></label>
                     </div>
                 </div>
@@ -257,9 +278,12 @@
                         <span class="slider-container__bar"><span class="slider-container__fill"></span></span>
                         <input id="slider" class="slider-container__input" type="range" min="0" max="100" value="70">
                     </div>
+                    
                     <div class="sliders__slider-container">
-                        <span id="bar2" class="slider-container__bar"><span id="fill2" class="slider-container__fill"></span></span>
-                        <input id="slider2" class="slider-container__input" type="range" min="0" max="100" value="30" disabled>
+                        <span id="bar2" class="slider-container__bar">
+                            <span id="fill2" class="slider-container__fill"></span></span>
+                        <input id="slider2" class="slider-container__input" type="range" min="0" max="100" value="30"
+                            disabled>
                     </div>
                 </div>
 

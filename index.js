@@ -70,84 +70,49 @@ $(document).ready(function () {
 
 
 
-// SELECT
+//04. FORMS - SELECT
+$(document).ready(function(){
 
-function dropDown() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
-
-window.onclick = function (event) {
-    if (!event.target.matches('.form__select-dropbtn')) {
-        var dropdowns = document.getElementsByClassName("form__select-dropdown-content");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-            }
+    //DropDown input - select
+    $('.t-dropdown-input').on('click', function() {
+        $(this).parent().next().slideDown('fast');
+    });
+    
+    $('.t-select-btn').on('click', function() {
+       $('.t-dropdown-list').slideUp('fast');
+    
+        if(!$(this).prev().attr('disabled')){
+        $(this).prev().trigger('click');
         }
-    }
-}
-
-function dropDown2() {
-    document.getElementById("myDropdown2").classList.toggle("show");
-}
-
-window.onclick = function (event) {
-    if (!event.target.matches('dropbtn2')) {
-        var dropdowns = document.getElementById("myDropdown2");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-            }
-        }
-    }
-}
-
-function dropDown3() {
-    document.getElementById("myDropdown3").classList.toggle("show");
-}
-
-window.onclick = function (event) {
-    if (!event.target.matches('dropbtn2')) {
-        var dropdowns = document.getElementById("myDropdown3");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-            }
-        }
-    }
-}
-
-function dropDown4() {
-    document.getElementById("myDropdown4").classList.toggle("show");
-}
-
-window.onclick = function (event) {
-    if (!event.target.matches('dropbtn4')) {
-        var dropdowns = document.getElementById("myDropdown3");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-            }
-        }
-    }
-}
+    });
+    
+    $('.t-dropdown-input').width($('.t-dropdown-select').width() - $('.t-select-btn').width() - 13);
+    
+    $('.t-dropdown-list').width($('.t-dropdown-select').width());
+    
+    $('.t-dropdown-input').val('');
+    
+    $('li.t-dropdown-item').on('click', function() {
+      var text = $(this).html();
+      $(this).parent().prev().find('.t-dropdown-input').val(text);
+      $('.t-dropdown-list').slideUp('fast');
+    });
+    
+    $(document).on('click', function(event) {
+      if ($(event.target).closest(".t-dropdown-input, .t-select-btn").length)
+        return;
+      $('.t-dropdown-list').slideUp('fast');
+      event.stopPropagation();
+    });
+    
+    });
 
 
 
 // RANGE SLIDER
 
-
-
-var $slider = $("#slider");
-var $fill = $(".slider-container__bar .slider-container__fill");
+const $slider = $("#slider");
+const $fill = $(".slider-container__bar .slider-container__fill");
 
 function setBar() {
     $fill.css("width", $slider.val() + "%");
@@ -156,6 +121,11 @@ function setBar() {
 $slider.on("input", setBar);
 
 setBar();
+
+
+
+
+
 
 
 
