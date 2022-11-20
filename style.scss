@@ -1962,6 +1962,7 @@ input::-webkit-inner-spin-button {
 		border-radius: 16px;
 		margin-bottom: 60px;
 		padding: 40px 40px;
+		width: 80%;
 	}
 
 	&__message-title {
@@ -1977,9 +1978,8 @@ input::-webkit-inner-spin-button {
 		font-weight: 400;
 		font-size: 20px;
 		line-height: 28px;
-	}
-
-	&__message-buttons {
+		width: 720px;
+		margin-bottom: 20px;
 	}
 
 	&__message-button {
@@ -1992,13 +1992,25 @@ input::-webkit-inner-spin-button {
 		border-radius: 6px;
 		padding: 14px 46px;
 		background-color: #ffffff;
+		border: 1px solid;
+		cursor: pointer;
+		&:nth-last-child(2){
+			margin-right: 16px;
+		}
+		&:hover{
+			background-color:#0880AE;
+			color: #ffffff;
+			border: 1px solid #7C9CBF;
+			transition: ease-in-out 0.3s;
+		}
+		}
 	}
-}
+
 .callout__message:nth-of-type(3),
 .callout__message:nth-of-type(4) {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	padding: 16px 20px;
 }
 
 // 16. CHARTS
