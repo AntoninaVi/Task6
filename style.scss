@@ -1514,6 +1514,14 @@ input::-webkit-inner-spin-button {
 			margin-right: 0;
 		}
 	}
+	&__group-content{
+		display: flex;
+		margin-bottom: 20px;
+		align-items: center;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
 
 	&__paragraph {
 		font-weight: 400;
@@ -1522,14 +1530,20 @@ input::-webkit-inner-spin-button {
 		color: #756f86;
 	}
 }
+.misc__group-span{
+	margin-right: 10px;
+	&:nth-last-child(1){
+		margin-left: 10px;
+		margin-right: 0;
+	}
+}
+// STARS RATING
 #console{
 	position: relative;
-    left: 96%;
-    bottom: 21%;
+    left: 7.6em;
+    bottom: 1.4em;
 }
-.jrating .jrating-selected {
-    background-image: url(data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='yellow'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E);
-}
+
 // TYPES SCALE
 .types {
 	&__title {

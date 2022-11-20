@@ -1729,6 +1729,18 @@ input::-webkit-inner-spin-button {
 .misc__group:last-child {
   margin-right: 0;
 }
+.misc__group-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.misc__group-content:last-child {
+  margin-bottom: 0;
+}
 .misc__paragraph {
   font-weight: 400;
   font-size: 16px;
@@ -1736,14 +1748,18 @@ input::-webkit-inner-spin-button {
   color: #756f86;
 }
 
-#console {
-  position: relative;
-  left: 96%;
-  bottom: 21%;
+.misc__group-span {
+  margin-right: 10px;
+}
+.misc__group-span:nth-last-child(1) {
+  margin-left: 10px;
+  margin-right: 0;
 }
 
-.jrating .jrating-selected {
-  background-image: url(star.png);
+#console {
+  position: relative;
+  left: 7.6em;
+  bottom: 1.4em;
 }
 
 .types__title {
