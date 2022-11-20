@@ -95,8 +95,6 @@ body {
 		@include name;
 	}
 
-	&__font {
-	}
 
 	&__style {
 		font-weight: 400;
@@ -109,8 +107,6 @@ body {
 		}
 	}
 
-	&__links {
-	}
 
 	&__link-title {
 		font-style: normal;
@@ -1553,8 +1549,7 @@ input::-webkit-inner-spin-button {
 		@include span;
 	}
 
-	&__content {
-	}
+
 
 	&__group {
 		text-align: start;
@@ -2130,9 +2125,9 @@ input::-webkit-inner-spin-button {
 		background-color: #0880ae;
 	}
 }
-.cards__card-2 .cards__card-label{
+// .cards__card-2 .cards__card-label{
 
-}
+// }
 
 .bi-three-dots {
 	rotate: 90deg;
