@@ -7,15 +7,18 @@
   <title>Task 6</title>
   <link rel="stylesheet" href="/style.css">
 
-  <link rel="stylesheet" type="text/css" href="//www.shieldui.com/shared/components/latest/chart/css/shield-chart.min.css" />
+  <link rel="stylesheet" type="text/css"
+    href="//www.shieldui.com/shared/components/latest/chart/css/shield-chart.min.css" />
 
 
-  
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
   <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-base.min.js" type="text/javascript"></script>
-    <script type="text/javascript" src="//www.shieldui.com/shared/components/latest/chart/js/jquery-1.9.1.min.js"></script>
-  <script type="text/javascript" src="//www.shieldui.com/shared/components/latest/chart/js/shield-chart.all.min.js"></script>
+  <script type="text/javascript"
+    src="//www.shieldui.com/shared/components/latest/chart/js/jquery-1.9.1.min.js"></script>
+  <script type="text/javascript"
+    src="//www.shieldui.com/shared/components/latest/chart/js/shield-chart.all.min.js"></script>
 
 </head>
 
@@ -25,7 +28,7 @@
       <section class="charts">
         <div id="charts__container-column"></div>
 
-      
+
 
         <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
 
@@ -149,7 +152,6 @@
           </article>
           <article class="cards__card-2">
             <div class="cards__card-menu">
-
               <div class="dots__menu" style="float:right;">
                 <button class="dots__button">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -165,7 +167,6 @@
                 </div>
               </div>
             </div>
-
             <p class="cards__card-label">Label</p>
             <h6 class="cards__card-title">Card Title</h6>
             <p class="cards__card-paragraph">Supporting description for the card goes here.</p>
@@ -216,7 +217,7 @@
             <span class="forms__checkmark"></span>
             By signing up, I agree to the terms.
           </label>
-          
+
           <input class="forms__form-btn" type="submit" value="Sign Up">
         </form>
         <form class="forms__form">
@@ -445,42 +446,42 @@
       }
     }
 
-    $(function() {
-  $("#chart").shieldChart({  
-primaryHeader: {
-    text: 'Shield UI Bar Spline Example',
-    align: 'center'
-},
+    $(function () {
+      $("#chart").shieldChart({
+        primaryHeader: {
+          text: 'Shield UI Bar Spline Example',
+          align: 'center'
+        },
 
-seriesSettings: {
-spline: {
-addToLegend: true,
-                      dataPointText: {
-enabled: true
-}
-}
-},
-chartLegend: {
-align: "center",
-verticalAlign: "bottom",
-borderRadius: 2,
-borderWidth: 2
-                },
-dataSeries: [
-  {
-seriesType: 'spline',
-collectionAlias: 'Series A',
-data: [11,26,27,44,15,22]
-  }, 
-  {
-seriesType: 'spline',
-collectionAlias: 'Series B',
-data: [22,11,22,31,32,22]
-  }
-]
-  });
-  
-  });
+        seriesSettings: {
+          spline: {
+            addToLegend: true,
+            dataPointText: {
+              enabled: true
+            }
+          }
+        },
+        chartLegend: {
+          align: "center",
+          verticalAlign: "bottom",
+          borderRadius: 2,
+          borderWidth: 2
+        },
+        dataSeries: [
+          {
+            seriesType: 'spline',
+            collectionAlias: 'Series A',
+            data: [11, 26, 27, 44, 15, 22]
+          },
+          {
+            seriesType: 'spline',
+            collectionAlias: 'Series B',
+            data: [22, 11, 22, 31, 32, 22]
+          }
+        ]
+      });
+
+    });
 
     // CARDS
 

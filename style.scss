@@ -1916,7 +1916,7 @@ input::-webkit-inner-spin-button {
 	&__modal-buttons {
 		display: flex;
 		justify-content: right;
-		&:nth-last-child(1) .modals__modal-button:nth-last-child(2){
+		&:nth-last-child(1) .modals__modal-button:nth-last-child(2) {
 			margin-right: 20px;
 		}
 	}
@@ -1934,10 +1934,10 @@ input::-webkit-inner-spin-button {
 		padding: 14px 46px;
 		border: none;
 		border: 1px solid;
-		&:hover{
+		&:hover {
 			background-color: #ffffff;
-			color: #7C9CBF;
-			border: 1px solid #7C9CBF;
+			color: #7c9cbf;
+			border: 1px solid #7c9cbf;
 		}
 	}
 
@@ -1994,17 +1994,17 @@ input::-webkit-inner-spin-button {
 		background-color: #ffffff;
 		border: 1px solid;
 		cursor: pointer;
-		&:nth-last-child(2){
+		&:nth-last-child(2) {
 			margin-right: 16px;
 		}
-		&:hover{
-			background-color:#0880AE;
+		&:hover {
+			background-color: #0880ae;
 			color: #ffffff;
-			border: 1px solid #7C9CBF;
+			border: 1px solid #7c9cbf;
 			transition: ease-in-out 0.3s;
 		}
-		}
 	}
+}
 
 .callout__message:nth-of-type(3),
 .callout__message:nth-of-type(4) {
@@ -2100,16 +2100,12 @@ input::-webkit-inner-spin-button {
 		padding: 14px 46px;
 	}
 
-	&__card-menu {
-	}
-
 	&__card-label {
 		font-style: normal;
 		font-weight: 500;
 		font-size: 14px;
 		line-height: 22px;
 		color: #ffffff;
-
 		opacity: 0.72;
 	}
 }
@@ -2121,6 +2117,21 @@ input::-webkit-inner-spin-button {
 	box-shadow: 0px 12px 24px rgba(44, 39, 56, 0.02), 0px 24px 48px rgba(44, 39, 56, 0.04);
 	border-radius: 20px;
 	color: #ffffff;
+	&:nth-last-child(1) {
+		background-color: #ff7171;
+	}
+	&:nth-last-child(2) {
+		background: #14a38b;
+	}
+	&:nth-last-child(3) {
+		background-color: #f2ac57;
+	}
+	&:nth-last-child(4) {
+		background-color: #0880ae;
+	}
+}
+.cards__card-2 .cards__card-label{
+
 }
 
 .bi-three-dots {

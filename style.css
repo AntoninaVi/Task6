@@ -2243,8 +2243,8 @@ input::-webkit-inner-spin-button {
 }
 .modals__modal-button:hover {
   background-color: #ffffff;
-  color: #7C9CBF;
-  border: 1px solid #7C9CBF;
+  color: #7c9cbf;
+  border: 1px solid #7c9cbf;
 }
 .modals__modal-close {
   display: -webkit-box;
@@ -2318,9 +2318,9 @@ input::-webkit-inner-spin-button {
   margin-right: 16px;
 }
 .callout__message-button:hover {
-  background-color: #0880AE;
+  background-color: #0880ae;
   color: #ffffff;
-  border: 1px solid #7C9CBF;
+  border: 1px solid #7c9cbf;
   -webkit-transition: ease-in-out 0.3s;
   transition: ease-in-out 0.3s;
 }
@@ -2456,6 +2456,18 @@ input::-webkit-inner-spin-button {
           box-shadow: 0px 12px 24px rgba(44, 39, 56, 0.02), 0px 24px 48px rgba(44, 39, 56, 0.04);
   border-radius: 20px;
   color: #ffffff;
+}
+.cards__card-2:nth-last-child(1) {
+  background-color: #ff7171;
+}
+.cards__card-2:nth-last-child(2) {
+  background: #14a38b;
+}
+.cards__card-2:nth-last-child(3) {
+  background-color: #f2ac57;
+}
+.cards__card-2:nth-last-child(4) {
+  background-color: #0880ae;
 }
 
 .bi-three-dots {
