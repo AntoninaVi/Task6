@@ -68,8 +68,6 @@ $(document).ready(function () {
 
 
 
-
-
 //04. FORMS - SELECT
 $(document).ready(function () {
 
@@ -123,12 +121,7 @@ $slider.on("input", setBar);
 setBar();
 
 
-
-
-
-
-
-
+// STAR RATING
 
 document.querySelector('jsuites-rating').addEventListener('onchange', function (e) {
     document.getElementById('console').innerHTML = + this.value;
@@ -144,6 +137,14 @@ function myFunction() {
     }
 }
 
+function myFunction2() {
+    var x = document.getElementById("myLinks2");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
 //   CHARTS
 
 

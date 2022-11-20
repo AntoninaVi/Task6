@@ -673,7 +673,8 @@ input::-webkit-inner-spin-button {
 	outline-offset: max(2px);
 	background-color: #0880ae;
 	border: 4px solid #ffffff;
-}.radio__input:checked {
+}
+.radio__input:checked {
 	outline: 2px solid #0880ae;
 	outline-offset: max(2px);
 	background-color: #0880ae;
@@ -692,7 +693,6 @@ input::-webkit-inner-spin-button {
 		height: 0;
 		width: 0;
 		visibility: hidden;
-	
 
 		&:checked + .switcher__title {
 			background: #0880ae;
@@ -703,7 +703,6 @@ input::-webkit-inner-spin-button {
 			left: calc(100% - 4px);
 			transform: translateX(-100%);
 			margin-top: -2px;
-			
 		}
 	}
 
@@ -1514,11 +1513,11 @@ input::-webkit-inner-spin-button {
 			margin-right: 0;
 		}
 	}
-	&__group-content{
+	&__group-content {
 		display: flex;
 		margin-bottom: 20px;
 		align-items: center;
-		&:last-child{
+		&:last-child {
 			margin-bottom: 0;
 		}
 	}
@@ -1530,18 +1529,18 @@ input::-webkit-inner-spin-button {
 		color: #756f86;
 	}
 }
-.misc__group-span{
+.misc__group-span {
 	margin-right: 10px;
-	&:nth-last-child(1){
+	&:nth-last-child(1) {
 		margin-left: 10px;
 		margin-right: 0;
 	}
 }
 // STARS RATING
-#console{
+#console {
 	position: relative;
-    left: 7.6em;
-    bottom: 1.4em;
+	left: 7.6em;
+	bottom: 1.4em;
 }
 
 // TYPES SCALE
@@ -1636,6 +1635,7 @@ input::-webkit-inner-spin-button {
 }
 // 12. HEADERS
 .headers {
+	margin-bottom: 80px;
 	&__title {
 		@include title;
 	}
@@ -1644,18 +1644,13 @@ input::-webkit-inner-spin-button {
 		@include span;
 	}
 
-	&__content {
-	}
-
 	&__nav {
 		display: flex;
-		justify-content: space-between;
-		align-items: center;
+	align-items: center;
+	justify-content: space-between;
 		padding: 13px 16px;
 		background-color: #ffffff;
-		&:first-of-type {
-			margin-bottom: 40px;
-		}
+		border-radius: 8px;
 	}
 
 	&__logo {
@@ -1679,8 +1674,6 @@ input::-webkit-inner-spin-button {
 		}
 	}
 
-	&__nav-buttons {
-	}
 	&__nav-button {
 		font-weight: 500;
 		font-size: 14px;
@@ -1702,50 +1695,55 @@ input::-webkit-inner-spin-button {
 			box-shadow: 0px 1px 2px rgba(44, 39, 56, 0.08), 0px 2px 4px rgba(44, 39, 56, 0.08);
 		}
 	}
-	&__nav-dropdown:first-of-type {
-		width: 50%;
-	}
-	&__nav-dropdown:last-of-type {
-		width: 30%;
-	}
+	
 	&__nav-dropdown {
+		display: flex;
+		margin-top: 40px;
+		
 	}
 }
 
+.headers__nav-dropdown .headers__nav{
+
+	&:nth-last-child(1){
+		width: 35%;
+	}
+	&:nth-last-child(2){
+		width: 60%;
+		margin-right: 72px;
+	}
+}
+
+// BURGER MENU
 .topnav {
 	overflow: hidden;
-	background-color: #333;
-	position: relative;
+	position: static;
 }
 
 .topnav #myLinks {
 	display: none;
 }
 
-.topnav a {
-	color: white;
-	padding: 14px 16px;
+.headers__nav-item{
+	float: left;
+	color: #2c2738;
 	text-decoration: none;
-	font-size: 17px;
-	display: block;
+	font-size: 20px;
+	margin-right: 3.5em;
+	margin-bottom: -23px;
 }
 
 .topnav a.icon {
-	background: black;
-	display: block;
-	position: absolute;
-	right: 0;
-	top: 0;
+	float: right;
+	color: #2C2738;
 }
 
 .topnav a:hover {
-	background-color: #ddd;
-	color: black;
+	color: #14a38b;
 }
 
 .active {
-	background-color: #04aa6d;
-	color: white;
+	color: rgb(163, 22, 22);
 }
 
 // 13. FLAPS
