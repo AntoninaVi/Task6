@@ -1736,6 +1736,16 @@ input::-webkit-inner-spin-button {
   color: #756f86;
 }
 
+#console {
+  position: relative;
+  left: 96%;
+  bottom: 21%;
+}
+
+.jrating .jrating-selected {
+  background-image: url(star.png);
+}
+
 .types__title {
   font-style: normal;
   font-weight: 600;
