@@ -794,7 +794,6 @@ input::-webkit-inner-spin-button {
 	transition: 0.3s ease-in-out;
 }
 
-
 .slider-container__input::-webkit-slider-thumb:hover {
 	box-shadow: 0px 4px 8px rgba(36, 33, 44, 0.2);
 }
@@ -967,17 +966,17 @@ input::-webkit-inner-spin-button {
 }
 
 .buttons-medium {
-	.buttons__group:nth-child(3){
+	.buttons__group:nth-child(3) {
 		margin-bottom: 80px;
 	}
-	
+
 	.buttons__button {
 		padding: 14px 45px;
 	}
 }
 
 .buttons-large {
-	.buttons__group:nth-child(3){
+	.buttons__group:nth-child(3) {
 		margin-bottom: 80px;
 	}
 	.buttons__button {
@@ -2143,17 +2142,6 @@ input::-webkit-inner-spin-button {
 	}
 }
 .chart {
-	&__column {
-	
-	}
-
-	&__line {
-	}
-
-	&__donut {
-		
-	}
-
 	&__content {
 		background: #ffffff;
 		box-shadow: 0px 40px 60px rgba(0, 0, 0, 0.08), 0px 80px 160px rgba(0, 0, 0, 0.04);
@@ -2164,6 +2152,7 @@ input::-webkit-inner-spin-button {
 		font-weight: 700;
 		font-size: 34px;
 		line-height: 44px;
+		margin-bottom: 5px;
 	}
 	&__paragraph {
 		font-style: normal;
@@ -2171,6 +2160,67 @@ input::-webkit-inner-spin-button {
 		font-size: 18px;
 		line-height: 23px;
 		color: #728191;
+		margin-bottom: 34px;
+	}
+
+	&__span {
+		content: "";
+		width: 28px;
+		height: 28px;
+		background: #14a38b;
+		box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 16px 32px rgba(0, 0, 0, 0.16);
+		border-radius: 3px;
+		margin-right: 8px;
+	}
+
+	&__meaning {
+		display: flex;
+		align-items: center;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 18px;
+		color: #7c9cbf;
+	}
+}
+.chart__line {
+	.chart__meanings {
+		display: flex;
+		justify-content: center;
+		margin-top: 24px;
+		border-top: 1px solid #dbe2ea;
+		padding-top: 24px;
+	}
+	.chart__span:nth-child(3) {
+		background: #d6cf6e;
+		margin-left: 24px;
+	}
+}
+.chart__donut {
+	.chart__group {
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+		border-bottom: 1px solid #DBE2EA;
+		margin-bottom: 24px;
+	}
+
+	.chart__meanings {
+		.chart__meaning:nth-child(2) .chart__span {
+			background: #d6cf6e;
+		}
+		.chart__meaning:nth-child(3) .chart__span {
+			background: #0880ae;
+		}
+	}
+	.chart__meaning {
+		margin-bottom: 24px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	.chart__paragraph:last-child{
+		text-align: center;
 	}
 }
 
