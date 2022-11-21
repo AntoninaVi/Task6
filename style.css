@@ -1597,37 +1597,37 @@ input::-webkit-inner-spin-button {
 .popover__group:nth-of-type(2) .popover__content:nth-child(1):before,
 .popover__group:nth-of-type(3) .popover__content:nth-child(1):before,
 .popover__group:nth-of-type(4) .popover__content:nth-child(1):before {
-  border-top: 19px solid #FFFFFF;
+  border-top: 19px solid #ffffff;
 }
 
 .popover__group:nth-of-type(2) .popover__content:nth-child(2):before,
 .popover__group:nth-of-type(3) .popover__content:nth-child(2):before,
 .popover__group:nth-of-type(4) .popover__content:nth-child(2):before {
-  border-top: 19px solid #2C2738;
+  border-top: 19px solid #2c2738;
 }
 
 .popover__group:nth-of-type(2) .popover__content:nth-child(3):before,
 .popover__group:nth-of-type(3) .popover__content:nth-child(3):before,
 .popover__group:nth-of-type(4) .popover__content:nth-child(3):before {
-  border-top: 19px solid #0880AE;
+  border-top: 19px solid #0880ae;
 }
 
 .popover__group:nth-of-type(2) .popover__content:nth-child(4):before,
 .popover__group:nth-of-type(3) .popover__content:nth-child(4):before,
 .popover__group:nth-of-type(4) .popover__content:nth-child(4):before {
-  border-top: 19px solid #F2AC57;
+  border-top: 19px solid #f2ac57;
 }
 
 .popover__group:nth-of-type(2) .popover__content:nth-child(5):before,
 .popover__group:nth-of-type(3) .popover__content:nth-child(5):before,
 .popover__group:nth-of-type(4) .popover__content:nth-child(5):before {
-  border-top: 19px solid #14A38B;
+  border-top: 19px solid #14a38b;
 }
 
 .popover__group:nth-of-type(2) .popover__content:nth-child(6):before,
 .popover__group:nth-of-type(3) .popover__content:nth-child(6):before,
 .popover__group:nth-of-type(4) .popover__content:nth-child(6):before {
-  border-top: 19px solid #FF7171;
+  border-top: 19px solid #ff7171;
 }
 
 .tooltips {
@@ -1750,35 +1750,35 @@ input::-webkit-inner-spin-button {
 .group2 .tooltips__content:nth-child(2):after,
 .group3 .tooltips__content:nth-child(2):after,
 .group4 .tooltips__content:nth-child(2):after {
-  border-color: #2C2738 transparent transparent transparent;
+  border-color: #2c2738 transparent transparent transparent;
 }
 
 .group1 .tooltips__content:nth-child(3):after,
 .group2 .tooltips__content:nth-child(3):after,
 .group3 .tooltips__content:nth-child(3):after,
 .group4 .tooltips__content:nth-child(3):after {
-  border-color: #0880AE transparent transparent transparent;
+  border-color: #0880ae transparent transparent transparent;
 }
 
 .group1 .tooltips__content:nth-child(4):after,
 .group2 .tooltips__content:nth-child(4):after,
 .group3 .tooltips__content:nth-child(4):after,
 .group4 .tooltips__content:nth-child(4):after {
-  border-color: #F2AC57 transparent transparent transparent;
+  border-color: #f2ac57 transparent transparent transparent;
 }
 
 .group1 .tooltips__content:nth-child(5):after,
 .group2 .tooltips__content:nth-child(5):after,
 .group3 .tooltips__content:nth-child(5):after,
 .group4 .tooltips__content:nth-child(5):after {
-  border-color: #14A38B transparent transparent transparent;
+  border-color: #14a38b transparent transparent transparent;
 }
 
 .group1 .tooltips__content:nth-child(6):after,
 .group2 .tooltips__content:nth-child(6):after,
 .group3 .tooltips__content:nth-child(6):after,
 .group4 .tooltips__content:nth-child(6):after {
-  border-color: #FF7171 transparent transparent transparent;
+  border-color: #ff7171 transparent transparent transparent;
 }
 
 .misc {
@@ -2483,6 +2483,26 @@ input::-webkit-inner-spin-button {
   color: #7c9cbf;
 }
 
+.chart__content {
+  background: #ffffff;
+  -webkit-box-shadow: 0px 40px 60px rgba(0, 0, 0, 0.08), 0px 80px 160px rgba(0, 0, 0, 0.04);
+          box-shadow: 0px 40px 60px rgba(0, 0, 0, 0.08), 0px 80px 160px rgba(0, 0, 0, 0.04);
+  border-radius: 24px;
+  padding: 20px 20px 40px 20px;
+}
+.chart__name {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 44px;
+}
+.chart__paragraph {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #728191;
+}
+
 .cards {
   margin-bottom: 80px;
 }
@@ -2584,6 +2604,7 @@ input::-webkit-inner-spin-button {
   line-height: 22px;
   color: #ffffff;
   opacity: 0.72;
+  margin-top: 5em;
 }
 
 .cards__card-2 {
@@ -2679,8 +2700,8 @@ input::-webkit-inner-spin-button {
 .forms__content:nth-last-child(1) {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 60px 1fr;
-  grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 30% 60px 30%;
+  grid-template-columns: 30% 30%;
   gap: 60px;
 }
 .forms__content:nth-last-child(2) {

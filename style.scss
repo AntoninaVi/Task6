@@ -1417,42 +1417,42 @@ input::-webkit-inner-spin-button {
 .popover__group:nth-of-type(3),
 .popover__group:nth-of-type(4) {
 	.popover__content:nth-child(1):before {
-		border-top: 19px solid #FFFFFF;
+		border-top: 19px solid #ffffff;
 	}
 }
 .popover__group:nth-of-type(2),
 .popover__group:nth-of-type(3),
 .popover__group:nth-of-type(4) {
 	.popover__content:nth-child(2):before {
-		border-top: 19px solid #2C2738;
+		border-top: 19px solid #2c2738;
 	}
 }
 .popover__group:nth-of-type(2),
 .popover__group:nth-of-type(3),
 .popover__group:nth-of-type(4) {
 	.popover__content:nth-child(3):before {
-		border-top: 19px solid #0880AE;
+		border-top: 19px solid #0880ae;
 	}
 }
 .popover__group:nth-of-type(2),
 .popover__group:nth-of-type(3),
 .popover__group:nth-of-type(4) {
 	.popover__content:nth-child(4):before {
-		border-top: 19px solid #F2AC57;
+		border-top: 19px solid #f2ac57;
 	}
 }
 .popover__group:nth-of-type(2),
 .popover__group:nth-of-type(3),
 .popover__group:nth-of-type(4) {
 	.popover__content:nth-child(5):before {
-		border-top: 19px solid #14A38B;
+		border-top: 19px solid #14a38b;
 	}
 }
 .popover__group:nth-of-type(2),
 .popover__group:nth-of-type(3),
 .popover__group:nth-of-type(4) {
 	.popover__content:nth-child(6):before {
-		border-top: 19px solid #FF7171;
+		border-top: 19px solid #ff7171;
 	}
 }
 // 09.TOOLTIP
@@ -1553,45 +1553,43 @@ input::-webkit-inner-spin-button {
 .group1,
 .group2,
 .group3,
-.group4{
-	.tooltips__content:nth-child(2):after{
-		border-color:#2C2738 transparent transparent transparent;
+.group4 {
+	.tooltips__content:nth-child(2):after {
+		border-color: #2c2738 transparent transparent transparent;
 	}
 }
 .group1,
 .group2,
 .group3,
-.group4{
-	.tooltips__content:nth-child(3):after{
-		border-color:#0880AE transparent transparent transparent;
+.group4 {
+	.tooltips__content:nth-child(3):after {
+		border-color: #0880ae transparent transparent transparent;
 	}
 }
 .group1,
 .group2,
 .group3,
-.group4{
-	.tooltips__content:nth-child(4):after{
-		border-color:#F2AC57 transparent transparent transparent;
+.group4 {
+	.tooltips__content:nth-child(4):after {
+		border-color: #f2ac57 transparent transparent transparent;
 	}
 }
 .group1,
 .group2,
 .group3,
-.group4{
-	.tooltips__content:nth-child(5):after{
-		border-color:#14A38B transparent transparent transparent;
+.group4 {
+	.tooltips__content:nth-child(5):after {
+		border-color: #14a38b transparent transparent transparent;
 	}
 }
 .group1,
 .group2,
 .group3,
-.group4{
-	.tooltips__content:nth-child(6):after{
-		border-color:#FF7171 transparent transparent transparent;
+.group4 {
+	.tooltips__content:nth-child(6):after {
+		border-color: #ff7171 transparent transparent transparent;
 	}
 }
-
-
 
 // 10. MISC
 .misc {
@@ -2130,7 +2128,6 @@ input::-webkit-inner-spin-button {
 	gap: 60px;
 	align-self: start;
 	justify-content: left;
-	
 
 	&__title {
 		@include title;
@@ -2139,7 +2136,6 @@ input::-webkit-inner-spin-button {
 	&__span {
 		@include span;
 	}
-
 }
 .chart {
 	&__column {
@@ -2147,14 +2143,29 @@ input::-webkit-inner-spin-button {
 	}
 
 	&__line {
-		
 	}
 
 	&__donut {
-		
+	}
+	&__content {
+		background: #ffffff;
+		box-shadow: 0px 40px 60px rgba(0, 0, 0, 0.08), 0px 80px 160px rgba(0, 0, 0, 0.04);
+		border-radius: 24px;
+		padding: 20px 20px 40px 20px;
+	}
+	&__name {
+		font-weight: 700;
+		font-size: 34px;
+		line-height: 44px;
+	}
+	&__paragraph {
+		font-style: normal;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 23px;
+		color: #728191;
 	}
 }
-
 
 // 17. CARDS
 .cards {
@@ -2183,7 +2194,6 @@ input::-webkit-inner-spin-button {
 		box-shadow: 0px 12px 24px rgba(44, 39, 56, 0.02), 0px 24px 48px rgba(44, 39, 56, 0.04);
 		border-radius: 24px;
 		max-width: 300px;
-		
 
 		&:nth-last-child(2) {
 			background-image: url(img/cards-bg-1.png);
@@ -2232,7 +2242,6 @@ input::-webkit-inner-spin-button {
 		border-radius: 6px;
 		padding: 14px 46px;
 		cursor: pointer;
-		
 	}
 
 	&__card-label {
@@ -2242,6 +2251,7 @@ input::-webkit-inner-spin-button {
 		line-height: 22px;
 		color: #ffffff;
 		opacity: 0.72;
+		margin-top: 5em;
 	}
 }
 
@@ -2266,9 +2276,6 @@ input::-webkit-inner-spin-button {
 		background-color: #0880ae;
 	}
 }
-// .cards__card-2 .cards__card-label{
-
-// }
 
 .bi-three-dots {
 	rotate: 90deg;
@@ -2324,7 +2331,7 @@ input::-webkit-inner-spin-button {
 	&__content {
 		&:nth-last-child(1) {
 			display: grid;
-			grid-template-columns: 1fr 1fr;
+			grid-template-columns: 30% 30%;
 			gap: 60px;
 		}
 		&:nth-last-child(2) {
