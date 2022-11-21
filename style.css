@@ -30,6 +30,34 @@ body {
   margin-right: auto;
 }
 
+.menu__pages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 500px;
+  border: 2px dotted rgb(156, 177, 247);
+  padding: 10px 10px;
+  margin-bottom: 20px;
+}
+.menu__pages-paragraph {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 44px;
+}
+.menu__pages-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #728191;
+}
+
 .typeface {
   margin-bottom: 80px;
 }
@@ -2556,7 +2584,7 @@ input::-webkit-inner-spin-button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: 1px solid #DBE2EA;
+  border-bottom: 1px solid #dbe2ea;
   margin-bottom: 24px;
 }
 .chart__donut .chart__meanings .chart__meaning:nth-child(2) .chart__span {
