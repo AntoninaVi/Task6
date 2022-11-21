@@ -128,7 +128,7 @@ document.querySelector('jsuites-rating').addEventListener('onchange', function (
     document.getElementById('console').innerHTML = + this.value;
 });
 
-// BURGER MENU
+// BURGER MENU page 4
 function myFunction() {
     var x = document.getElementById("myLinks");
     if (x.style.display === "block") {
