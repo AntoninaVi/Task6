@@ -110,19 +110,20 @@ $(document).ready(function () {
 // RANGE SLIDER
 
 const $slider = $("#slider");
-const $fill = $(".slider-container__bar .slider-container__fill");
+const $fill = $("#bar #fill");
 
 function setBar() {
     $fill.css("width", $slider.val() + "%");
 }
-
 $slider.on("input", setBar);
 
 setBar();
 
+let inputSlider2 = document.querySelector("#slider2");
+inputSlider2.disabled = true
+
 
 // STAR RATING
-
 document.querySelector('jsuites-rating').addEventListener('onchange', function (e) {
     document.getElementById('console').innerHTML = + this.value;
 });
@@ -145,6 +146,4 @@ function myFunction2() {
         x.style.display = "block";
     }
 }
-//   CHARTS
-
 

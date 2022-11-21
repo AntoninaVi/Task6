@@ -1098,14 +1098,14 @@ input::-webkit-inner-spin-button {
   margin-right: 0;
 }
 
-.buttons-medium {
+.buttons-medium .buttons__group:nth-child(3) {
   margin-bottom: 80px;
 }
 .buttons-medium .buttons__button {
   padding: 14px 45px;
 }
 
-.buttons-large {
+.buttons-large .buttons__group:nth-child(3) {
   margin-bottom: 80px;
 }
 .buttons-large .buttons__button {
