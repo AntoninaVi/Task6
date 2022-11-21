@@ -2114,10 +2114,6 @@ input::-webkit-inner-spin-button {
 
 // 16. CHARTS
 
-#charts__container-column {
-	height: 600px;
-	width: 560px;
-}
 #myChartDonut {
 	height: 600px;
 	width: 600px;
@@ -2126,6 +2122,37 @@ input::-webkit-inner-spin-button {
 	max-width: 650px;
 	margin: 35px auto;
 }
+.charts {
+	// margin-bottom: 80px;
+	// display: grid;
+	grid-template-columns: 600px 600px;
+	grid-template-rows: 1fr;
+	gap: 60px;
+	
+
+	&__title {
+		@include title;
+	}
+
+	&__span {
+		@include span;
+	}
+
+}
+.chart {
+	&__column {
+		width: 30%;
+	}
+
+	&__line {
+		width: 30%;
+	}
+
+	&__donut {
+		width: 30%;
+	}
+}
+
 
 // 17. CARDS
 .cards {

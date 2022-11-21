@@ -2425,11 +2425,6 @@ input::-webkit-inner-spin-button {
   padding: 16px 20px;
 }
 
-#charts__container-column {
-  height: 600px;
-  width: 560px;
-}
-
 #myChartDonut {
   height: 600px;
   width: 600px;
@@ -2438,6 +2433,57 @@ input::-webkit-inner-spin-button {
 #chart {
   max-width: 650px;
   margin: 35px auto;
+}
+
+.charts {
+  -ms-grid-columns: 600px 60px 600px;
+  grid-template-columns: 600px 600px;
+  -ms-grid-rows: 1fr;
+  grid-template-rows: 1fr;
+  gap: 60px;
+}
+
+.charts > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.charts > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+.charts__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 36px;
+  margin-bottom: 81px;
+}
+.charts__title:after {
+  content: "";
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #dbe2ea;
+  margin-top: 20px;
+}
+.charts__span {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 36px;
+  color: #7c9cbf;
+}
+
+.chart__column {
+  width: 30%;
+}
+.chart__line {
+  width: 30%;
+}
+.chart__donut {
+  width: 30%;
 }
 
 .cards {
