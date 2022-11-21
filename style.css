@@ -1415,8 +1415,26 @@ input::-webkit-inner-spin-button {
   color: #ffffff;
   opacity: 0.86;
 }
-.chat__message:nth-of-type(4):before {
-  border-top: 19px solid #ff5689;
+
+.chat__group:nth-of-type(1) .chat__message:nth-child(4):before,
+.chat__group:nth-of-type(2) .chat__message:nth-child(4):before,
+.chat__group:nth-of-type(3) .chat__message:nth-child(4):before,
+.chat__group:nth-of-type(4) .chat__message:nth-child(4):before {
+  border-top-color: #df3468;
+}
+
+.chat__group:nth-of-type(1) .chat__message:nth-child(2):before,
+.chat__group:nth-of-type(2) .chat__message:nth-child(2):before,
+.chat__group:nth-of-type(3) .chat__message:nth-child(2):before,
+.chat__group:nth-of-type(4) .chat__message:nth-child(2):before {
+  border-top-color: #585364;
+}
+
+.chat__group:nth-of-type(1) .chat__message:nth-child(3):before,
+.chat__group:nth-of-type(2) .chat__message:nth-child(3):before,
+.chat__group:nth-of-type(3) .chat__message:nth-child(3):before,
+.chat__group:nth-of-type(4) .chat__message:nth-child(3):before {
+  border-top-color: #4874e9;
 }
 
 .popover {
@@ -1576,6 +1594,42 @@ input::-webkit-inner-spin-button {
   rotate: -40deg;
 }
 
+.popover__group:nth-of-type(2) .popover__content:nth-child(1):before,
+.popover__group:nth-of-type(3) .popover__content:nth-child(1):before,
+.popover__group:nth-of-type(4) .popover__content:nth-child(1):before {
+  border-top: 19px solid #FFFFFF;
+}
+
+.popover__group:nth-of-type(2) .popover__content:nth-child(2):before,
+.popover__group:nth-of-type(3) .popover__content:nth-child(2):before,
+.popover__group:nth-of-type(4) .popover__content:nth-child(2):before {
+  border-top: 19px solid #2C2738;
+}
+
+.popover__group:nth-of-type(2) .popover__content:nth-child(3):before,
+.popover__group:nth-of-type(3) .popover__content:nth-child(3):before,
+.popover__group:nth-of-type(4) .popover__content:nth-child(3):before {
+  border-top: 19px solid #0880AE;
+}
+
+.popover__group:nth-of-type(2) .popover__content:nth-child(4):before,
+.popover__group:nth-of-type(3) .popover__content:nth-child(4):before,
+.popover__group:nth-of-type(4) .popover__content:nth-child(4):before {
+  border-top: 19px solid #F2AC57;
+}
+
+.popover__group:nth-of-type(2) .popover__content:nth-child(5):before,
+.popover__group:nth-of-type(3) .popover__content:nth-child(5):before,
+.popover__group:nth-of-type(4) .popover__content:nth-child(5):before {
+  border-top: 19px solid #14A38B;
+}
+
+.popover__group:nth-of-type(2) .popover__content:nth-child(6):before,
+.popover__group:nth-of-type(3) .popover__content:nth-child(6):before,
+.popover__group:nth-of-type(4) .popover__content:nth-child(6):before {
+  border-top: 19px solid #FF7171;
+}
+
 .tooltips {
   margin-bottom: 80px;
 }
@@ -1690,6 +1744,41 @@ input::-webkit-inner-spin-button {
   border-style: solid;
   border-color: rgb(255, 255, 255) transparent transparent transparent;
   rotate: 90deg;
+}
+
+.group1 .tooltips__content:nth-child(2):after,
+.group2 .tooltips__content:nth-child(2):after,
+.group3 .tooltips__content:nth-child(2):after,
+.group4 .tooltips__content:nth-child(2):after {
+  border-color: #2C2738 transparent transparent transparent;
+}
+
+.group1 .tooltips__content:nth-child(3):after,
+.group2 .tooltips__content:nth-child(3):after,
+.group3 .tooltips__content:nth-child(3):after,
+.group4 .tooltips__content:nth-child(3):after {
+  border-color: #0880AE transparent transparent transparent;
+}
+
+.group1 .tooltips__content:nth-child(4):after,
+.group2 .tooltips__content:nth-child(4):after,
+.group3 .tooltips__content:nth-child(4):after,
+.group4 .tooltips__content:nth-child(4):after {
+  border-color: #F2AC57 transparent transparent transparent;
+}
+
+.group1 .tooltips__content:nth-child(5):after,
+.group2 .tooltips__content:nth-child(5):after,
+.group3 .tooltips__content:nth-child(5):after,
+.group4 .tooltips__content:nth-child(5):after {
+  border-color: #14A38B transparent transparent transparent;
+}
+
+.group1 .tooltips__content:nth-child(6):after,
+.group2 .tooltips__content:nth-child(6):after,
+.group3 .tooltips__content:nth-child(6):after,
+.group4 .tooltips__content:nth-child(6):after {
+  border-color: #FF7171 transparent transparent transparent;
 }
 
 .misc {
@@ -2344,6 +2433,11 @@ input::-webkit-inner-spin-button {
 #myChartDonut {
   height: 600px;
   width: 600px;
+}
+
+#chart {
+  max-width: 650px;
+  margin: 35px auto;
 }
 
 .cards {

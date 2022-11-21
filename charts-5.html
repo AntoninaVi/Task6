@@ -7,18 +7,15 @@
   <title>Task 6</title>
   <link rel="stylesheet" href="/style.css">
 
-  <link rel="stylesheet" type="text/css"
-    href="//www.shieldui.com/shared/components/latest/chart/css/shield-chart.min.css" />
 
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
   <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-base.min.js" type="text/javascript"></script>
-  <script type="text/javascript"
-    src="//www.shieldui.com/shared/components/latest/chart/js/jquery-1.9.1.min.js"></script>
-  <script type="text/javascript"
-    src="//www.shieldui.com/shared/components/latest/chart/js/shield-chart.all.min.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 
 </head>
 
@@ -26,14 +23,17 @@
   <div class="wrapper">
     <div class="container">
       <section class="charts">
-        <div id="charts__container-column"></div>
+
+        <div id="chart"></div> 
 
 
 
         <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
 
-        <div id="chart"></div>
+        <!-- column -->
+      
       </section>
+      
 
 
       <section class="cards">
@@ -244,57 +244,59 @@
   <!-- <script src="index.js"></script> -->
   <script>
 
-    // Column
-    anychart.onDocumentReady(function () {
 
-      // data
-      var data = anychart.data.set([
-        ["John", 10000, 12000, "#ccc", "#FF9900", "diamond"],
-        ["Jake", 12000, 15000, "#ccc", "#FF9900", "backwarddiagonal"],
-        ["Peter", 18000, 16000, "#ccc", "#FF9900", "diamond"],
-        ["James", 11000, 13000, "#ccc", "#FF9900", "diamond"],
-        ["Mary", 9000, 19000, "#ccc", "#FF9900", "diamond"]
-      ]);
+      
+var options = {
+          series: [{
+          name: 'Pageviews',
+          data: [35, 41, 36, 26, 45, 48, 52]
+        }, {
+          name: 'Conversions',
+          data: [76, 85, 101, 98, 87, 105, 91]
+        }],
+          chart: {
+          type: 'bar',
+          height: 350
+        },
+        plotOptions: {
+          bar: {
+            horizontal: false,
+            columnWidth: '70%',
+            endingShape: 'rounded'
+          },
+        },
+        dataLabels: {
+          enabled: false
+        },
+        stroke: {
+          show: true,
+          width: 2,
+          colors: ['transparent']
+        },
+        xaxis: {
+          categories: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Unit'],
+        },
+        xaxis: {
+          title: {
+            text: '443K Pageviews'
+          }
+        },
+        fill: {
+          opacity: 1
+        },
+        // tooltip: {
+        //   x: {
+        //     formatter: function (val) {
+        //       return "$ " + val + " thousands"
+        //     }
+        //   }
+        // }
+        };
 
-      // map data for the each series
-      var Sales2003 = data.mapAs({ x: 0, value: 1, hoverFill: 3, selectFill: 4 });
-      var Sales2004 = data.mapAs({ x: 0, value: 2, hoverFill: 3, selectHatchFill: 5 });
-
-      // chart type
-      var chart = anychart.column();
-
-      // set data
-      var series_1 = chart.column(Sales2003);
-      series_1.name("Conversions");
-      series_1.xPointPosition(0.5);
-
-      var series_2 = chart.column(Sales2004);
-      series_2.name("Pageviews");
-
-      series_1.fill("#E0F08F");
-      series_2.fill("#29ADC2");
-      series_1.stroke("none");
-      series_2.stroke("none");
-
-      // chart title
-      chart.title("443K Pageviews");
-
-      // chart.xAxis().title("Retail Channel");
-      // chart.yAxis().title("Sales");
-
-      // enable legend
-      chart.legend(true);
-
-      // switching the select mode to multi
-      var interactivity = chart.interactivity();
-      interactivity.selectionMode("multi-select");
-
-      // draw
-      chart.container("charts__container-column");
-      chart.draw();
-    });
-
-
+        var chart = new ApexCharts(document.querySelector("#chart"), options);
+        chart.render();
+      
+ 
 
     // Donut
     var xValues = ["Web", "Mobile", "Social"];
@@ -432,7 +434,7 @@
       document.getElementById("myDotDropdown").classList.toggle("show");
     }
 
-    // Close the dropdown if the user clicks outside of it
+    // Close  dropdown
     window.onclick = function (event) {
       if (!event.target.matches('.dotbtn')) {
         var dropdowns = document.getElementsByClassName(".dotdropdown-content");
@@ -446,44 +448,61 @@
       }
     }
 
-    $(function () {
-      $("#chart").shieldChart({
-        primaryHeader: {
-          text: 'Shield UI Bar Spline Example',
-          align: 'center'
-        },
+  
 
-        seriesSettings: {
-          spline: {
-            addToLegend: true,
-            dataPointText: {
-              enabled: true
-            }
-          }
+    // column chart
+
+      
+    var options = {
+          series: [{
+          name: 'Pageviews',
+          data: [35, 41, 36, 26, 45, 48, 52]
+        }, {
+          name: 'Conversions',
+          data: [76, 85, 101, 98, 87, 105, 91]
+        }],
+          chart: {
+          type: 'bar',
+          height: 350
         },
-        chartLegend: {
-          align: "center",
-          verticalAlign: "bottom",
-          borderRadius: 2,
-          borderWidth: 2
-        },
-        dataSeries: [
-          {
-            seriesType: 'spline',
-            collectionAlias: 'Series A',
-            data: [11, 26, 27, 44, 15, 22]
+        plotOptions: {
+          bar: {
+            horizontal: false,
+            columnWidth: '70%',
+            endingShape: 'rounded'
           },
-          {
-            seriesType: 'spline',
-            collectionAlias: 'Series B',
-            data: [22, 11, 22, 31, 32, 22]
+        },
+        dataLabels: {
+          enabled: false
+        },
+        stroke: {
+          show: true,
+          width: 2,
+          colors: ['transparent']
+        },
+        xaxis: {
+          categories: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Unit'],
+        },
+        xaxis: {
+          title: {
+            text: '443K Pageviews'
           }
-        ]
-      });
+        },
+        fill: {
+          opacity: 1
+        },
+        // tooltip: {
+        //   x: {
+        //     formatter: function (val) {
+        //       return "$ " + val + " thousands"
+        //     }
+        //   }
+        // }
+        };
 
-    });
-
-    // CARDS
+        var chart = new ApexCharts(document.querySelector("#chart"), options);
+        chart.render();
+      
 
 
   </script>

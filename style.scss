@@ -95,7 +95,6 @@ body {
 		@include name;
 	}
 
-
 	&__style {
 		font-weight: 400;
 		font-size: 20px;
@@ -106,7 +105,6 @@ body {
 			font-weight: 600;
 		}
 	}
-
 
 	&__link-title {
 		font-style: normal;
@@ -1244,8 +1242,31 @@ input::-webkit-inner-spin-button {
 	background: #ff5689;
 	color: #ffffff;
 	opacity: 0.86;
-	&:before {
-		border-top: 19px solid #ff5689;
+}
+
+// CHAT MESSAGES TAIL
+.chat__group:nth-of-type(1),
+.chat__group:nth-of-type(2),
+.chat__group:nth-of-type(3),
+.chat__group:nth-of-type(4) {
+	.chat__message:nth-child(4):before {
+		border-top-color: #df3468;
+	}
+}
+.chat__group:nth-of-type(1),
+.chat__group:nth-of-type(2),
+.chat__group:nth-of-type(3),
+.chat__group:nth-of-type(4) {
+	.chat__message:nth-child(2):before {
+		border-top-color: #585364;
+	}
+}
+.chat__group:nth-of-type(1),
+.chat__group:nth-of-type(2),
+.chat__group:nth-of-type(3),
+.chat__group:nth-of-type(4) {
+	.chat__message:nth-child(3):before {
+		border-top-color: #4874e9;
 	}
 }
 
@@ -1391,7 +1412,49 @@ input::-webkit-inner-spin-button {
 	top: 40px;
 	rotate: -40deg;
 }
-
+// POPOVER TAILS
+.popover__group:nth-of-type(2),
+.popover__group:nth-of-type(3),
+.popover__group:nth-of-type(4) {
+	.popover__content:nth-child(1):before {
+		border-top: 19px solid #FFFFFF;
+	}
+}
+.popover__group:nth-of-type(2),
+.popover__group:nth-of-type(3),
+.popover__group:nth-of-type(4) {
+	.popover__content:nth-child(2):before {
+		border-top: 19px solid #2C2738;
+	}
+}
+.popover__group:nth-of-type(2),
+.popover__group:nth-of-type(3),
+.popover__group:nth-of-type(4) {
+	.popover__content:nth-child(3):before {
+		border-top: 19px solid #0880AE;
+	}
+}
+.popover__group:nth-of-type(2),
+.popover__group:nth-of-type(3),
+.popover__group:nth-of-type(4) {
+	.popover__content:nth-child(4):before {
+		border-top: 19px solid #F2AC57;
+	}
+}
+.popover__group:nth-of-type(2),
+.popover__group:nth-of-type(3),
+.popover__group:nth-of-type(4) {
+	.popover__content:nth-child(5):before {
+		border-top: 19px solid #14A38B;
+	}
+}
+.popover__group:nth-of-type(2),
+.popover__group:nth-of-type(3),
+.popover__group:nth-of-type(4) {
+	.popover__content:nth-child(6):before {
+		border-top: 19px solid #FF7171;
+	}
+}
 // 09.TOOLTIP
 .tooltips {
 	margin-bottom: 80px;
@@ -1486,6 +1549,49 @@ input::-webkit-inner-spin-button {
 	border-color: rgb(255, 255, 255) transparent transparent transparent;
 	rotate: 90deg;
 }
+// TOOLTIPS TAILS
+.group1,
+.group2,
+.group3,
+.group4{
+	.tooltips__content:nth-child(2):after{
+		border-color:#2C2738 transparent transparent transparent;
+	}
+}
+.group1,
+.group2,
+.group3,
+.group4{
+	.tooltips__content:nth-child(3):after{
+		border-color:#0880AE transparent transparent transparent;
+	}
+}
+.group1,
+.group2,
+.group3,
+.group4{
+	.tooltips__content:nth-child(4):after{
+		border-color:#F2AC57 transparent transparent transparent;
+	}
+}
+.group1,
+.group2,
+.group3,
+.group4{
+	.tooltips__content:nth-child(5):after{
+		border-color:#14A38B transparent transparent transparent;
+	}
+}
+.group1,
+.group2,
+.group3,
+.group4{
+	.tooltips__content:nth-child(6):after{
+		border-color:#FF7171 transparent transparent transparent;
+	}
+}
+
+
 
 // 10. MISC
 .misc {
@@ -1548,8 +1654,6 @@ input::-webkit-inner-spin-button {
 	&__span {
 		@include span;
 	}
-
-
 
 	&__group {
 		text-align: start;
@@ -2017,6 +2121,10 @@ input::-webkit-inner-spin-button {
 #myChartDonut {
 	height: 600px;
 	width: 600px;
+}
+#chart {
+	max-width: 650px;
+	margin: 35px auto;
 }
 
 // 17. CARDS
