@@ -2436,6 +2436,7 @@ input::-webkit-inner-spin-button {
 }
 
 .charts {
+  margin-bottom: 80px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 600px 60px 600px;
