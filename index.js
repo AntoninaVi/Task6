@@ -9,7 +9,7 @@ $(function () {
         lineWidth: 3,
         trackColor: "#DBE2EA",
         lineCap: "circle",
-        animate: 2000,
+        animate: 15000,
     });
 });
 $(function () {
@@ -20,7 +20,7 @@ $(function () {
         lineWidth: 3,
         trackColor: "#DBE2EA",
         lineCap: "circle",
-        animate: 10000,
+        animate: 12000,
     });
 });
 $(function () {
@@ -31,7 +31,7 @@ $(function () {
         lineWidth: 3,
         trackColor: "#DBE2EA",
         lineCap: "circle",
-        animate: 20000,
+        animate: 17000,
     });
 });
 $(function () {
@@ -42,7 +42,7 @@ $(function () {
         lineWidth: 3,
         trackColor: "#DBE2EA",
         lineCap: "circle",
-        animate: 7000,
+        animate: 15000,
     });
 });
 
