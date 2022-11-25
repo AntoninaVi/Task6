@@ -769,7 +769,7 @@ input::-webkit-inner-spin-button {
 		&::before {
 			content: "";
 			position: absolute;
-			top: 5px;
+			top: 4px;
 			left: 5px;
 			width: 24px;
 			height: 24px;
@@ -788,7 +788,9 @@ input::-webkit-inner-spin-button {
 		}
 	}
 }
-
+.switcher__input[type=checkbox]:checked + .switcher__title:disabled{
+	background-color: #ff3c3c;
+}
 // RANGE SLIDER
 
 .sliders {
