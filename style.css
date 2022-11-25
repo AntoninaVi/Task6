@@ -872,7 +872,7 @@ input::-webkit-inner-spin-button {
 
 .radio__input:disabled {
   background-color: #d9dce0;
-  border: 4px solid #EBF4F8;
+  border: 4px solid #ebf4f8;
   outline: 1px solid #d9dce0;
 }
 
@@ -1056,7 +1056,7 @@ input::-webkit-inner-spin-button {
 }
 
 .tags-buttons__btn:nth-last-child(6) .closebtn {
-  color: #0880AE;
+  color: #0880ae;
 }
 
 .tags-buttons__btn:nth-last-child(5) {
@@ -1121,8 +1121,6 @@ input::-webkit-inner-spin-button {
   border: 2px solid #7c9cbf;
 }
 .buttons__group:nth-last-child(2) .buttons__button {
-  color: #ebf4f8;
-  background: #0880ae;
   -webkit-box-shadow: 0px 6px 12px rgba(44, 39, 56, 0.08), 0px 12px 24px rgba(44, 39, 56, 0.16);
           box-shadow: 0px 6px 12px rgba(44, 39, 56, 0.08), 0px 12px 24px rgba(44, 39, 56, 0.16);
 }
@@ -1152,7 +1150,7 @@ input::-webkit-inner-spin-button {
   line-height: 18px;
   text-align: center;
   color: #7c9cbf;
-  border-radius: 6px;
+  border-radius: 3px;
   background-color: #ffffff;
   border: 1px solid #dbe2ea;
   -webkit-box-shadow: 0px 1px 2px rgba(44, 39, 56, 0.0001), 0px 2px 4px rgba(44, 39, 56, 0.08);
@@ -1166,6 +1164,13 @@ input::-webkit-inner-spin-button {
 }
 .buttons__button:last-child {
   margin-right: 0;
+}
+
+.buttons__button:hover {
+  color: #ebf4f8;
+  background: #0880ae;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
 }
 
 .buttons-medium .buttons__group:nth-child(3) {
