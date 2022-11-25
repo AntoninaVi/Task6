@@ -1423,13 +1423,13 @@ input::-webkit-inner-spin-button {
   width: 0px;
   height: 0px;
   position: absolute;
-  border-left: 9px solid transparent;
-  border-right: 0px solid transparent;
-  border-top: 18px solid #d5d6d7;
-  border-bottom: 18px solid transparent;
-  left: -3px;
-  top: 58px;
-  rotate: 12deg;
+  border-left: 4px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 13px solid #d5d6d7;
+  border-bottom: 27px solid transparent;
+  left: -6px;
+  top: 55px;
+  rotate: 19deg;
 }
 
 .chat__group:nth-of-type(2) .chat__message:before {
@@ -1437,12 +1437,13 @@ input::-webkit-inner-spin-button {
   width: 0px;
   height: 0px;
   position: absolute;
-  border-left: 9px solid transparent;
-  border-right: 0px solid transparent;
-  border-top: 18px solid #d5d6d7;
-  border-bottom: 18px solid transparent;
-  right: 3px;
-  top: 58px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 13px solid #d5d6d7;
+  border-bottom: 7px solid transparent;
+  right: -1px;
+  top: 57px;
+  rotate: -13deg;
 }
 
 .chat__group:nth-of-type(3) .chat__message:before {
@@ -1450,13 +1451,13 @@ input::-webkit-inner-spin-button {
   width: 0px;
   height: 0px;
   position: absolute;
-  border-left: 9px solid transparent;
-  border-right: 0px solid transparent;
-  border-top: 18px solid #d5d6d7;
-  border-bottom: 18px solid transparent;
-  left: 2px;
-  top: -36px;
-  rotate: 180deg;
+  border-left: 4px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 13px solid #d5d6d7;
+  border-bottom: 27px solid transparent;
+  left: -6px;
+  top: -37px;
+  rotate: 161deg;
 }
 
 .chat__group:nth-of-type(4) .chat__message:before {
@@ -1464,12 +1465,12 @@ input::-webkit-inner-spin-button {
   width: 0px;
   height: 0px;
   position: absolute;
-  border-left: 7px solid transparent;
-  border-right: 2px solid transparent;
-  border-top: 19px solid #d5d6d7;
-  border-bottom: 18px solid transparent;
+  border-left: 4px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 13px solid #d5d6d7;
+  border-bottom: 27px solid transparent;
   right: -3px;
-  top: -36px;
+  top: -38px;
   rotate: 192deg;
 }
 
