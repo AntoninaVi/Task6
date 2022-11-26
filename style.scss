@@ -1935,19 +1935,19 @@ input::-webkit-inner-spin-button {
 		margin-bottom: 24px;
 	}
 
-	&__flap-button {
-		font-weight: 500;
-		font-size: 16px;
-		line-height: 21px;
-		text-align: center;
-		color: #ebf4f8;
-		background: #0880ae;
-		box-shadow: 0px 2px 4px rgba(44, 39, 56, 0.08), 0px 4px 8px rgba(44, 39, 56, 0.08);
-		border-radius: 6px;
-		border: none;
-		padding: 18px 41px;
-		cursor: pointer;
-	}
+	// &__flap-button {
+	// 	font-weight: 500;
+	// 	font-size: 16px;
+	// 	line-height: 21px;
+	// 	text-align: center;
+	// 	color: #ebf4f8;
+	// 	background: #0880ae;
+	// 	box-shadow: 0px 2px 4px rgba(44, 39, 56, 0.08), 0px 4px 8px rgba(44, 39, 56, 0.08);
+	// 	border-radius: 6px;
+	// 	border: none;
+	// 	padding: 18px 41px;
+	// 	cursor: pointer;
+	// }
 
 	&__flap {
 		width: 100%;
@@ -2081,25 +2081,25 @@ input::-webkit-inner-spin-button {
 		}
 	}
 
-	&__modal-button {
-		width: 140px;
-		font-style: normal;
-		font-weight: 500;
-		font-size: 16px;
-		line-height: 21px;
-		color: #ebf4f8;
-		background: #0880ae;
-		box-shadow: 0px 2px 4px rgba(44, 39, 56, 0.08), 0px 4px 8px rgba(44, 39, 56, 0.08);
-		border-radius: 6px;
-		padding: 14px 46px;
-		border: none;
-		border: 1px solid;
-		&:hover {
-			background-color: #ffffff;
-			color: #7c9cbf;
-			border: 1px solid #7c9cbf;
-		}
-	}
+	// &__modal-button {
+	// 	width: 140px;
+	// 	font-style: normal;
+	// 	font-weight: 500;
+	// 	font-size: 16px;
+	// 	line-height: 21px;
+	// 	color: #ebf4f8;
+	// 	background: #0880ae;
+	// 	box-shadow: 0px 2px 4px rgba(44, 39, 56, 0.08), 0px 4px 8px rgba(44, 39, 56, 0.08);
+	// 	border-radius: 6px;
+	// 	padding: 14px 46px;
+	// 	border: none;
+	// 	border: 1px solid;
+	// 	&:hover {
+	// 		background-color: #ffffff;
+	// 		color: #7c9cbf;
+	// 		border: 1px solid #7c9cbf;
+	// 	}
+	// }
 
 	&__modal-close {
 		display: flex;
@@ -2143,28 +2143,28 @@ input::-webkit-inner-spin-button {
 	&__message-buttons {
 		margin-top: 20px;
 	}
-	&__message-button {
-		font-weight: 500;
-		font-size: 16px;
-		line-height: 21px;
-		text-align: center;
-		color: #7c9cbf;
-		border: 2px solid #7c9cbf;
-		border-radius: 6px;
-		padding: 14px 46px;
-		background-color: #ffffff;
-		border: 1px solid;
-		cursor: pointer;
-		&:nth-last-child(2) {
-			margin-right: 16px;
-		}
-		&:hover {
-			background-color: #0880ae;
-			color: #ffffff;
-			border: 1px solid #7c9cbf;
-			transition: ease-in-out 0.3s;
-		}
-	}
+	// &__message-button {
+	// 	font-weight: 500;
+	// 	font-size: 16px;
+	// 	line-height: 21px;
+	// 	text-align: center;
+	// 	color: #7c9cbf;
+	// 	border: 2px solid #7c9cbf;
+	// 	border-radius: 6px;
+	// 	padding: 14px 46px;
+	// 	background-color: #ffffff;
+	// 	border: 1px solid;
+	// 	cursor: pointer;
+	// 	&:nth-last-child(2) {
+	// 		margin-right: 16px;
+	// 	}
+	// 	&:hover {
+	// 		background-color: #0880ae;
+	// 		color: #ffffff;
+	// 		border: 1px solid #7c9cbf;
+	// 		transition: ease-in-out 0.3s;
+	// 	}
+	// }
 }
 
 .callout__message:nth-of-type(3),
