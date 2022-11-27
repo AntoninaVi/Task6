@@ -2096,6 +2096,9 @@ input::-webkit-inner-spin-button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 .headers__nav-links {
   font-style: normal;
@@ -2129,6 +2132,10 @@ input::-webkit-inner-spin-button {
   margin-right: 72px;
 }
 
+.headers__nav-dropdown:nth-child(2) .headers__nav-links {
+  margin-bottom: -1em;
+}
+
 .topnav {
   overflow: hidden;
   position: static;
@@ -2138,18 +2145,10 @@ input::-webkit-inner-spin-button {
   display: none;
 }
 
-.headers__nav-item {
-  float: left;
-  color: #2c2738;
-  text-decoration: none;
-  font-size: 20px;
-  margin-right: 3.5em;
-  margin-bottom: -23px;
-}
-
 .topnav a.icon {
   float: right;
   color: #2c2738;
+  margin-left: 20px;
 }
 
 .topnav a:hover {

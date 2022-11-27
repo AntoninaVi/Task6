@@ -1820,6 +1820,7 @@ input::-webkit-inner-spin-button {
 	&__nav-items {
 		display: flex;
 		align-items: center;
+		justify-content: space-evenly;
 	}
 
 	&__nav-links {
@@ -1855,35 +1856,30 @@ input::-webkit-inner-spin-button {
 		margin-right: 72px;
 	}
 }
+.headers__nav-dropdown:nth-child(2) .headers__nav-links{
+	margin-bottom: -1em;
+
+}
+.headers__nav-dropdown:nth-child(2) .headers__nav-items{
+	
+}
 
 // BURGER MENU
 .topnav {
 	overflow: hidden;
 	position: static;
 }
-
 .topnav #myLinks {
 	display: none;
 }
-
-.headers__nav-item {
-	float: left;
-	color: #2c2738;
-	text-decoration: none;
-	font-size: 20px;
-	margin-right: 3.5em;
-	margin-bottom: -23px;
-}
-
 .topnav a.icon {
 	float: right;
 	color: #2c2738;
+	margin-left: 20px;
 }
-
 .topnav a:hover {
 	color: #14a38b;
 }
-
 .active {
 	color: rgb(163, 22, 22);
 }
