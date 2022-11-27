@@ -2109,27 +2109,10 @@ input::-webkit-inner-spin-button {
   margin-right: 0;
 }
 .headers__nav-button {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 18px;
-  text-align: center;
-  color: #7c9cbf;
-  background-color: #ffffff;
-  border: 1px solid #dbe2ea;
-  -webkit-box-shadow: 0px 1px 2px rgba(44, 39, 56, 0.0001), 0px 2px 4px rgba(44, 39, 56, 0.08);
-          box-shadow: 0px 1px 2px rgba(44, 39, 56, 0.0001), 0px 2px 4px rgba(44, 39, 56, 0.08);
-  border-radius: 3px;
-  padding: 8px 28px;
-  cursor: pointer;
+  margin-bottom: 0;
 }
 .headers__nav-button:first-of-type {
   margin-right: 13px;
-}
-.headers__nav-button:hover {
-  color: #ffffff;
-  background: #0880ae;
-  -webkit-box-shadow: 0px 1px 2px rgba(44, 39, 56, 0.08), 0px 2px 4px rgba(44, 39, 56, 0.08);
-          box-shadow: 0px 1px 2px rgba(44, 39, 56, 0.08), 0px 2px 4px rgba(44, 39, 56, 0.08);
 }
 .headers__nav-dropdown {
   display: -webkit-box;
@@ -2218,6 +2201,10 @@ input::-webkit-inner-spin-button {
   color: #2c2738;
   max-width: 571px;
   margin-bottom: 24px;
+}
+.flaps__flap-button {
+  padding: 14px 45px;
+  margin-bottom: 0;
 }
 .flaps__flap {
   width: 100%;
@@ -2377,6 +2364,10 @@ input::-webkit-inner-spin-button {
 .modals__modal-buttons:nth-last-child(1) .modals__modal-button:nth-last-child(2) {
   margin-right: 20px;
 }
+.modals__modal-button {
+  padding: 14px 45px;
+  margin-bottom: 0;
+}
 .modals__modal-close {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2431,7 +2422,13 @@ input::-webkit-inner-spin-button {
   line-height: 28px;
   width: 720px;
 }
-.callout__message-buttons {
+.callout__message-button {
+  padding: 14px 45px;
+  margin-bottom: 0;
+}
+
+.callout__message:nth-of-type(1) .callout__message-buttons,
+.callout__message:nth-of-type(2) .callout__message-buttons {
   margin-top: 20px;
 }
 
