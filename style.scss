@@ -2403,6 +2403,13 @@ input::-webkit-inner-spin-button {
 
 	&__form-btn {
 		margin-top: 30px;
+		background-color: #0880AE;
+		color: #ffffff;
+		border: 2px solid #0880AE;
+		&:hover{
+			background-color: #ffffff;
+			color: #0880AE ;
+		}
 	}
 	&__form {
 		display: flex;
@@ -2419,7 +2426,6 @@ input::-webkit-inner-spin-button {
 		font-size: 16px;
 		line-height: 22px;
 		color: #0880ae;
-		margin-top: 23px;
 	}
 	&__checkbox-label {
 		display: block;
@@ -2454,6 +2460,14 @@ input::-webkit-inner-spin-button {
 	max-width: 180px;
 	padding: 18px 37px;
 }
+.forms__form:nth-child(1){
+	max-height: 80%;
+}
+.forms__form:nth-child(3){
+	margin-top: -8em;
+}
+
+
 .forms__form label {
 	font-style: normal;
 	font-weight: 500;
@@ -2461,7 +2475,7 @@ input::-webkit-inner-spin-button {
 	line-height: 21px;
 	color: #756f86;
 	margin-top: 30px;
-	margin-bottom: 8px;
+	margin-bottom: 7px;
 }
 .forms__form input {
 	border: 1px solid #dbe2ea;

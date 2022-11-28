@@ -9,7 +9,7 @@ $(function () {
         lineWidth: 3,
         trackColor: "#DBE2EA",
         lineCap: "circle",
-        animate: 16000,
+        animate: 18000,
     });
 });
 $(function () {
