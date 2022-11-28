@@ -1856,12 +1856,10 @@ input::-webkit-inner-spin-button {
 		margin-right: 72px;
 	}
 }
-.headers__nav-dropdown:nth-child(2) .headers__nav-links{
+.headers__nav-dropdown:nth-child(2) .headers__nav-links {
 	margin-bottom: -1em;
-
 }
-.headers__nav-dropdown:nth-child(2) .headers__nav-items{
-	
+.headers__nav-dropdown:nth-child(2) .headers__nav-items {
 }
 
 // BURGER MENU
@@ -2103,9 +2101,9 @@ input::-webkit-inner-spin-button {
 	}
 }
 .callout__message:nth-of-type(1) .callout__message-buttons,
-.callout__message:nth-of-type(2) .callout__message-buttons{
-		margin-top: 20px;
-	}
+.callout__message:nth-of-type(2) .callout__message-buttons {
+	margin-top: 20px;
+}
 
 .callout__message:nth-of-type(3),
 .callout__message:nth-of-type(4) {
@@ -2247,9 +2245,8 @@ input::-webkit-inner-spin-button {
 	}
 
 	&__card {
-		padding: 16px 16px 30px 16px;
+		padding: 16px 16px 0px 16px;
 		background: #ffffff;
-		box-shadow: 0px 12px 24px rgba(44, 39, 56, 0.02), 0px 24px 48px rgba(44, 39, 56, 0.04);
 		border-radius: 24px;
 		max-width: 300px;
 
@@ -2267,6 +2264,9 @@ input::-webkit-inner-spin-button {
 	&__card-img {
 		border-radius: 24px;
 		margin-bottom: 20px;
+		margin-right: auto;
+		margin-left: auto;
+		max-width: 100%;
 	}
 	&__card-information {
 		color: #ffffff;
@@ -2288,18 +2288,7 @@ input::-webkit-inner-spin-button {
 	}
 
 	&__card-button {
-		font-style: normal;
-		font-weight: 500;
-		font-size: 16px;
-		line-height: 21px;
-		text-align: center;
-		color: #7c9cbf;
-		background: #ffffff;
-		border: 1px solid #dbe2ea;
-		box-shadow: 0px 2px 4px rgba(44, 39, 56, 0.0001), 0px 4px 8px rgba(44, 39, 56, 0.08);
-		border-radius: 6px;
-		padding: 14px 46px;
-		cursor: pointer;
+		padding: 14px 45px;
 	}
 
 	&__card-label {
