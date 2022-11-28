@@ -2305,7 +2305,10 @@ input::-webkit-inner-spin-button {
 	&__modal-close {
 		display: flex;
 		justify-content: right;
+		background-color: transparent;
+		border: none;
 		font-size: 28px;
+		cursor: pointer;
 	}
 }
 .modals__modal:nth-child(1) .modals__modal-title {

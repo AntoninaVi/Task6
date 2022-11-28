@@ -2660,7 +2660,10 @@ input::-webkit-inner-spin-button {
   -webkit-box-pack: right;
       -ms-flex-pack: right;
           justify-content: right;
+  background-color: transparent;
+  border: none;
   font-size: 28px;
+  cursor: pointer;
 }
 
 .modals__modal:nth-child(1) .modals__modal-title {
