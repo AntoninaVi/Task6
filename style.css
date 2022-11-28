@@ -1460,9 +1460,9 @@ input::-webkit-inner-spin-button {
   border-right: 5px solid transparent;
   border-top: 13px solid #d5d6d7;
   border-bottom: 7px solid transparent;
-  right: -1px;
-  top: 57px;
-  rotate: -13deg;
+  right: -3px;
+  top: 56px;
+  rotate: -19deg;
 }
 
 .chat__group:nth-of-type(3) .chat__message:before {
