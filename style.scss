@@ -62,7 +62,7 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 }
-.menu__pages {
+.menu {
 	&__pages {
 		display: flex;
 		justify-content: space-between;
@@ -662,6 +662,7 @@ input::-webkit-inner-spin-button {
 .checkboxes__label:nth-of-type(6) .checkboxes__checkmark,
 .checkboxes__label:nth-of-type(5) .checkboxes__checkmark,
 .checkboxes__label:nth-of-type(4) .checkboxes__checkmark {
+	border: 2px solid #dbe2ea;
 	background-color: transparent;
 }
 
@@ -711,7 +712,6 @@ input::-webkit-inner-spin-button {
 .radio__input:checked::before {
 	transform: scale(1);
 }
-
 .radio__input:focus {
 	outline: 2px solid #0880ae;
 	background-color: #0880ae;
@@ -727,13 +727,15 @@ input::-webkit-inner-spin-button {
 	border: 4px solid #ebf4f8;
 	outline: 1px solid #d9dce0;
 }
+#radio2 {
+	border: 9px solid #ebf4f8;
+}
 // SWITCHER
 .switchers {
 	display: grid;
 	grid-template-columns: 30% 30%;
 	margin-bottom: 80px;
 }
-
 .switcher {
 	&__input[type="checkbox"] {
 		height: 0;
@@ -743,12 +745,18 @@ input::-webkit-inner-spin-button {
 		&:checked + .switcher__title {
 			background: #0880ae;
 		}
+		&:checked:disabled + .switcher__title {
+			background-color: transparent;
+		}
 		&:checked + .switcher__title::before {
 			width: 24px;
 			height: 24px;
 			left: calc(100% - 4px);
 			transform: translateX(-100%);
 			margin-top: -2px;
+		}
+		&:disabled + .switcher__title::before {
+			background-color: transparent;
 		}
 	}
 
@@ -757,7 +765,6 @@ input::-webkit-inner-spin-button {
 		cursor: pointer;
 		width: 53px;
 		height: 30px;
-		background: rgb(228, 230, 232);
 		border: 1px solid #dbe2ea;
 		border-radius: 100px;
 		position: relative;
@@ -766,7 +773,7 @@ input::-webkit-inner-spin-button {
 		&::before {
 			content: "";
 			position: absolute;
-			top: 4px;
+			top: 0.2em;
 			left: 5px;
 			width: 24px;
 			height: 24px;
@@ -784,6 +791,9 @@ input::-webkit-inner-spin-button {
 			vertical-align: sub;
 		}
 	}
+}
+.switchers__switcher:nth-child(3) .switcher__title {
+	background-color: transparent;
 }
 
 // RANGE SLIDER
@@ -1860,8 +1870,98 @@ input::-webkit-inner-spin-button {
 	margin-bottom: -1em;
 }
 
+// BURGER 1
+.burger-menu-first{
+	display: none;
+}
+@media screen and (max-width: 800px) {
+ .burger-menu-first {
+		display: block;
+	}
+}
+@media screen and (max-width: 800px) {
+	.headers__nav-links {
+		display: none;
+	}
+}
+@media screen and (max-width: 800px) {
+	.headers__nav-links {
+		display: none;
+	}
+}
+@media screen and (max-width: 800px) {
+	.headers__nav-buttons {
+		display: none;
+	}
+}
+#menu__toggle-first {
+	position: absolute;
+	display: none;
+}
 
-// BURGER
+.menu__btn-first {
+	display: block;
+	position: relative;
+	right: 2.5em;
+	bottom: 0.7em;
+	width: 40px;
+	cursor: pointer;
+}
+
+.menu__btn-first span,
+.menu__btn-first span::before,
+.menu__btn-first span::after {
+	display: block;
+	position: absolute;
+	width: 30px;
+	height: 3px;
+	background-color: #090909;
+	border-radius: 20px;
+	z-index: 10;
+	transition: ease-in-out 0.3s;
+}
+.menu__btn-first span::before {
+	content: "";
+	top: -9px;
+}
+.menu__btn-first span::after {
+	content: "";
+	top: 9px;
+}
+.menu__box-first {
+	display: block;
+	position: absolute;
+	overflow: hidden;
+	visibility: hidden;
+	padding-top: 30px;
+	width: 80%;
+	height: 20em;
+	right: 10%;
+	max-width: 25em;
+	background: #ffffff;
+	opacity: 0.8;
+	text-align: center;
+	z-index: 6;
+}
+
+#menu__toggle-first:checked ~ .menu__btn-first span {
+	transform: rotate(45deg);
+}
+#menu__toggle-first:checked ~ .menu__btn-first span::before {
+	top: 0;
+	transform: rotate(0);
+	background-color: #000000;
+}
+#menu__toggle-first:checked ~ .menu__btn-first span::after {
+	top: 0;
+	transform: rotate(90deg);
+	background-color: #000000;
+}
+#menu__toggle-first:checked ~ .menu__box-first {
+	visibility: visible;
+}
+
+// BURGER 2
 #menu__toggle {
 	position: absolute;
 	display: none;
@@ -1885,7 +1985,7 @@ input::-webkit-inner-spin-button {
 	height: 3px;
 	background-color: #090909;
 	border-radius: 20px;
-	z-index: 30;
+	z-index: 1;
 	transition: ease-in-out 0.3s;
 }
 .menu__btn span::before {
@@ -1904,7 +2004,7 @@ input::-webkit-inner-spin-button {
 	padding-top: 30px;
 	width: 80%;
 	height: 20em;
-    right: 43.6%;
+	right: 43.6%;
 	max-width: 25em;
 	background: #ffffff;
 	opacity: 0.8;
@@ -1946,7 +2046,7 @@ input::-webkit-inner-spin-button {
 #menu__toggle:checked ~ .menu__box {
 	visibility: visible;
 }
-// BURGER2
+// BURGER3
 #menu__toggle2 {
 	position: absolute;
 	display: none;
@@ -1970,7 +2070,7 @@ input::-webkit-inner-spin-button {
 	height: 3px;
 	background-color: #090909;
 	border-radius: 20px;
-	z-index: 30;
+	z-index: 1;
 	transition: ease-in-out 0.3s;
 }
 .menu__btn2 span::before {
@@ -1989,7 +2089,7 @@ input::-webkit-inner-spin-button {
 	padding-top: 30px;
 	width: 80%;
 	height: 20em;
-    right: 17%;
+	right: 17%;
 	max-width: 25em;
 	background: #ffffff;
 	opacity: 0.8;
@@ -2182,7 +2282,6 @@ input::-webkit-inner-spin-button {
 		line-height: 21px;
 		color: #2c2738;
 		margin-bottom: 34px;
-		
 	}
 	&__modal-buttons {
 		display: flex;
@@ -2190,7 +2289,6 @@ input::-webkit-inner-spin-button {
 		&:nth-last-child(1) .modals__modal-button:nth-last-child(2) {
 			margin-right: 20px;
 		}
-
 	}
 
 	&__modal-button {
@@ -2204,7 +2302,7 @@ input::-webkit-inner-spin-button {
 		font-size: 28px;
 	}
 }
-.modals__modal:nth-child(1) .modals__modal-title{
+.modals__modal:nth-child(1) .modals__modal-title {
 	margin-top: -24px;
 }
 // 15. Callouts

@@ -30,7 +30,7 @@ body {
   margin-right: auto;
 }
 
-.menu__pages__pages {
+.menu__pages {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -45,12 +45,12 @@ body {
   padding: 10px 10px;
   margin-bottom: 20px;
 }
-.menu__pages__pages-paragraph {
+.menu__pages-paragraph {
   font-weight: 700;
   font-size: 20px;
   line-height: 44px;
 }
-.menu__pages__pages-link {
+.menu__pages-link {
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -803,6 +803,7 @@ input::-webkit-inner-spin-button {
 .checkboxes__label:nth-of-type(6) .checkboxes__checkmark,
 .checkboxes__label:nth-of-type(5) .checkboxes__checkmark,
 .checkboxes__label:nth-of-type(4) .checkboxes__checkmark {
+  border: 2px solid #dbe2ea;
   background-color: transparent;
 }
 
@@ -876,6 +877,10 @@ input::-webkit-inner-spin-button {
   outline: 1px solid #d9dce0;
 }
 
+#radio2 {
+  border: 9px solid #ebf4f8;
+}
+
 .switchers {
   display: -ms-grid;
   display: grid;
@@ -892,6 +897,9 @@ input::-webkit-inner-spin-button {
 .switcher__input[type=checkbox]:checked + .switcher__title {
   background: #0880ae;
 }
+.switcher__input[type=checkbox]:checked:disabled + .switcher__title {
+  background-color: transparent;
+}
 .switcher__input[type=checkbox]:checked + .switcher__title::before {
   width: 24px;
   height: 24px;
@@ -900,12 +908,14 @@ input::-webkit-inner-spin-button {
           transform: translateX(-100%);
   margin-top: -2px;
 }
+.switcher__input[type=checkbox]:disabled + .switcher__title::before {
+  background-color: transparent;
+}
 .switcher__title {
   display: block;
   cursor: pointer;
   width: 53px;
   height: 30px;
-  background: rgb(228, 230, 232);
   border: 1px solid #dbe2ea;
   border-radius: 100px;
   position: relative;
@@ -914,7 +924,7 @@ input::-webkit-inner-spin-button {
 .switcher__title::before {
   content: "";
   position: absolute;
-  top: 4px;
+  top: 0.2em;
   left: 5px;
   width: 24px;
   height: 24px;
@@ -936,6 +946,10 @@ input::-webkit-inner-spin-button {
   line-height: 21px;
   color: #756f86;
   vertical-align: sub;
+}
+
+.switchers__switcher:nth-child(3) .switcher__title {
+  background-color: transparent;
 }
 
 .sliders {
@@ -2136,6 +2150,107 @@ input::-webkit-inner-spin-button {
   margin-bottom: -1em;
 }
 
+.burger-menu-first {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .burger-menu-first {
+    display: block;
+  }
+}
+@media screen and (max-width: 800px) {
+  .headers__nav-links {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  .headers__nav-links {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  .headers__nav-buttons {
+    display: none;
+  }
+}
+#menu__toggle-first {
+  position: absolute;
+  display: none;
+}
+
+.menu__btn-first {
+  display: block;
+  position: relative;
+  right: 2.5em;
+  bottom: 0.7em;
+  width: 40px;
+  cursor: pointer;
+}
+
+.menu__btn-first span,
+.menu__btn-first span::before,
+.menu__btn-first span::after {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: #090909;
+  border-radius: 20px;
+  z-index: 10;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+}
+
+.menu__btn-first span::before {
+  content: "";
+  top: -9px;
+}
+
+.menu__btn-first span::after {
+  content: "";
+  top: 9px;
+}
+
+.menu__box-first {
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  visibility: hidden;
+  padding-top: 30px;
+  width: 80%;
+  height: 20em;
+  right: 10%;
+  max-width: 25em;
+  background: #ffffff;
+  opacity: 0.8;
+  text-align: center;
+  z-index: 6;
+}
+
+#menu__toggle-first:checked ~ .menu__btn-first span {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+#menu__toggle-first:checked ~ .menu__btn-first span::before {
+  top: 0;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  background-color: #000000;
+}
+
+#menu__toggle-first:checked ~ .menu__btn-first span::after {
+  top: 0;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  background-color: #000000;
+}
+
+#menu__toggle-first:checked ~ .menu__box-first {
+  visibility: visible;
+}
+
 #menu__toggle {
   position: absolute;
   display: none;
@@ -2159,7 +2274,7 @@ input::-webkit-inner-spin-button {
   height: 3px;
   background-color: #090909;
   border-radius: 20px;
-  z-index: 30;
+  z-index: 1;
   -webkit-transition: ease-in-out 0.3s;
   transition: ease-in-out 0.3s;
 }
@@ -2258,7 +2373,7 @@ input::-webkit-inner-spin-button {
   height: 3px;
   background-color: #090909;
   border-radius: 20px;
-  z-index: 30;
+  z-index: 1;
   -webkit-transition: ease-in-out 0.3s;
   transition: ease-in-out 0.3s;
 }
