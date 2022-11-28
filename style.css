@@ -1134,6 +1134,12 @@ input::-webkit-inner-spin-button {
   color: #7c9cbf;
   border: 2px solid #7c9cbf;
 }
+.buttons__group:nth-last-child(1) .buttons__button:hover {
+  color: #EBF4F8;
+  background: #0880ae;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+}
 .buttons__group:nth-last-child(2) .buttons__button {
   -webkit-box-shadow: 0px 6px 12px rgba(44, 39, 56, 0.08), 0px 12px 24px rgba(44, 39, 56, 0.16);
           box-shadow: 0px 6px 12px rgba(44, 39, 56, 0.08), 0px 12px 24px rgba(44, 39, 56, 0.16);
@@ -1179,9 +1185,8 @@ input::-webkit-inner-spin-button {
 .buttons__button:last-child {
   margin-right: 0;
 }
-
 .buttons__button:hover {
-  color: #ebf4f8;
+  color: #EBF4F8;
   background: #0880ae;
   -webkit-transition: ease-in-out 0.3s;
   transition: ease-in-out 0.3s;
