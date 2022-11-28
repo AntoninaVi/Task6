@@ -129,21 +129,22 @@ document.querySelector('jsuites-rating').addEventListener('onchange', function (
 });
 
 // BURGER MENU page 4
-function myFunction() {
-    var x = document.getElementById("myLinks");
-    if (x.style.display === "inline-block") {
-        x.style.display = "none";
-    } else {
-        x.style.display = "inline-block";
-    }
-}
+// function myFunction() {
+//     var x = document.getElementById("myLinks");
+//     if (x.style.display === "inline-block") {
+//         x.style.display = "none";
+//     } else {
+//         x.style.display = "inline-block";
+//     }
+// }
 
-function myFunction2() {
-    var x = document.getElementById("myLinks2");
-    if (x.style.display === "inline-block") {
-        x.style.display = "none";
-    } else {
-        x.style.display = "inline-block";
-    }
-}
+// function myFunction2() {
+//     var x = document.getElementById("myLinks2");
+//     if (x.style.display === "inline-block") {
+//         x.style.display = "none";
+//     } else {
+//         x.style.display = "inline-block";
+//     }
+// }
+
 

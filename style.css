@@ -30,7 +30,7 @@ body {
   margin-right: auto;
 }
 
-.menu__pages {
+.menu__pages__pages {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -45,12 +45,12 @@ body {
   padding: 10px 10px;
   margin-bottom: 20px;
 }
-.menu__pages-paragraph {
+.menu__pages__pages-paragraph {
   font-weight: 700;
   font-size: 20px;
   line-height: 44px;
 }
-.menu__pages-link {
+.menu__pages__pages-link {
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -2136,27 +2136,193 @@ input::-webkit-inner-spin-button {
   margin-bottom: -1em;
 }
 
-.topnav {
-  overflow: hidden;
-  position: static;
-}
-
-.topnav #myLinks {
+#menu__toggle {
+  position: absolute;
   display: none;
 }
 
-.topnav a.icon {
-  float: right;
-  color: #2c2738;
-  margin-left: 20px;
+.menu__btn {
+  display: block;
+  position: relative;
+  right: 2.5em;
+  bottom: 0.7em;
+  width: 40px;
+  cursor: pointer;
 }
 
-.topnav a:hover {
-  color: #14a38b;
+.menu__btn span,
+.menu__btn span::before,
+.menu__btn span::after {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: #090909;
+  border-radius: 20px;
+  z-index: 30;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
 }
 
-.active {
-  color: rgb(163, 22, 22);
+.menu__btn span::before {
+  content: "";
+  top: -9px;
+}
+
+.menu__btn span::after {
+  content: "";
+  top: 9px;
+}
+
+.menu__box {
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  visibility: hidden;
+  padding-top: 30px;
+  width: 80%;
+  height: 20em;
+  right: 43.6%;
+  max-width: 25em;
+  background: #ffffff;
+  opacity: 0.8;
+  text-align: center;
+  z-index: 3;
+}
+
+.menu__item {
+  display: block;
+  margin-bottom: 8px;
+  padding: 10px 0px;
+  font-weight: 700;
+  font-size: 20px;
+  color: #4b4b4b;
+}
+
+.menu__item:hover {
+  color: #0b0b0b;
+}
+
+.button--burger {
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
+  width: 100%;
+  max-width: 16em;
+}
+
+#menu__toggle:checked ~ .menu__btn span {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+#menu__toggle:checked ~ .menu__btn span::before {
+  top: 0;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  background-color: #000000;
+}
+
+#menu__toggle:checked ~ .menu__btn span::after {
+  top: 0;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  background-color: #000000;
+}
+
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+}
+
+#menu__toggle2 {
+  position: absolute;
+  display: none;
+}
+
+.menu__btn2 {
+  display: block;
+  position: relative;
+  right: 2.5em;
+  bottom: 0.7em;
+  width: 40px;
+  cursor: pointer;
+}
+
+.menu__btn2 span,
+.menu__btn2 span::before,
+.menu__btn2 span::after {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: #090909;
+  border-radius: 20px;
+  z-index: 30;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+}
+
+.menu__btn2 span::before {
+  content: "";
+  top: -9px;
+}
+
+.menu__btn2 span::after {
+  content: "";
+  top: 9px;
+}
+
+.menu__box2 {
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  visibility: hidden;
+  padding-top: 30px;
+  width: 80%;
+  height: 20em;
+  right: 17%;
+  max-width: 25em;
+  background: #ffffff;
+  opacity: 0.8;
+  text-align: center;
+  z-index: 3;
+}
+
+.menu__item {
+  display: block;
+  margin-bottom: 8px;
+  padding: 10px 0px;
+  font-weight: 700;
+  font-size: 20px;
+  color: #4b4b4b;
+}
+
+.menu__item:hover {
+  color: #0b0b0b;
+}
+
+#menu__toggle2:checked ~ .menu__btn2 span {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+#menu__toggle2:checked ~ .menu__btn2 span::before {
+  top: 0;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  background-color: #000000;
+}
+
+#menu__toggle2:checked ~ .menu__btn2 span::after {
+  top: 0;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  background-color: #000000;
+}
+
+#menu__toggle2:checked ~ .menu__box2 {
+  visibility: visible;
 }
 
 .flaps {
@@ -2375,6 +2541,10 @@ input::-webkit-inner-spin-button {
       -ms-flex-pack: right;
           justify-content: right;
   font-size: 28px;
+}
+
+.modals__modal:nth-child(1) .modals__modal-title {
+  margin-top: -24px;
 }
 
 .callout__title {
@@ -2803,13 +2973,13 @@ input::-webkit-inner-spin-button {
 }
 .forms__form-btn {
   margin-top: 30px;
-  background-color: #0880AE;
+  background-color: #0880ae;
   color: #ffffff;
-  border: 2px solid #0880AE;
+  border: 2px solid #0880ae;
 }
 .forms__form-btn:hover {
   background-color: #ffffff;
-  color: #0880AE;
+  color: #0880ae;
 }
 .forms__form {
   display: -webkit-box;
