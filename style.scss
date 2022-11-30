@@ -2629,7 +2629,7 @@ input::-webkit-inner-spin-button {
 		&:nth-last-child(1) {
 			display: grid;
 			grid-template-columns: 30% 30%;
-			gap: 60px;
+			gap: 5em;
 		}
 		&:nth-last-child(2) {
 			margin-bottom: 60px;

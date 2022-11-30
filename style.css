@@ -1135,7 +1135,7 @@ input::-webkit-inner-spin-button {
   border: 2px solid #7c9cbf;
 }
 .buttons__group:nth-last-child(1) .buttons__button:hover {
-  color: #EBF4F8;
+  color: #ebf4f8;
   background: #0880ae;
   -webkit-transition: ease-in-out 0.3s;
   transition: ease-in-out 0.3s;
@@ -1186,7 +1186,7 @@ input::-webkit-inner-spin-button {
   margin-right: 0;
 }
 .buttons__button:hover {
-  color: #EBF4F8;
+  color: #ebf4f8;
   background: #0880ae;
   -webkit-transition: ease-in-out 0.3s;
   transition: ease-in-out 0.3s;
@@ -2715,7 +2715,6 @@ input::-webkit-inner-spin-button {
   width: 720px;
 }
 .callout__message-button {
-  padding: 14px 45px;
   margin-bottom: 0;
 }
 
@@ -3074,9 +3073,9 @@ input::-webkit-inner-spin-button {
 .forms__content:nth-last-child(1) {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 30% 60px 30%;
+  -ms-grid-columns: 30% 5em 30%;
   grid-template-columns: 30% 30%;
-  gap: 60px;
+  gap: 5em;
 }
 .forms__content:nth-last-child(2) {
   margin-bottom: 60px;
