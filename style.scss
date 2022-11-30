@@ -960,7 +960,6 @@ input::-webkit-inner-spin-button {
 			.buttons__button {
 				background-color: transparent;
 				border: 2px solid rgba(44, 39, 56, 0.24);
-				
 
 				&:nth-last-child(1) {
 					opacity: 0.24;
@@ -979,7 +978,7 @@ input::-webkit-inner-spin-button {
 					border: 2px solid #7c9cbf;
 				}
 				&:hover {
-					color: #EBF4F8;
+					color: #ebf4f8;
 					background: #0880ae;
 					transition: ease-in-out 0.3s;
 				}
@@ -1035,12 +1034,11 @@ input::-webkit-inner-spin-button {
 		margin-right: 0;
 	}
 	&:hover {
-		color: #EBF4F8;
+		color: #ebf4f8;
 		background: #0880ae;
 		transition: ease-in-out 0.3s;
 	}
 }
-
 
 .buttons-medium {
 	.buttons__group:nth-child(3) {
@@ -1877,11 +1875,11 @@ input::-webkit-inner-spin-button {
 }
 
 // BURGER 1
-.burger-menu-first{
+.burger-menu-first {
 	display: none;
 }
 @media screen and (max-width: 800px) {
- .burger-menu-first {
+	.burger-menu-first {
 		display: block;
 	}
 }
@@ -2349,7 +2347,6 @@ input::-webkit-inner-spin-button {
 	}
 
 	&__message-button {
-		padding: 14px 45px;
 		margin-bottom: 0;
 	}
 }
