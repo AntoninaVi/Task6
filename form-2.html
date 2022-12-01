@@ -7,13 +7,34 @@
     <title>Task 6</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="loading-bar.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+
+    <!-- dropdown -->
+    <!-- Compressed CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css"
+        crossorigin="anonymous">
+
+    <!-- Compressed JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/js/foundation.min.js"
+        crossorigin="anonymous"></script>
+    <!-- foundation-float.min.css: Compressed CSS with legacy Float Grid -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation-float.min.css"
+        crossorigin="anonymous">
+
+    <!-- foundation-prototype.min.css: Compressed CSS with prototyping classes -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation-prototype.min.css"
+        crossorigin="anonymous">
+
+    <!-- foundation-rtl.min.css: Compressed CSS with right-to-left reading direction -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation-rtl.min.css"
+        crossorigin="anonymous">
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
-
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
 </head>
 
 
@@ -57,7 +78,7 @@
                         <div class="form__field">
                             <p class="form__label">Label</p>
                             <div class="form__select">
-                                <div class="t-dropdown-block">
+                                <!-- <div class="t-dropdown-block">
                                     <div class="t-dropdown-select">
                                         <input type="text" class="t-dropdown-input" placeholder="Dropdown" />
                                         <span class="t-select-btn">
@@ -69,9 +90,24 @@
                                         <li class="t-dropdown-item">Item</li>
                                         <li class="t-dropdown-item">Item</li>
                                     </ul>
+                                </div> -->
+                                <div class="dropdown_list">
+                                    <button class="dropdown_button" onclick="show_list()">
+                                        Select course
+                                    </button>
+
+                                    <div id="courses_id" class="courses">
+                                        <li><a href="">Machine learning</a></li>
+                                        <li><a href="">Data science</a></li>
+                                        <li><a href="">Data analysis</a></li>
+                                        <li><a href="">Data mining</a></li>
+                                        <li><a href="">Data warehousing</a></li>
+                                    </div>
                                 </div>
 
                             </div>
+
+
                         </div>
 
                         <div class="form__field">
@@ -420,6 +456,7 @@
                         <input id="slider2" class="slider-container__input" type="range" min="0" max="100" value="30"
                             disabled>
                     </div>
+
                 </div>
 
                 <div class="tags-buttons">
@@ -454,11 +491,11 @@
                 <div class="buttons">
                     <div class="buttons__group">
                         <button class="buttons__button">Button</button>
-                        <button class="buttons__button">Button</button>
-                        <button class="buttons__button">Button</button>
-                        <button class="buttons__button">Button</button>
+                        <!-- <button active class="buttons__button">Button</button>
+                        <button class="buttons__button">Button</button> -->
+                        <button disabled class="buttons__button">Button</button>
                     </div>
-                    <div class="buttons__group">
+                    <!-- <div class="buttons__group">
                         <button class="buttons__button">Button</button>
                         <button class="buttons__button">Button</button>
                         <button class="buttons__button">Button</button>
@@ -469,49 +506,27 @@
                         <button class="buttons__button">Button</button>
                         <button class="buttons__button">Button</button>
                         <button class="buttons__button ">Button</button>
-                    </div>
+                    </div> -->
                 </div>
 
                 <div class="buttons-medium">
                     <div class="buttons__group">
-                        <button class="buttons-medium buttons__button">Button</button>
-                        <button class="buttons-medium buttons__button">Button</button>
-                        <button class="buttons-medium buttons__button">Button</button>
-                        <button class="buttons-medium buttons__button">Button</button>
+                        <button class="buttons__button">Button</button>
+                        <!-- <button active class="buttons__button">Button</button>
+                        <button class="buttons__button">Button</button> -->
+                        <button disabled class="buttons__button">Button</button>
                     </div>
-                    <div class="buttons__group">
-                        <button class="buttons__button">Button</button>
-                        <button class="buttons__button">Button</button>
-                        <button class="buttons__button">Button</button>
-                        <button class="buttons__button">Button</button>
-                    </div>
-                    <div class="buttons__group">
-                        <button class="buttons__button">Button</button>
-                        <button class="buttons__button">Button</button>
-                        <button class="buttons__button">Button</button>
-                        <button class="buttons__button ">Button</button>
-                    </div>
+
                 </div>
 
                 <div class="buttons-large">
                     <div class="buttons__group">
-                        <button class="buttons-large buttons__button">Button</button>
-                        <button class="buttons-large buttons__button">Button</button>
-                        <button class="buttons-large buttons__button">Button</button>
-                        <button class="buttons-large buttons__button">Button</button>
+                        <button class="buttons__button">Button</button>
+                        <!-- <button active class="buttons__button">Button</button>
+                        <button class="buttons__button">Button</button> -->
+                        <button disabled class="buttons__button">Button</button>
                     </div>
-                    <div class="buttons__group">
-                        <button class="buttons-large buttons__button">Button</button>
-                        <button class="buttons-large buttons__button">Button</button>
-                        <button class="buttons-large buttons__button">Button</button>
-                        <button class="buttons-large buttons__button">Button</button>
-                    </div>
-                    <div class="buttons__group">
-                        <button class="buttons-large buttons__button">Button</button>
-                        <button class="buttons-large buttons__button">Button</button>
-                        <button class="buttons-large buttons__button">Button</button>
-                        <button class="buttons-large buttons__button">Button</button>
-                    </div>
+
                 </div>
 
                 <div class="alerts">
