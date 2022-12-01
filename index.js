@@ -1,126 +1,115 @@
 
 
 // CIRCLE LOADERS
-$(function () {
-    $('.chart').easyPieChart({
-        size: 44,
-        barColor: "#0880AE",
-        scaleLength: 0,
-        lineWidth: 3,
-        trackColor: "#DBE2EA",
-        lineCap: "circle",
-        animate: 18000,
-    });
-});
-$(function () {
-    $('.chart2').easyPieChart({
-        size: 44,
-        barColor: "#F2AC57",
-        scaleLength: 0,
-        lineWidth: 3,
-        trackColor: "#DBE2EA",
-        lineCap: "circle",
-        animate: 14000,
-    });
-});
-$(function () {
-    $('.chart3').easyPieChart({
-        size: 44,
-        barColor: "#14A38B",
-        scaleLength: 0,
-        lineWidth: 3,
-        trackColor: "#DBE2EA",
-        lineCap: "circle",
-        animate: 18000,
-    });
-});
-$(function () {
-    $('.chart4').easyPieChart({
-        size: 44,
-        barColor: "#FF7171",
-        scaleLength: 0,
-        lineWidth: 3,
-        trackColor: "#DBE2EA",
-        lineCap: "circle",
-        animate: 17000,
-    });
-});
+// $(function () {
+//     $('.chart').easyPieChart({
+//         size: 44,
+//         barColor: "#0880AE",
+//         scaleLength: 0,
+//         lineWidth: 3,
+//         trackColor: "#DBE2EA",
+//         lineCap: "circle",
+//         animate: 18000,
+//     });
+// });
+// $(function () {
+//     $('.chart2').easyPieChart({
+//         size: 44,
+//         barColor: "#F2AC57",
+//         scaleLength: 0,
+//         lineWidth: 3,
+//         trackColor: "#DBE2EA",
+//         lineCap: "circle",
+//         animate: 14000,
+//     });
+// });
+// $(function () {
+//     $('.chart3').easyPieChart({
+//         size: 44,
+//         barColor: "#14A38B",
+//         scaleLength: 0,
+//         lineWidth: 3,
+//         trackColor: "#DBE2EA",
+//         lineCap: "circle",
+//         animate: 18000,
+//     });
+// });
+// $(function () {
+//     $('.chart4').easyPieChart({
+//         size: 44,
+//         barColor: "#FF7171",
+//         scaleLength: 0,
+//         lineWidth: 3,
+//         trackColor: "#DBE2EA",
+//         lineCap: "circle",
+//         animate: 17000,
+//     });
+// });
 
 
 // COUNTERS
 
-$(document).ready(function () {
-    $('.counters__counter-minus').click(function () {
-        var $input = $(this).parent().find('.counters__counter-input');
-        var count = parseInt($input.val()) - 01;
-        count = count < 1 ? 1 : count;
-        $input.val(count);
-        $input.change();
-        return false;
-    });
-    $('.counters__counter-plus').click(function () {
-        var $input = $(this).parent().find('.counters__counter-input');
-        $input.val(parseInt($input.val()) + 01);
-        $input.change();
-        return false;
-    });
-});
+let num1 = 0
+let sumEL = document.getElementById("sum")
 
-
-
-//04. FORMS - SELECT
-$(document).ready(function () {
-
-    //DropDown input - select
-    $('.t-dropdown-input').on('click', function () {
-        $(this).parent().next().slideDown('fast');
-    });
-
-    $('.t-select-btn').on('click', function () {
-        $('.t-dropdown-list').slideUp('fast');
-
-        if (!$(this).prev().attr('disabled')) {
-            $(this).prev().trigger('click');
-        }
-    });
-
-    $('.t-dropdown-input').width($('.t-dropdown-select').width() - $('.t-select-btn').width() - 13);
-
-    $('.t-dropdown-list').width($('.t-dropdown-select').width());
-
-    $('.t-dropdown-input').val('');
-
-    $('li.t-dropdown-item').on('click', function () {
-        var text = $(this).html();
-        $(this).parent().prev().find('.t-dropdown-input').val(text);
-        $('.t-dropdown-list').slideUp('fast');
-    });
-
-    $(document).on('click', function (event) {
-        if ($(event.target).closest(".t-dropdown-input, .t-select-btn").length)
-            return;
-        $('.t-dropdown-list').slideUp('fast');
-        event.stopPropagation();
-    });
-
-});
-
-
-
-// RANGE SLIDER
-
-const $slider = $("#slider");
-const $fill = $("#bar #fill");
-
-function setBar() {
-    $fill.css("width", $slider.val() + "%");
+function minus1() {
+    let result = num1 - 1
+    sumEL.textContent = result
+    num1 = num1 - 1
 }
-$slider.on("input", setBar);
+console.log(num1)
 
-setBar();
+function add1() {
+    let result = num1 + 1
+    sumEL.textContent = + result
+    num1 = num1 + 1
+}
+console.log(num1)
 
-let inputSlider2 = document.querySelector("#slider2");
-inputSlider2.disabled = true
+
+
+let num2 = 0
+let sumEL2 = document.getElementById("sum2")
+
+function minus2() {
+    let result = num2 - 1
+    sumEL2.textContent = result
+    num2 = num2 - 1
+}
+console.log(num2)
+
+function add2() {
+    let result = num2 + 1
+    sumEL2.textContent = + result
+    num2 = num2 + 1
+}
+console.log(num2)
+
+
+
+
+
+
+// RANGE SLIDERS
+
+const rangeInputs = document.querySelectorAll('input[type="range"]')
+
+function handleInputChange(e) {
+    let target = e.target
+    if (e.target.type !== 'range') {
+        target = document.getElementById('range')
+    }
+    const min = target.min
+    const max = target.max
+    const val = target.value
+
+    target.style.backgroundSize = (val - min) * 100 / (max - min) + '% 100%'
+}
+
+rangeInputs.forEach(input => {
+    input.addEventListener('input', handleInputChange)
+})
+
 
 
 // STAR RATING
@@ -163,7 +152,7 @@ window.onclick = function (event) {
         document.getElementById('dropdown_id')
             .style.display = "none";
     }
-}   
+}
 
 function show_list2() {
     var courses = document.getElementById("dropdown_id2");
