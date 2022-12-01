@@ -150,7 +150,7 @@ document.querySelector('jsuites-rating').addEventListener('onchange', function (
 
 // dropdown 2
 function show_list() {
-    var courses = document.getElementById("courses_id");
+    var courses = document.getElementById("dropdown_id");
 
     if (courses.style.display == "block") {
         courses.style.display = "none";
@@ -159,8 +159,24 @@ function show_list() {
     }
 }
 window.onclick = function (event) {
-    if (!event.target.matches('.dropdown_button')) {
-        document.getElementById('courses_id')
+    if (!event.target.matches('.form__select-button')) {
+        document.getElementById('dropdown_id')
+            .style.display = "none";
+    }
+}   
+
+function show_list2() {
+    var courses = document.getElementById("dropdown_id2");
+
+    if (courses.style.display == "block") {
+        courses.style.display = "none";
+    } else {
+        courses.style.display = "block";
+    }
+}
+window.onclick = function (event) {
+    if (!event.target.matches('form__select-button2')) {
+        document.getElementById('dropdown_id2')
             .style.display = "none";
     }
 }   
