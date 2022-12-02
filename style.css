@@ -1023,16 +1023,16 @@ input[type=range]::-ms-track {
   background: transparent;
 }
 
-#sliderdis::-webkit-slider-thumb {
-  background-color: #EBF4F8;
+input[type=range]:disabled::-webkit-slider-thumb {
+  background-color: #ebf4f8;
 }
 
-#sliderdis::-moz-range-thumb:disabled {
-  background-color: #EBF4F8;
+input[type=range]:disabled::-moz-range-thumb {
+  background-color: #ebf4f8;
 }
 
-#sliderdis::-ms-thumb:disabled {
-  background-color: #EBF4F8;
+input[type=range]:disabled::-ms-thumb {
+  background-color: #ebf4f8;
 }
 
 .tags-buttons {
