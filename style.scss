@@ -313,6 +313,8 @@ body {
 		padding: 10px;
 		border-radius: 6px;
 		margin-bottom: 40px;
+		border: 1px solid #dbe2ea;
+		box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04);
 	}
 }
 
@@ -365,7 +367,6 @@ body {
 }
 
 // Dropdown buttons page 2
-
 .form {
 	&__select-button {
 		background: #ffffff;
