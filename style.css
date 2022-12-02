@@ -353,7 +353,7 @@ body {
   font-size: 16px;
   line-height: 21px;
   padding: 10px;
-  border-radius: 7px;
+  border-radius: 6px;
   margin-bottom: 40px;
 }
 
@@ -825,6 +825,12 @@ input::-webkit-inner-spin-button {
   border: 9px solid #ebf4f8;
 }
 
+#radioLabel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .switchers {
   display: -ms-grid;
   display: grid;
@@ -847,12 +853,12 @@ input::-webkit-inner-spin-button {
   background-color: transparent;
 }
 .switcher__input[type=checkbox]:checked + .switcher__title::before {
-  width: 24px;
-  height: 24px;
+  width: 23px;
+  height: 23px;
   left: calc(100% - 4px);
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
-  margin-top: -2px;
+  margin-top: -0.5px;
 }
 .switcher__input[type=checkbox]:disabled + .switcher__title::before {
   background-color: transparent;
@@ -906,6 +912,7 @@ input::-webkit-inner-spin-button {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 80px;
+  width: 48.2em;
 }
 
 input[type=range] {
@@ -935,9 +942,6 @@ input[type=range] {
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
-.sliders__slider input[type=range]::-webkit-slider-thumb:disabled {
-  background: #EBF4F8;
-}
 
 .sliders__slider input[type=range]::-moz-range-thumb {
   -webkit-appearance: none;
@@ -952,7 +956,7 @@ input[type=range] {
   transition: 0.3s ease-in-out;
 }
 .sliders__slider input[type=range]::-moz-range-thumb:disabled {
-  background: #EBF4F8;
+  background: #ebf4f8;
 }
 
 .sliders__slider input[type=range]::-ms-thumb {
@@ -968,7 +972,7 @@ input[type=range] {
   transition: 0.3s ease-in-out;
 }
 .sliders__slider input[type=range]::-ms-thumb:disabled {
-  background: #EBF4F8;
+  background: #ebf4f8;
 }
 
 .sliders__slider input[type=range]::-webkit-slider-thumb:hover {
@@ -988,10 +992,9 @@ input[type=range] {
 }
 
 .slider__bar:disabled {
-  background: #DBE2EA;
+  background: #dbe2ea;
 }
 
-/* Input Track */
 input[type=range]::-webkit-slider-runnable-track {
   -webkit-appearance: none;
   -webkit-box-shadow: none;
@@ -1220,6 +1223,10 @@ input[type=range]::-ms-track {
   color: #ff3c3c;
 }
 
+.progressbars {
+  margin-bottom: 80px;
+}
+
 .progressbars__progress {
   background: #dbe2ea;
   border-radius: 100px;
@@ -1277,9 +1284,17 @@ input[type=range]::-ms-track {
   display: -ms-flexbox;
   display: flex;
 }
-.circle-loaders__circle-loader {
+.circle-loaders__loader {
   margin-right: 30px;
-  rotate: 90deg;
+}
+
+#containerProgress,
+#containerProgress2,
+#containerProgress3,
+#containerProgress4 {
+  height: 44px;
+  width: 44px;
+  background-color: transparent;
 }
 
 .logos__title {
