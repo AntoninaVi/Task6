@@ -1,12 +1,12 @@
 // PAGE 2
 //DROPDOWN BUTTONS
 function show_list() {
-    var courses = document.getElementById("dropdown_id");
+    var dropdownList = document.getElementById("dropdown_id");
 
-    if (courses.style.display == "block") {
-        courses.style.display = "none";
+    if (dropdownList.style.display == "block") {
+        dropdownList.style.display = "none";
     } else {
-        courses.style.display = "block";
+        dropdownList.style.display = "block";
     }
 }
 window.onclick = function (event) {
@@ -17,20 +17,20 @@ window.onclick = function (event) {
 }
 
 function show_list2() {
-    var courses = document.getElementById("dropdown_id2");
+    var dropdownList = document.getElementById("dropdown_id2");
 
-    if (courses.style.display == "block") {
-        courses.style.display = "none";
+    if (dropdownList.style.display == "block") {
+        dropdownList.style.display = "none";
     } else {
-        courses.style.display = "block";
+        dropdownList.style.display = "block";
     }
 }
 window.onclick = function (event) {
-    if (!event.target.matches('form__select-button2')) {
+    if (!event.target.matches('.form__select-button')) {
         document.getElementById('dropdown_id2')
             .style.display = "none";
     }
-}   
+}
 // COUNTERS
 let num1 = 0
 let sumEL = document.getElementById("sum")
