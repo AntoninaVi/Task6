@@ -998,7 +998,7 @@ input[type=range] {
 }
 
 .slider__bar:disabled {
-  background: #dbe2ea;
+  background: rgba(44, 39, 56, 0.1607843137);
 }
 
 input[type=range]::-webkit-slider-runnable-track {
@@ -1021,6 +1021,18 @@ input[type=range]::-ms-track {
   box-shadow: none;
   border: none;
   background: transparent;
+}
+
+#sliderdis::-webkit-slider-thumb {
+  background-color: #EBF4F8;
+}
+
+#sliderdis::-moz-range-thumb:disabled {
+  background-color: #EBF4F8;
+}
+
+#sliderdis::-ms-thumb:disabled {
+  background-color: #EBF4F8;
 }
 
 .tags-buttons {

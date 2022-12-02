@@ -854,7 +854,7 @@ input[type="range"] {
 	margin-right: 66px;
 }
 .slider__bar:disabled {
-	background: #dbe2ea;
+	background: #2C273829;
 }
 
 input[type="range"]::-webkit-slider-runnable-track {
@@ -876,6 +876,16 @@ input[type="range"]::-ms-track {
 	box-shadow: none;
 	border: none;
 	background: transparent;
+}
+
+#sliderdis::-webkit-slider-thumb {
+background-color: #EBF4F8;
+}
+#sliderdis::-moz-range-thumb:disabled {
+	background-color: #EBF4F8;
+	}
+	#sliderdis::-ms-thumb:disabled {
+		background-color: #EBF4F8;
 }
 // TAGS-BTN
 .tags-buttons {
