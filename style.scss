@@ -2550,10 +2550,13 @@ input[type="range"]:disabled::-ms-thumb {
 		text-align: center;
 	}
 }
-.my_dataviz svg{
-	width: 100%;
-	max-width: 25em;
+@media screen and(max-width:1120px){
+	#my_dataviz svg{
+		width: 100%;
+		max-width: 25em;
+	}
 }
+
 // 17. CARDS
 .cards {
 	margin-bottom: 80px;
