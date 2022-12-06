@@ -1233,11 +1233,18 @@ input[type="range"]:disabled::-ms-thumb {
 		display: flex;
 		align-items: center;
 		margin-bottom: 80px;
+		@media screen and (max-width: 540px) {
+			flex-direction: column;
+		}
 	}
 
 	&__logo {
 		&:first-of-type {
 			margin-right: 60px;
+			@media screen and (max-width: 540px) {
+				margin-right: 0;
+				margin-bottom: 2em;
+			}
 		}
 	}
 }
@@ -1256,12 +1263,18 @@ input[type="range"]:disabled::-ms-thumb {
 
 	&__content {
 		display: flex;
+		@media screen and (max-width: 980px) {
+			flex-direction: column;
+		}
 	}
 	// &__group {
 	// }
 
 	&__group-img {
 		margin-right: 30px;
+		@media screen and (max-width: 540px) {
+			margin-right: 0;
+		}
 		.avatars__group:last-child &:last-child {
 			margin-right: 0;
 		}
