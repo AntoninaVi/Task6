@@ -1632,9 +1632,19 @@ input[type=range]:disabled::-ms-thumb {
   display: flex;
   margin-bottom: 40px;
 }
+@media screen and (max-width: 990px) {
+  .chat__group {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10em, 44%));
+    -ms-grid-rows: ;
+    grid-template-rows: repeat(3.5em);
+    gap: 2.7em;
+  }
+}
 .chat__message {
   position: relative;
-  width: 240px;
+  width: 15em;
   background: #ffffff;
   border-radius: 6px;
   padding: 20px;
@@ -1775,6 +1785,16 @@ input[type=range]:disabled::-ms-thumb {
 }
 .popover__group:last-child {
   margin-bottom: 0;
+}
+@media screen and (max-width: 990px) {
+  .popover__group {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10em, 24%));
+    -ms-grid-rows: ;
+    grid-template-rows: repeat(3.5em);
+    gap: 2.7em;
+  }
 }
 .popover__content {
   position: relative;
@@ -1966,6 +1986,16 @@ input[type=range]:disabled::-ms-thumb {
   display: flex;
   margin-bottom: 30px;
 }
+@media screen and (max-width: 990px) {
+  .tooltips__group {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14em, 15%));
+    -ms-grid-rows: ;
+    grid-template-rows: repeat(3.5em);
+    gap: 1em;
+  }
+}
 .tooltips__content {
   position: relative;
   padding: 7px 10px;
@@ -2116,11 +2146,29 @@ input[type=range]:disabled::-ms-thumb {
   display: -ms-flexbox;
   display: flex;
 }
+@media screen and (max-width: 530px) {
+  .misc__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .misc__group {
   margin-right: 40px;
 }
 .misc__group:last-child {
   margin-right: 0;
+}
+@media screen and (max-width: 530px) {
+  .misc__group {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 530px) {
+  .misc__group:nth-child(1), .misc__group:nth-child(2) {
+    margin-bottom: 2em;
+  }
 }
 .misc__group-content {
   display: -webkit-box;
@@ -2187,62 +2235,103 @@ input[type=range]:disabled::-ms-thumb {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media screen and (max-width: 1410px) {
+  .types__group {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+@media screen and (max-width: 1270px) {
+  .types__group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
 .types__paragraph {
   margin-bottom: 49px;
   margin-right: 40px;
+  white-space: nowrap;
 }
 
 .types__group:nth-of-type(1) .types__paragraph {
   font-weight: 600;
-  font-size: 72px;
+  font-size: 4.5em;
   line-height: 86px;
+}
+@media screen and (max-width: 470px) {
+  .types__group:nth-of-type(1) .types__paragraph {
+    font-size: 3em;
+  }
 }
 
 .types__group:nth-of-type(2) .types__paragraph {
   font-weight: 600;
-  font-size: 64px;
+  font-size: 4em;
   line-height: 76px;
+}
+@media screen and (max-width: 470px) {
+  .types__group:nth-of-type(2) .types__paragraph {
+    font-size: 2.5em;
+  }
 }
 
 .types__group:nth-of-type(3) .types__paragraph {
   font-weight: 600;
-  font-size: 56px;
+  font-size: 3.5em;
   line-height: 68px;
+}
+@media screen and (max-width: 470px) {
+  .types__group:nth-of-type(3) .types__paragraph {
+    font-size: 2em;
+  }
 }
 
 .types__group:nth-of-type(4) .types__paragraph {
   font-weight: 600;
-  font-size: 34px;
+  font-size: 2.1em;
   line-height: 44px;
+}
+@media screen and (max-width: 470px) {
+  .types__group:nth-of-type(4) .types__paragraph {
+    font-size: 1.8em;
+  }
 }
 
 .types__group:nth-of-type(5) .types__paragraph {
   font-weight: 600;
-  font-size: 28px;
+  font-size: 1.75em;
   line-height: 36px;
+}
+@media screen and (max-width: 470px) {
+  .types__group:nth-of-type(5) .types__paragraph {
+    font-size: 1.6em;
+  }
 }
 
 .types__group:nth-of-type(6) .types__paragraph {
   font-weight: 600;
-  font-size: 20px;
+  font-size: 1.3em;
   line-height: 28px;
 }
 
 .types__group:nth-of-type(7) .types__paragraph {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 22px;
 }
 
 .types__group:nth-of-type(8) .types__paragraph {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 20px;
 }
 
 .types__group:nth-of-type(9) .types__paragraph {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 0.75em;
   line-height: 18px;
 }
 
