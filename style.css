@@ -21,7 +21,7 @@ body {
   height: 100%;
   background: #ebf4f8;
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 420px) {
   .wrapper {
     padding: 10px 10px 100px 10px;
   }
@@ -3098,8 +3098,19 @@ input[type=range]:disabled::-ms-thumb {
 @media screen and (max-width: 1330px) {
   .charts {
     grid-template-columns: repeat(auto-fit, minmax(23em, 2fr));
-    -ms-grid-rows: (33em)[2];
-    grid-template-rows: repeat(2, 33em);
+    -ms-grid-rows: (33em)[1];
+    grid-template-rows: repeat(1, 33em);
+    margin-bottom: 22em;
+  }
+}
+@media screen and (max-width: 380px) {
+  .charts {
+    grid-template-columns: repeat(auto-fit, minmax(20em, 2fr));
+  }
+}
+@media screen and (max-width: 330px) {
+  .charts {
+    grid-template-columns: repeat(auto-fit, minmax(18em, 2fr));
   }
 }
 .charts__title {
@@ -3218,9 +3229,31 @@ input[type=range]:disabled::-ms-thumb {
 }
 
 @media screen and (max-width: 1120px) {
-  #my_dataviz svg {
-    width: 100%;
-    max-width: 25em;
+  #my_dataviz {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+    margin-right: -4em;
+  }
+}
+@media screen and (max-width: 920px) {
+  #my_dataviz {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    margin-right: 3em;
+  }
+}
+@media screen and (max-width: 650px) {
+  #my_dataviz {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+    margin-right: -4em;
+  }
+}
+@media screen and (max-width: 380px) {
+  #my_dataviz {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    margin-right: -7em;
   }
 }
 .cards {
