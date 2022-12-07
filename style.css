@@ -550,6 +550,7 @@ body {
   border-radius: 6px;
   margin-top: 4px;
   width: 20%;
+  min-width: 15empage 2;
 }
 .form__select-item {
   background: #ffffff;
