@@ -549,8 +549,7 @@ body {
   border: 1px solid #dbe2ea;
   border-radius: 6px;
   margin-top: 4px;
-  width: 22.6rem;
-  max-width: 100%;
+  width: 20%;
 }
 .form__select-item {
   background: #ffffff;
