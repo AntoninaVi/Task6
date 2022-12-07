@@ -733,14 +733,18 @@ body {
 	border: 4px solid #ffffff;
 }
 .radio__input:checked {
-	outline: 2px solid #0880ae;
+	// outline: 2px solid #0880ae;
+	box-shadow: 0 0 0 1px #fff, 
+	0 0 0 2px #0880ae;
 	background-color: #0880ae;
 	border: 4px solid #ffffff;
 }
 .radio__input:disabled {
 	background-color: #d9dce0;
 	border: 4px solid #ebf4f8;
-	outline: 1px solid #d9dce0;
+	// outline: 1px solid #d9dce0;
+	box-shadow: 0 0 0 1px #EBF4F8, 
+	0 0 0 3px #DBE2EA;
 }
 #radio2 {
 	border: 9px solid #ebf4f8;
