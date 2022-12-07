@@ -2458,13 +2458,14 @@ input[type="range"]:disabled::-ms-thumb {
 	@media screen and(max-width:1330px) {
 		grid-template-columns: repeat(auto-fit, minmax(23em, 2fr));
 		grid-template-rows: repeat(1, 33em);
-		margin-bottom: 22em;
+		margin-bottom: 13em;
 	}
-	@media screen and(max-width:380px){
-		grid-template-columns: repeat(auto-fit, minmax(20em, 2fr));
+	@media screen and(max-width:440px) {
+		grid-template-columns: repeat(auto-fit, minmax(21em, 2fr));
+		margin-bottom: 8em;
 	}
-	@media screen and(max-width:330px){
-		grid-template-columns: repeat(auto-fit, minmax(18em, 2fr));
+	@media screen and(max-width:330px) {
+		grid-template-columns: repeat(auto-fit, minmax(16em, 2fr));
 	}
 
 	&__title {
@@ -2480,13 +2481,20 @@ input[type="range"]:disabled::-ms-thumb {
 		background: #ffffff;
 		box-shadow: 0px 40px 60px rgba(0, 0, 0, 0.08), 0px 80px 160px rgba(0, 0, 0, 0.04);
 		border-radius: 24px;
-		padding: 20px 20px 40px 20px;
+		padding: 20px 20px 10px 20px;
+		@media screen and(max-width:500px) {
+			padding: 10px 5px 5px 5px;
+		}
 	}
 	&__name {
 		font-weight: 700;
 		font-size: 34px;
 		line-height: 44px;
 		margin-bottom: 5px;
+		@media screen and(max-width:500px) {
+			font-size: 24px;
+			line-height: 30px;
+		}
 	}
 	&__paragraph {
 		font-style: normal;
@@ -2495,6 +2503,9 @@ input[type="range"]:disabled::-ms-thumb {
 		line-height: 23px;
 		color: #728191;
 		margin-bottom: 34px;
+		@media screen and(max-width:500px) {
+			font-size: 15px;
+		}
 	}
 
 	&__span {
@@ -2531,15 +2542,19 @@ input[type="range"]:disabled::-ms-thumb {
 	}
 }
 
-
 .chart__donut {
-	
 	.chart__group {
 		display: flex;
 		flex-direction: row-reverse;
 		align-items: center;
 		border-bottom: 1px solid #dbe2ea;
 		margin-bottom: 24px;
+		@media screen and(max-width:500px) {
+			height: 20em;
+		}
+		@media screen and(max-width:330px){
+			height: 15em;
+		}
 	}
 
 	.chart__meanings {
@@ -2549,15 +2564,11 @@ input[type="range"]:disabled::-ms-thumb {
 		.chart__meaning:nth-child(3) .chart__span {
 			background: #0880ae;
 		}
-	
 	}
 	.chart__meaning {
 		margin-bottom: 24px;
 		&:last-child {
 			margin-bottom: 0;
-			// @media screen and(max-width:1130px) {
-			// 	margin-bottom: 24px;
-			// }
 		}
 	}
 	.chart__paragraph:last-child {
@@ -2567,26 +2578,32 @@ input[type="range"]:disabled::-ms-thumb {
 
 @media screen and(max-width:1120px) {
 	#my_dataviz {
-		transform: scale(0.70);
+		transform: scale(0.7);
 		margin-right: -4em;
 	}
 }
 @media screen and(max-width:920px) {
 	#my_dataviz {
 		transform: scale(1);
-	margin-right: 3em;
+		margin-right: 3em;
 	}
 }
 @media screen and(max-width:650px) {
 	#my_dataviz {
-		transform: scale(0.70);
-	margin-right: -4em;
+		transform: scale(0.7);
+		margin-right: -4em;
 	}
 }
 @media screen and(max-width:380px) {
 	#my_dataviz {
-		transform: scale(0.50);
-	margin-right: -7em;
+		transform: scale(0.5);
+		margin-right: -6em;
+	}
+}
+@media screen and(max-width:280px) {
+	#my_dataviz {
+		transform: scale(0.4);
+		margin-right: -7em;
 	}
 }
 // 17. CARDS
@@ -2616,6 +2633,9 @@ input[type="range"]:disabled::-ms-thumb {
 				display: grid;
 				grid-template-columns: repeat(auto-fit, minmax(19em, 12vmax));
 				grid-template-rows: repeat(2, 27em);
+			}
+			@media screen and(max-width:330px){
+				grid-template-columns: repeat(auto-fit, minmax(16em, 12vmax));
 			}
 		}
 	}
