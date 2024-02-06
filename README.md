@@ -16,6 +16,7 @@ Technologies used in the project:
 *   SCSS
 *   HTML
 
-  <img width="332" alt="Screenshot" src="https://github.com/AntoninaVi/Task6/assets/68278960/7e4d6165-592e-458e-b303-94f75d8ff03c">
+
 <img width="302" alt="Screenshot" src="https://github.com/AntoninaVi/Task6/assets/68278960/ac54d6dd-17a5-406f-9287-3be46010885f">
 <img width="465" alt="Screenshot" src="https://github.com/AntoninaVi/Task6/assets/68278960/82c824a5-0ff5-41b3-96e5-dd72229c1185">
+  <img width="332" alt="Screenshot" src="https://github.com/AntoninaVi/Task6/assets/68278960/7e4d6165-592e-458e-b303-94f75d8ff03c">
